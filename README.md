@@ -41,7 +41,7 @@ Users can browse through different products and will be able to purchase them us
 will stock a limited number of categories of products but the plan is to expand upon the number down the line.
 
 The website will have a login page that will direct them to the main store front where they will be able to browse 
-through all the products or select from different categories. Once a user adds their product(s) to the basket, then 
+through all the products or select from different categories. Once a user adds their product(s) to the cart, then 
 they will be able to purchase them by entering in shipping and payment details. The user will also be able to view 
 their purchase history linked to their username. If the customer currently does not have an account then they will 
 be able to create one. When they create an account, they will also be able to change their email address, password 
@@ -54,9 +54,9 @@ and other details related to their account.
 ## Customer
 ### Products
 *	I want to see the full range of your products, and be able to purchase one or quickly change how many I have put 
-in my basket.
+in my shopping cart.
 *	I want to be able to view an individual product and find out more details about that product.
-*	I want to be able to see at all times, how much my current basket total is so I can see how much I am spending on 
+*	I want to be able to see at all times, how much my current cart total is so I can see how much I am spending on 
 products.
 *	I want to be able to see the different categories and be able to sort through them without having to see all the 
 products I might not be interested in.
@@ -64,9 +64,9 @@ products I might not be interested in.
 *	I want to see if the product(s) I want is in stock so I know they are available to purchase.
 
 ### Purchasing
-*	Once I have selected the items I want to buy and added them to the basket I want a notification with them shown 
-added to my basket.
-*	I want to be able to be able to change the items in my basket e.g. change quantity of an item or remove it.
+*	Once I have selected the items I want to buy and added them to the cart I want a notification with them shown 
+added to my cart.
+*	I want to be able to be able to change the items in my cart e.g. change quantity of an item or remove it.
 *	I want to be able to enter my payment details for the products as quickly and as easily as possible.
 *	I want to be sure that my payment information is secure before confirming my payment details at the checkout.
 *	I want a confirmation of my order on the site before confirming just to double check that I have not made any 
