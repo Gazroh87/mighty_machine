@@ -33,6 +33,10 @@ body {
     text-transform: uppercase;
 }
 
+.nav-item {
+    font-size: 1.5em;
+}
+
 /* -------------------------------- Buttons */
 
 .shop-now-button {
