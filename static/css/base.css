@@ -7,8 +7,8 @@ html {
 body {
     background: url('/media/homepage_background_cropped.jpg') no-repeat center center fixed;
     background-size: cover;
-    /* 164px is height of top header */
-    height: calc(100vh - 164px);
+    /* 172px is height of top header */
+    height: calc(100vh - 172px);
     color: #555;
     font-family: 'Roboto', sans-serif;
 }
@@ -22,14 +22,15 @@ body {
     width: 1.5rem;
 }
 
+.logo {
+    width: 200px;
+    height: 72px;
+    object-fit: cover;
+}
+
 /* maintain uppercase with logo */
 .logo-case {
     text-transform: uppercase;
-}
-
-/* logo takes up as much space as text requires and no more */
-.main-logo-link {
-    width: fit-content;
 }
 
 /* -------------------------------- Buttons */
@@ -65,6 +66,10 @@ body {
     border: 1px solid black !important;
 }
 
+.bg-black {
+    background: #000 !important;
+}
+
 /* -------------------------------- Media Queries */
 
 /* Slightly larger container on xl screens */
@@ -84,8 +89,8 @@ body {
         z-index: 1030;
     }
 
-    /* 164px is height of top header */
+    /* 172px is height of top header */
     .header-container {
-        padding-top: 164px;
+        padding-top: 172px;
     }
 }
