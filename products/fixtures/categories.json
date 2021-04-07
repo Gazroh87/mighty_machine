@@ -1,0 +1,90 @@
+[
+ {
+   "pk": 1,
+   "model": "products.category",
+   "fields": {
+      "name": "cases",
+      "friendly_name": "Cases"
+   }
+},
+ {
+   "pk": 2,
+   "model": "products.category",
+   "fields": {
+      "name": "motherboard",
+      "friendly_name": "Motherboard"
+   }
+},
+ {
+   "pk": 3,
+   "model": "products.category",
+   "fields": {
+      "name": "cpu",
+      "friendly_name": "CPU"
+   }
+},
+ {
+   "pk": 4,
+   "model": "products.category",
+   "fields": {
+      "name": "gpu",
+      "friendly_name": "GPU"
+   }
+},
+ {
+   "pk": 5,
+   "model": "products.category",
+   "fields": {
+      "name": "ram",
+      "friendly_name": "RAM"
+   }
+},
+ {
+   "pk": 6,
+   "model": "products.category",
+   "fields": {
+      "name": "storage",
+      "friendly_name": "Storage"
+   }
+},
+ {
+   "pk": 7,
+   "model": "products.category",
+   "fields": {
+      "name": "psu",
+      "friendly_name": "PSU"
+   }
+},
+ {
+   "pk": 8,
+   "model": "products.category",
+   "fields": {
+      "name": "keyboard",
+      "friendly_name": "Keyboard"
+   }
+},
+ {
+   "pk": 9,
+   "model": "products.category",
+   "fields": {
+      "name": "mouse",
+      "friendly_name": "Mouse"
+   }
+},
+ {
+   "pk": 10,
+   "model": "products.category",
+   "fields": {
+      "name": "new_items",
+      "friendly_name": "New Items"
+   }
+},
+ {
+   "pk": 11,
+   "model": "products.category",
+   "fields": {
+      "name": "clearance",
+      "friendly_name": "Clearance"
+   }
+}
+]

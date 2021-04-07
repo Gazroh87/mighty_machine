@@ -1,0 +1,4562 @@
+[
+ {
+   "pk": 1,
+   "model": "products.product",
+   "fields": {
+      "sku": "CA10-001",
+      "brand": "Aerocool",
+      "part_name": "Aerocool Cyclon RGB Mid Tower",
+      "description": "Aerocool Cyclon RGB Mid Tower Case",
+      "price": 34.99,
+      "category": 11,
+      "rating": 4,
+      "image": "ca10-001.png",
+      "part_type": "ATX Mid Tower"
+   }
+},
+ {
+   "pk": 2,
+   "model": "products.product",
+   "fields": {
+      "sku": "CA10-002",
+      "brand": "Antec",
+      "part_name": "Antec NX400 Mid Tower Gaming Case",
+      "description": "Antec NX400 Mid Tower Gaming Case",
+      "price": 54.99,
+      "category": 11,
+      "rating": 4.5,
+      "image": "ca10-002.png",
+      "part_type": "ATX Mid Tower"
+   }
+},
+ {
+   "pk": 3,
+   "model": "products.product",
+   "fields": {
+      "sku": "CA10-003",
+      "brand": "ASUS",
+      "part_name": "ASUS ROG Strix Helios RGB Gaming Case",
+      "description": "ASUS ROG Strix Helios RGB Gaming Case",
+      "price": 264.99,
+      "category": 1,
+      "rating": 5,
+      "image": "ca10-003.png",
+      "part_type": "ATX Full Tower"
+   }
+},
+ {
+   "pk": 4,
+   "model": "products.product",
+   "fields": {
+      "sku": "CA10-004",
+      "brand": "Corsair",
+      "part_name": "Corsair Obsidian 1000D Super Tower",
+      "description": "Corsair Obsidian 1000D Super Tower Case",
+      "price": 499.99,
+      "category": 1,
+      "rating": 5,
+      "image": "ca10-004.png",
+      "part_type": "ATX Full Tower"
+   }
+},
+ {
+   "pk": 5,
+   "model": "products.product",
+   "fields": {
+      "sku": "CA10-005",
+      "brand": "Corsair",
+      "part_name": "Corsair Carbide 200R Compact ATX Case",
+      "description": "Corsair Carbide 200R Compact ATX Case",
+      "price": 72.99,
+      "category": 1,
+      "rating": 4,
+      "image": "ca10-005.png",
+      "part_type": "ATX Mid Tower"
+   }
+},
+ {
+   "pk": 6,
+   "model": "products.product",
+   "fields": {
+      "sku": "CA10-006",
+      "brand": "Corsair",
+      "part_name": "Corsair Obsidian 750D Full Tower ATX Case",
+      "description": "Corsair Obsidian 750D Full Tower ATX Case",
+      "price": 134.99,
+      "category": 1,
+      "rating": 4,
+      "image": "ca10-006.png",
+      "part_type": "ATX Full Tower"
+   }
+},
+ {
+   "pk": 7,
+   "model": "products.product",
+   "fields": {
+      "sku": "CA10-007",
+      "brand": "Corsair",
+      "part_name": "Corsair Carbide 175R RGB Mid Tower ATX Gaming Case",
+      "description": "Corsair Carbide 175R RGB Tempered Glass Mid Tower ATX Gaming Case",
+      "price": 57.99,
+      "category": 1,
+      "rating": 4,
+      "image": "ca10-007.png",
+      "part_type": "ATX Mid Tower"
+   }
+},
+ {
+   "pk": 8,
+   "model": "products.product",
+   "fields": {
+      "sku": "CA10-008",
+      "brand": "Corsair",
+      "part_name": "Corsair Crystal 680X RGB ATX Smart Case",
+      "description": "Corsair Crystal 680X RGB ATX High Airflow Tempered Glass Smart Case",
+      "price": 234.99,
+      "category": 10,
+      "rating": 3,
+      "image": "ca10-008.png",
+      "part_type": "ATX Mid Tower"
+   }
+},
+ {
+   "pk": 9,
+   "model": "products.product",
+   "fields": {
+      "sku": "CA10-009",
+      "brand": "Corsair",
+      "part_name": "Corsair Obsidian 500D RGB SE Premium Mid Tower",
+      "description": "Corsair Obsidian 500D RGB SE Premium Mid Tower Case",
+      "price": 249.99,
+      "category": 1,
+      "rating": 5,
+      "image": "ca10-009.png",
+      "part_type": "ATX Mid Tower"
+   }
+},
+ {
+   "pk": 10,
+   "model": "products.product",
+   "fields": {
+      "sku": "CA10-010",
+      "brand": "Fractal Design",
+      "part_name": "Fractal Design Focus G Black Mid Tower",
+      "description": "Fractal Design Focus G Black Mid Tower Case",
+      "price": 37.99,
+      "category": 1,
+      "rating": 4.5,
+      "image": "ca10-010.png",
+      "part_type": "ATX Mid Tower"
+   }
+},
+ {
+   "pk": 11,
+   "model": "products.product",
+   "fields": {
+      "sku": "CA10-011",
+      "brand": "Fractal Design",
+      "part_name": "Fractal Design Focus G White Mid Tower",
+      "description": "Fractal Design Focus G White Mid Tower Case",
+      "price": 37.99,
+      "category": 1,
+      "rating": 4.5,
+      "image": "ca10-011.png",
+      "part_type": "ATX Mid Tower"
+   }
+},
+ {
+   "pk": 12,
+   "model": "products.product",
+   "fields": {
+      "sku": "CA10-012",
+      "brand": "MSI",
+      "part_name": "MAG FORGE 100R Mid Tower",
+      "description": "MAG FORGE 100R Mid Tower Case",
+      "price": 59.99,
+      "category": 1,
+      "rating": 3.5,
+      "image": "ca10-012.png",
+      "part_type": "ATX Mid Tower"
+   }
+},
+ {
+   "pk": 13,
+   "model": "products.product",
+   "fields": {
+      "sku": "CA10-013",
+      "brand": "NZXT",
+      "part_name": "NZXT H210 Black Mini ITX Case",
+      "description": "NZXT H210 Black Mini ITX Case",
+      "price": 72.99,
+      "category": 11,
+      "rating": 4,
+      "image": "ca10-013.png",
+      "part_type": "Mini ITX Tower"
+   }
+},
+ {
+   "pk": 14,
+   "model": "products.product",
+   "fields": {
+      "sku": "CA10-014",
+      "brand": "NZXT",
+      "part_name": "NZXT H210 White Mini ITX Case",
+      "description": "NZXT H210 White Mini ITX Case",
+      "price": 72.99,
+      "category": 11,
+      "rating": 4,
+      "image": "ca10-014.png",
+      "part_type": "Mini ITX Tower"
+   }
+},
+ {
+   "pk": 15,
+   "model": "products.product",
+   "fields": {
+      "sku": "CA10-015",
+      "brand": "NZXT",
+      "part_name": "NZXT H500 Matte White ATX Mid Tower",
+      "description": "NZXT H500 Matte White ATX Mid Tower Case",
+      "price": 49.99,
+      "category": 1,
+      "rating": 5,
+      "image": "ca10-015.png",
+      "part_type": "ATX Mid Tower"
+   }
+},
+ {
+   "pk": 16,
+   "model": "products.product",
+   "fields": {
+      "sku": "CA10-016",
+      "brand": "Phanteks",
+      "part_name": "Phanteks Enthoo Elite ATX Full Tower",
+      "description": "Phanteks Enthoo Elite ATX Full Tower",
+      "price": 856.99,
+      "category": 10,
+      "rating": 5,
+      "image": "ca10-016.png",
+      "part_type": "ATX Full Tower"
+   }
+},
+ {
+   "pk": 17,
+   "model": "products.product",
+   "fields": {
+      "sku": "CA10-017",
+      "brand": "Thermaltake",
+      "part_name": "Thermaltake Core V21 Micro Chassis",
+      "description": "Thermaltake Core V21 Micro Chassis",
+      "price": 59.99,
+      "category": 1,
+      "rating": 5,
+      "image": "ca10-017.png",
+      "part_type": "Micro ATX Mini Tower"
+   }
+},
+ {
+   "pk": 18,
+   "model": "products.product",
+   "fields": {
+      "sku": "CA10-018",
+      "brand": "Thermaltake",
+      "part_name": "Thermaltake Core W200 Super Tower Chassis",
+      "description": "Thermaltake Core W200 Super Tower Chassis",
+      "price": 559.99,
+      "category": 1,
+      "rating": 4,
+      "image": "ca10-018.png",
+      "part_type": "ATX Full Tower"
+   }
+},
+ {
+   "pk": 19,
+   "model": "products.product",
+   "fields": {
+      "sku": "CA10-019",
+      "brand": "Thermaltake",
+      "part_name": "Thermaltake View 91 RGB Edition Super Tower Chassis",
+      "description": "Thermaltake View 91 Tempered Glass RGB Edition Super Tower Chassis",
+      "price": 399.99,
+      "category": 11,
+      "rating": 4.5,
+      "image": "ca10-019.png",
+      "part_type": "ATX Full Tower"
+   }
+},
+ {
+   "pk": 20,
+   "model": "products.product",
+   "fields": {
+      "sku": "CP20-020",
+      "brand": "AMD",
+      "part_name": "AMD Ryzen 3 3100 Desktop Processor",
+      "description": "AMD Ryzen 3 3100 Desktop Processor",
+      "price": 133.99,
+      "category": 2,
+      "rating": 3,
+      "image": "cp20-020.png",
+      "part_type": "AMD Ryzen 3 CPU"
+   }
+},
+ {
+   "pk": 21,
+   "model": "products.product",
+   "fields": {
+      "sku": "CP20-021",
+      "brand": "AMD",
+      "part_name": "AMD Ryzen 3 3300X Desktop Processor",
+      "description": "AMD Ryzen 3 3300X Desktop Processor",
+      "price": 188.99,
+      "category": 2,
+      "rating": 3,
+      "image": "cp20-021.png",
+      "part_type": "AMD Ryzen 3 CPU"
+   }
+},
+ {
+   "pk": 22,
+   "model": "products.product",
+   "fields": {
+      "sku": "CP20-022",
+      "brand": "AMD",
+      "part_name": "AMD Ryzen 5 3600 Desktop Processor",
+      "description": "AMD Ryzen 5 3600 Desktop Processor",
+      "price": 299.99,
+      "category": 2,
+      "rating": 4,
+      "image": "cp20-022.png",
+      "part_type": "AMD Ryzen 5 CPU"
+   }
+},
+ {
+   "pk": 23,
+   "model": "products.product",
+   "fields": {
+      "sku": "CP20-023",
+      "brand": "AMD",
+      "part_name": "AMD Ryzen 5 3600X Desktop Processor",
+      "description": "AMD Ryzen 5 3600X Desktop Processor",
+      "price": 329.99,
+      "category": 2,
+      "rating": 4,
+      "image": "cp20-023.png",
+      "part_type": "AMD Ryzen 5 CPU"
+   }
+},
+ {
+   "pk": 24,
+   "model": "products.product",
+   "fields": {
+      "sku": "CP20-024",
+      "brand": "AMD",
+      "part_name": "AMD Ryzen 7 3700X Desktop Processor",
+      "description": "AMD Ryzen 7 3700X Desktop Processor",
+      "price": 339.99,
+      "category": 2,
+      "rating": 4,
+      "image": "cp20-024.png",
+      "part_type": "AMD Ryzen 7 CPU"
+   }
+},
+ {
+   "pk": 25,
+   "model": "products.product",
+   "fields": {
+      "sku": "CP20-025",
+      "brand": "AMD",
+      "part_name": "AMD Ryzen 7 3800X Desktop Processor",
+      "description": "AMD Ryzen 7 3800X Desktop Processor",
+      "price": 379.99,
+      "category": 2,
+      "rating": 3,
+      "image": "cp20-025.png",
+      "part_type": "AMD Ryzen 7 CPU"
+   }
+},
+ {
+   "pk": 26,
+   "model": "products.product",
+   "fields": {
+      "sku": "CP20-026",
+      "brand": "AMD",
+      "part_name": "AMD Ryzen 9 3900X Desktop Processor",
+      "description": "AMD Ryzen 9 3900X Desktop Processor",
+      "price": 539.99,
+      "category": 2,
+      "rating": 4,
+      "image": "cp20-026.png",
+      "part_type": "AMD Ryzen 9 CPU"
+   }
+},
+ {
+   "pk": 27,
+   "model": "products.product",
+   "fields": {
+      "sku": "CP20-027",
+      "brand": "AMD",
+      "part_name": "AMD Ryzen 9 3950X Desktop Processor",
+      "description": "AMD Ryzen 9 3950X Desktop Processor",
+      "price": 559.99,
+      "category": 2,
+      "rating": 4,
+      "image": "cp20-027.png",
+      "part_type": "AMD Ryzen 9 CPU"
+   }
+},
+ {
+   "pk": 28,
+   "model": "products.product",
+   "fields": {
+      "sku": "CP20-028",
+      "brand": "AMD",
+      "part_name": "AMD Ryzen 5 3600XT Desktop Processor",
+      "description": "AMD Ryzen 5 3600XT Desktop Processor",
+      "price": 359.99,
+      "category": 2,
+      "rating": 4,
+      "image": "cp20-028.png",
+      "part_type": "AMD Ryzen 5 CPU"
+   }
+},
+ {
+   "pk": 29,
+   "model": "products.product",
+   "fields": {
+      "sku": "CP20-029",
+      "brand": "AMD",
+      "part_name": "AMD Ryzen 7 3800XT Desktop Processor",
+      "description": "AMD Ryzen 7 3800XT Desktop Processor",
+      "price": 449.99,
+      "category": 2,
+      "rating": 3,
+      "image": "cp20-029.png",
+      "part_type": "AMD Ryzen 7 CPU"
+   }
+},
+ {
+   "pk": 30,
+   "model": "products.product",
+   "fields": {
+      "sku": "CP20-030",
+      "brand": "AMD",
+      "part_name": "AMD Ryzen 9 3900XT Desktop Processor",
+      "description": "AMD Ryzen 9 3900XT Desktop Processor",
+      "price": 499.99,
+      "category": 2,
+      "rating": 4,
+      "image": "cp20-030.png",
+      "part_type": "AMD Ryzen 9 CPU"
+   }
+},
+ {
+   "pk": 31,
+   "model": "products.product",
+   "fields": {
+      "sku": "CP20-031",
+      "brand": "AMD",
+      "part_name": "AMD Ryzen 5 5600X Desktop Processor",
+      "description": "AMD Ryzen 5 5600X Desktop Processor",
+      "price": 349.99,
+      "category": 10,
+      "rating": 5,
+      "image": "cp20-031.png",
+      "part_type": "AMD Ryzen 5 CPU"
+   }
+},
+ {
+   "pk": 32,
+   "model": "products.product",
+   "fields": {
+      "sku": "CP20-032",
+      "brand": "AMD",
+      "part_name": "AMD Ryzen 7 5800X Desktop Processor",
+      "description": "AMD Ryzen 7 5800X Desktop Processor",
+      "price": 499.99,
+      "category": 10,
+      "rating": 5,
+      "image": "cp20-032.png",
+      "part_type": "AMD Ryzen 7 CPU"
+   }
+},
+ {
+   "pk": 33,
+   "model": "products.product",
+   "fields": {
+      "sku": "CP20-033",
+      "brand": "AMD",
+      "part_name": "AMD Ryzen 9 5900X Desktop Processor",
+      "description": "AMD Ryzen 9 5900X Desktop Processor",
+      "price": 749.99,
+      "category": 10,
+      "rating": 5,
+      "image": "cp20-033.png",
+      "part_type": "AMD Ryzen 9 CPU"
+   }
+},
+ {
+   "pk": 34,
+   "model": "products.product",
+   "fields": {
+      "sku": "CP20-034",
+      "brand": "AMD",
+      "part_name": "AMD Ryzen 9 5950X Desktop Processor",
+      "description": "AMD Ryzen 9 5950X Desktop Processor",
+      "price": 999.99,
+      "category": 10,
+      "rating": 5,
+      "image": "cp20-034.png",
+      "part_type": "AMD Ryzen 9 CPU"
+   }
+},
+ {
+   "pk": 35,
+   "model": "products.product",
+   "fields": {
+      "sku": "CP20-035",
+      "brand": "Intel",
+      "part_name": "Intel Core i5 3470 Desktop Processor",
+      "description": "Intel Core i5 3470 Desktop Processor",
+      "price": 47.99,
+      "category": 11,
+      "rating": 3,
+      "image": "cp20-035.png",
+      "part_type": "Intel Core i5 CPU"
+   }
+},
+ {
+   "pk": 36,
+   "model": "products.product",
+   "fields": {
+      "sku": "CP20-036",
+      "brand": "Intel",
+      "part_name": "Intel Core i5 3570K Desktop Processor",
+      "description": "Intel Core i5 3570K Desktop Processor",
+      "price": 74.99,
+      "category": 11,
+      "rating": 3.5,
+      "image": "cp20-036.png",
+      "part_type": "Intel Core i5 CPU"
+   }
+},
+ {
+   "pk": 37,
+   "model": "products.product",
+   "fields": {
+      "sku": "CP20-037",
+      "brand": "Intel",
+      "part_name": "Intel Core i5 4460 Desktop Processor",
+      "description": "Intel Core i5 4460 Desktop Processor",
+      "price": 144.99,
+      "category": 11,
+      "rating": 4,
+      "image": "cp20-037.png",
+      "part_type": "Intel Core i5 CPU"
+   }
+},
+ {
+   "pk": 38,
+   "model": "products.product",
+   "fields": {
+      "sku": "CP20-038",
+      "brand": "Intel",
+      "part_name": "Intel Core i5 4690K Desktop Processor",
+      "description": "Intel Core i5 4690K Desktop Processor",
+      "price": 269.99,
+      "category": 11,
+      "rating": 4.5,
+      "image": "cp20-038.png",
+      "part_type": "Intel Core i5 CPU"
+   }
+},
+ {
+   "pk": 39,
+   "model": "products.product",
+   "fields": {
+      "sku": "CP20-039",
+      "brand": "Intel",
+      "part_name": "Intel Core i5 6400 Desktop Processor",
+      "description": "Intel Core i5 6400 Desktop Processor",
+      "price": 199.99,
+      "category": 2,
+      "rating": 5,
+      "image": "cp20-039.png",
+      "part_type": "Intel Core i5 CPU"
+   }
+},
+ {
+   "pk": 40,
+   "model": "products.product",
+   "fields": {
+      "sku": "CP20-040",
+      "brand": "Intel",
+      "part_name": "Intel Core i5 6500 Desktop Processor",
+      "description": "Intel Core i5 6500 Desktop Processor",
+      "price": 232.99,
+      "category": 2,
+      "rating": 5,
+      "image": "cp20-040.png",
+      "part_type": "Intel Core i5 CPU"
+   }
+},
+ {
+   "pk": 41,
+   "model": "products.product",
+   "fields": {
+      "sku": "CP20-041",
+      "brand": "Intel",
+      "part_name": "Intel Core i5 6600K Desktop Processor",
+      "description": "Intel Core i5 6600K Desktop Processor",
+      "price": 219.99,
+      "category": 2,
+      "rating": 5,
+      "image": "cp20-041.png",
+      "part_type": "Intel Core i5 CPU"
+   }
+},
+ {
+   "pk": 42,
+   "model": "products.product",
+   "fields": {
+      "sku": "CP20-042",
+      "brand": "Intel",
+      "part_name": "Intel Core i5 7400 Desktop Processor",
+      "description": "Intel Core i5 7400 Desktop Processor",
+      "price": 147.99,
+      "category": 2,
+      "rating": 4,
+      "image": "cp20-042.png",
+      "part_type": "Intel Core i5 CPU"
+   }
+},
+ {
+   "pk": 43,
+   "model": "products.product",
+   "fields": {
+      "sku": "CP20-043",
+      "brand": "Intel",
+      "part_name": "Intel Core i5 7500 Desktop Processor",
+      "description": "Intel Core i5 7500 Desktop Processor",
+      "price": 237.99,
+      "category": 2,
+      "rating": 4.5,
+      "image": "cp20-043.png",
+      "part_type": "Intel Core i5 CPU"
+   }
+},
+ {
+   "pk": 44,
+   "model": "products.product",
+   "fields": {
+      "sku": "CP20-044",
+      "brand": "Intel",
+      "part_name": "Intel Core i5 7600K Desktop Processor",
+      "description": "Intel Core i5 7600K Desktop Processor",
+      "price": 276.99,
+      "category": 2,
+      "rating": 4.5,
+      "image": "cp20-044.png",
+      "part_type": "Intel Core i5 CPU"
+   }
+},
+ {
+   "pk": 45,
+   "model": "products.product",
+   "fields": {
+      "sku": "CP20-045",
+      "brand": "Intel",
+      "part_name": "Intel Core i5 8400 Desktop Processor",
+      "description": "Intel Core i5 8400 Desktop Processor",
+      "price": 148.99,
+      "category": 2,
+      "rating": 3.5,
+      "image": "cp20-045.png",
+      "part_type": "Intel Core i5 CPU"
+   }
+},
+ {
+   "pk": 46,
+   "model": "products.product",
+   "fields": {
+      "sku": "CP20-046",
+      "brand": "Intel",
+      "part_name": "Intel Core i5 8600K Desktop Processor",
+      "description": "Intel Core i5 8600K Desktop Processor",
+      "price": 186.99,
+      "category": 2,
+      "rating": 3.5,
+      "image": "cp20-046.png",
+      "part_type": "Intel Core i5 CPU"
+   }
+},
+ {
+   "pk": 47,
+   "model": "products.product",
+   "fields": {
+      "sku": "CP20-047",
+      "brand": "Intel",
+      "part_name": "Intel Core i7 3770 Desktop Processor",
+      "description": "Intel Core i7 3770 Desktop Processor",
+      "price": 37.99,
+      "category": 11,
+      "rating": 3,
+      "image": "cp20-047.png",
+      "part_type": "Intel Core i7 CPU"
+   }
+},
+ {
+   "pk": 48,
+   "model": "products.product",
+   "fields": {
+      "sku": "CP20-048",
+      "brand": "Intel",
+      "part_name": "Intel Core i7 4770K Desktop Processor",
+      "description": "Intel Core i7 4770K Desktop Processor",
+      "price": 247.99,
+      "category": 11,
+      "rating": 4,
+      "image": "cp20-048.png",
+      "part_type": "Intel Core i7 CPU"
+   }
+},
+ {
+   "pk": 49,
+   "model": "products.product",
+   "fields": {
+      "sku": "CP20-049",
+      "brand": "Intel",
+      "part_name": "Intel Core i7 4790K Desktop Processor",
+      "description": "Intel Core i7 4790K Desktop Processor",
+      "price": 274.99,
+      "category": 11,
+      "rating": 4,
+      "image": "cp20-049.png",
+      "part_type": "Intel Core i7 CPU"
+   }
+},
+ {
+   "pk": 50,
+   "model": "products.product",
+   "fields": {
+      "sku": "CP20-050",
+      "brand": "Intel",
+      "part_name": "Intel Core i7 7700 Desktop Processor",
+      "description": "Intel Core i7 7700 Desktop Processor",
+      "price": 434.99,
+      "category": 2,
+      "rating": 4,
+      "image": "cp20-050.png",
+      "part_type": "Intel Core i7 CPU"
+   }
+},
+ {
+   "pk": 51,
+   "model": "products.product",
+   "fields": {
+      "sku": "CP20-051",
+      "brand": "Intel",
+      "part_name": "Intel Core i7 7700K Desktop Processor",
+      "description": "Intel Core i7 7700K Desktop Processor",
+      "price": 377.99,
+      "category": 2,
+      "rating": 4,
+      "image": "cp20-051.png",
+      "part_type": "Intel Core i7 CPU"
+   }
+},
+ {
+   "pk": 52,
+   "model": "products.product",
+   "fields": {
+      "sku": "CP20-052",
+      "brand": "Intel",
+      "part_name": "Intel Core i7 8700 Desktop Processor",
+      "description": "Intel Core i7 8700 Desktop Processor",
+      "price": 287.99,
+      "category": 2,
+      "rating": 4,
+      "image": "cp20-052.png",
+      "part_type": "Intel Core i7 CPU"
+   }
+},
+ {
+   "pk": 53,
+   "model": "products.product",
+   "fields": {
+      "sku": "CP20-053",
+      "brand": "Intel",
+      "part_name": "Intel Core i7 8700K Desktop Processor",
+      "description": "Intel Core i7 8700K Desktop Processor",
+      "price": 343.99,
+      "category": 2,
+      "rating": 4,
+      "image": "cp20-053.png",
+      "part_type": "Intel Core i7 CPU"
+   }
+},
+ {
+   "pk": 54,
+   "model": "products.product",
+   "fields": {
+      "sku": "MB30-054",
+      "brand": "ASUS",
+      "part_name": "ASUS ROG STRIX B550-A GAMING",
+      "description": "ASUS ROG STRIX B550-A GAMING Motherboard",
+      "price": 159.99,
+      "category": 3,
+      "rating": 5,
+      "image": "mb30-054.png",
+      "part_type": "AM4 ATX Motherboard"
+   }
+},
+ {
+   "pk": 55,
+   "model": "products.product",
+   "fields": {
+      "sku": "MB30-055",
+      "brand": "ASUS",
+      "part_name": "ASUS ROG STRIX B550-E GAMING",
+      "description": "ASUS ROG STRIX B550-E GAMING Motherboard",
+      "price": 259.99,
+      "category": 3,
+      "rating": 5,
+      "image": "mb30-055.png",
+      "part_type": "AM4 ATX Motherboard"
+   }
+},
+ {
+   "pk": 56,
+   "model": "products.product",
+   "fields": {
+      "sku": "MB30-056",
+      "brand": "ASUS",
+      "part_name": "ASUS ROG STRIX B550-F GAMING",
+      "description": "ASUS ROG STRIX B550-F GAMING Motherboard",
+      "price": 124.99,
+      "category": 3,
+      "rating": 5,
+      "image": "mb30-056.png",
+      "part_type": "AM4 ATX Motherboard"
+   }
+},
+ {
+   "pk": 57,
+   "model": "products.product",
+   "fields": {
+      "sku": "MB30-057",
+      "brand": "ASUS",
+      "part_name": "ASUS ROG STRIX B550-F GAMING (WI-FI)",
+      "description": "ASUS ROG STRIX B550-F GAMING (WI-FI) Motherboard",
+      "price": 174.99,
+      "category": 3,
+      "rating": 5,
+      "image": "mb30-057.png",
+      "part_type": "AM4 ATX Motherboard"
+   }
+},
+ {
+   "pk": 58,
+   "model": "products.product",
+   "fields": {
+      "sku": "MB30-058",
+      "brand": "ASUS",
+      "part_name": "ASUS ROG STRIX B550-XE GAMING (WI-FI)",
+      "description": "ASUS ROG STRIX B550-XE GAMING (WI-FI) Motherboard",
+      "price": 499.99,
+      "category": 3,
+      "rating": 5,
+      "image": "mb30-058.png",
+      "part_type": "AM4 ATX Motherboard"
+   }
+},
+ {
+   "pk": 59,
+   "model": "products.product",
+   "fields": {
+      "sku": "MB30-059",
+      "brand": "Gigabyte",
+      "part_name": "Gigabyte B550 AORUS ELITE AX V2",
+      "description": "Gigabyte B550 AORUS ELITE AX V2 Motherboard",
+      "price": 149.99,
+      "category": 10,
+      "rating": 5,
+      "image": "mb30-059.png",
+      "part_type": "AM4 ATX Motherboard"
+   }
+},
+ {
+   "pk": 60,
+   "model": "products.product",
+   "fields": {
+      "sku": "MB30-060",
+      "brand": "Gigabyte",
+      "part_name": "Gigabyte B550 AORUS ELITE V2",
+      "description": "Gigabyte B550 AORUS ELITE V2 Motherboard",
+      "price": 149.99,
+      "category": 10,
+      "rating": 5,
+      "image": "mb30-060.png",
+      "part_type": "AM4 ATX Motherboard"
+   }
+},
+ {
+   "pk": 61,
+   "model": "products.product",
+   "fields": {
+      "sku": "MB30-061",
+      "brand": "Gigabyte",
+      "part_name": "Gigabyte B550 AORUS MASTER",
+      "description": "Gigabyte B550 AORUS MASTER Motherboard",
+      "price": 159.99,
+      "category": 3,
+      "rating": 5,
+      "image": "mb30-061.png",
+      "part_type": "AM4 ATX Motherboard"
+   }
+},
+ {
+   "pk": 62,
+   "model": "products.product",
+   "fields": {
+      "sku": "MB30-062",
+      "brand": "Gigabyte",
+      "part_name": "Gigabyte B550 AORUS PRO AC",
+      "description": "Gigabyte B550 AORUS PRO AC Motherboard",
+      "price": 174.99,
+      "category": 3,
+      "rating": 5,
+      "image": "mb30-062.png",
+      "part_type": "AM4 ATX Motherboard"
+   }
+},
+ {
+   "pk": 63,
+   "model": "products.product",
+   "fields": {
+      "sku": "MB30-063",
+      "brand": "Gigabyte",
+      "part_name": "Gigabyte B550 AORUS PRO AX",
+      "description": "Gigabyte B550 AORUS PRO AX Motherboard",
+      "price": 214.99,
+      "category": 3,
+      "rating": 5,
+      "image": "mb30-063.png",
+      "part_type": "AM4 ATX Motherboard"
+   }
+},
+ {
+   "pk": 64,
+   "model": "products.product",
+   "fields": {
+      "sku": "MB30-064",
+      "brand": "Gigabyte",
+      "part_name": "Gigabyte B550 AORUS PRO V2",
+      "description": "Gigabyte B550 AORUS PRO V2 Motherboard",
+      "price": 274.99,
+      "category": 10,
+      "rating": 5,
+      "image": "mb30-064.png",
+      "part_type": "AM4 Micro ATX Motherboard"
+   }
+},
+ {
+   "pk": 65,
+   "model": "products.product",
+   "fields": {
+      "sku": "MB30-065",
+      "brand": "Gigabyte",
+      "part_name": "Gigabyte B550M GAMING",
+      "description": "Gigabyte B550M GAMING Motherboard",
+      "price": 274.99,
+      "category": 3,
+      "rating": 5,
+      "image": "mb30-065.png",
+      "part_type": "AM4 Micro ATX Motherboard"
+   }
+},
+ {
+   "pk": 66,
+   "model": "products.product",
+   "fields": {
+      "sku": "MB30-066",
+      "brand": "Gigabyte",
+      "part_name": "Gigabyte B550M GAMING X V2",
+      "description": "Gigabyte B550M GAMING X V2 Motherboard",
+      "price": 274.99,
+      "category": 10,
+      "rating": 5,
+      "image": "mb30-066.png",
+      "part_type": "AM4 ATX Motherboard"
+   }
+},
+ {
+   "pk": 67,
+   "model": "products.product",
+   "fields": {
+      "sku": "MB30-067",
+      "brand": "Gigabyte",
+      "part_name": "Gigabyte B550M DS3H",
+      "description": "Gigabyte B550M DS3H Motherboard",
+      "price": 74.99,
+      "category": 3,
+      "rating": 5,
+      "image": "mb30-067.png",
+      "part_type": "AM4 Micro ATX Motherboard"
+   }
+},
+ {
+   "pk": 68,
+   "model": "products.product",
+   "fields": {
+      "sku": "MB30-068",
+      "brand": "Gigabyte",
+      "part_name": "Gigabyte B550M DS3H AC",
+      "description": "Gigabyte B550M DS3H AC Motherboard",
+      "price": 74.99,
+      "category": 3,
+      "rating": 5,
+      "image": "mb30-068.png",
+      "part_type": "AM4 Micro ATX Motherboard"
+   }
+},
+ {
+   "pk": 69,
+   "model": "products.product",
+   "fields": {
+      "sku": "MB30-069",
+      "brand": "Gigabyte",
+      "part_name": "Gigabyte B550M H",
+      "description": "Gigabyte B550M H Motherboard",
+      "price": 74.99,
+      "category": 3,
+      "rating": 5,
+      "image": "mb30-069.png",
+      "part_type": "AM4 Micro ATX Motherboard"
+   }
+},
+ {
+   "pk": 70,
+   "model": "products.product",
+   "fields": {
+      "sku": "MB30-070",
+      "brand": "Gigabyte",
+      "part_name": "Gigabyte B550M S2H",
+      "description": "Gigabyte B550M S2H Motherboard",
+      "price": 74.99,
+      "category": 3,
+      "rating": 5,
+      "image": "mb30-070.png",
+      "part_type": "AM4 Micro ATX Motherboard"
+   }
+},
+ {
+   "pk": 71,
+   "model": "products.product",
+   "fields": {
+      "sku": "MB30-071",
+      "brand": "Gigabyte",
+      "part_name": "Gigabyte H310 D3 2.0",
+      "description": "Gigabyte H310 D3 2.0 Motherboard",
+      "price": 49.99,
+      "category": 10,
+      "rating": 3,
+      "image": "mb30-071.png",
+      "part_type": "LGA1151 ATX Motherboard"
+   }
+},
+ {
+   "pk": 72,
+   "model": "products.product",
+   "fields": {
+      "sku": "MB30-072",
+      "brand": "Gigabyte",
+      "part_name": "Gigabyte H310M D3H 2.0",
+      "description": "Gigabyte H310M D3H 2.0 Motherboard",
+      "price": 49.99,
+      "category": 10,
+      "rating": 3,
+      "image": "mb30-072.png",
+      "part_type": "LGA1151 Micro ATX Motherboard"
+   }
+},
+ {
+   "pk": 73,
+   "model": "products.product",
+   "fields": {
+      "sku": "MB30-073",
+      "brand": "MSI",
+      "part_name": "MSI B550-A PRO",
+      "description": "MSI B550-A PRO Motherboard",
+      "price": 124.99,
+      "category": 3,
+      "rating": 5,
+      "image": "mb30-073.png",
+      "part_type": "AM4 ATX Motherboard"
+   }
+},
+ {
+   "pk": 74,
+   "model": "products.product",
+   "fields": {
+      "sku": "MB30-074",
+      "brand": "MSI",
+      "part_name": "MSI B550M PRO",
+      "description": "MSI B550M PRO Motherboard",
+      "price": 59.99,
+      "category": 3,
+      "rating": 5,
+      "image": "mb30-074.png",
+      "part_type": "AM4 Micro ATX Motherboard"
+   }
+},
+ {
+   "pk": 75,
+   "model": "products.product",
+   "fields": {
+      "sku": "MB30-075",
+      "brand": "MSI",
+      "part_name": "MSI B550M PRO-DASH",
+      "description": "MSI B550M PRO-DASH Motherboard",
+      "price": 69.99,
+      "category": 3,
+      "rating": 5,
+      "image": "mb30-075.png",
+      "part_type": "AM4 Micro ATX Motherboard"
+   }
+},
+ {
+   "pk": 76,
+   "model": "products.product",
+   "fields": {
+      "sku": "MB30-076",
+      "brand": "MSI",
+      "part_name": "MSI B550M PRO-VDH",
+      "description": "MSI B550M PRO-VDH Motherboard",
+      "price": 74.99,
+      "category": 3,
+      "rating": 5,
+      "image": "mb30-076.png",
+      "part_type": "AM4 Micro ATX Motherboard"
+   }
+},
+ {
+   "pk": 77,
+   "model": "products.product",
+   "fields": {
+      "sku": "MB30-077",
+      "brand": "MSI",
+      "part_name": "MSI B550M PRO-VDH WIFI",
+      "description": "MSI B550M PRO-VDH WIFI Motherboard",
+      "price": 99.99,
+      "category": 3,
+      "rating": 5,
+      "image": "mb30-077.png",
+      "part_type": "AM4 Micro ATX Motherboard"
+   }
+},
+ {
+   "pk": 78,
+   "model": "products.product",
+   "fields": {
+      "sku": "MB30-078",
+      "brand": "MSI",
+      "part_name": "MSI B550M-A PRO",
+      "description": "MSI B550M-A PRO Motherboard",
+      "price": 89.99,
+      "category": 3,
+      "rating": 5,
+      "image": "mb30-078.png",
+      "part_type": "AM4 Micro ATX Motherboard"
+   }
+},
+ {
+   "pk": 79,
+   "model": "products.product",
+   "fields": {
+      "sku": "MB30-079",
+      "brand": "MSI",
+      "part_name": "MSI MAG B550 TORPEDO",
+      "description": "MSI MAG B550 TORPEDO Motherboard",
+      "price": 149.99,
+      "category": 3,
+      "rating": 5,
+      "image": "mb30-079.png",
+      "part_type": "AM4 ATX Motherboard"
+   }
+},
+ {
+   "pk": 80,
+   "model": "products.product",
+   "fields": {
+      "sku": "MB30-080",
+      "brand": "MSI",
+      "part_name": "MSI MAG B550M BAZOOKA",
+      "description": "MSI MAG B550M BAZOOKA Motherboard",
+      "price": 149.99,
+      "category": 3,
+      "rating": 5,
+      "image": "mb30-080.png",
+      "part_type": "AM4 Micro ATX Motherboard"
+   }
+},
+ {
+   "pk": 81,
+   "model": "products.product",
+   "fields": {
+      "sku": "MB30-081",
+      "brand": "MSI",
+      "part_name": "MSI MAG B550M MORTAR",
+      "description": "MSI MAG B550M MORTAR Motherboard",
+      "price": 149.99,
+      "category": 3,
+      "rating": 5,
+      "image": "mb30-081.png",
+      "part_type": "AM4 Micro ATX Motherboard"
+   }
+},
+ {
+   "pk": 82,
+   "model": "products.product",
+   "fields": {
+      "sku": "MB30-082",
+      "brand": "MSI",
+      "part_name": "MSI MAG B550M MORTAR WIFI",
+      "description": "MSI MAG B550M MORTAR WIFI Motherboard",
+      "price": 149.99,
+      "category": 3,
+      "rating": 5,
+      "image": "mb30-082.png",
+      "part_type": "AM4 Micro ATX Motherboard"
+   }
+},
+ {
+   "pk": 83,
+   "model": "products.product",
+   "fields": {
+      "sku": "MB30-083",
+      "brand": "MSI",
+      "part_name": "MSI MAG B550M VECTOR WIFI",
+      "description": "MSI MAG B550M VECTOR WIFI Motherboard",
+      "price": 149.99,
+      "category": 3,
+      "rating": 5,
+      "image": "mb30-083.png",
+      "part_type": "AM4 Micro ATX Motherboard"
+   }
+},
+ {
+   "pk": 84,
+   "model": "products.product",
+   "fields": {
+      "sku": "MB30-084",
+      "brand": "MSI",
+      "part_name": "MSI MEG B550 UNIFY-X",
+      "description": "MSI MEG B550 UNIFY-X Motherboard",
+      "price": 159.99,
+      "category": 3,
+      "rating": 5,
+      "image": "mb30-084.png",
+      "part_type": "AM4 ATX Motherboard"
+   }
+},
+ {
+   "pk": 85,
+   "model": "products.product",
+   "fields": {
+      "sku": "MB30-085",
+      "brand": "MSI",
+      "part_name": "MSI MPG B550 GAMING CARBON WIFI",
+      "description": "MSI MPG B550 GAMING CARBON WIFI Motherboard",
+      "price": 174.99,
+      "category": 3,
+      "rating": 5,
+      "image": "mb30-085.png",
+      "part_type": "AM4 ATX Motherboard"
+   }
+},
+ {
+   "pk": 86,
+   "model": "products.product",
+   "fields": {
+      "sku": "MB30-086",
+      "brand": "MSI",
+      "part_name": "MSI MPG B550 GAMING EDGE WIFI",
+      "description": "MSI MPG B550 GAMING EDGE WIFI Motherboard",
+      "price": 174.99,
+      "category": 3,
+      "rating": 5,
+      "image": "mb30-086.png",
+      "part_type": "AM4 ATX Motherboard"
+   }
+},
+ {
+   "pk": 87,
+   "model": "products.product",
+   "fields": {
+      "sku": "MB30-087",
+      "brand": "MSI",
+      "part_name": "MSI MPG B550 GAMING PLUS",
+      "description": "MSI MPG B550 GAMING PLUS Motherboard",
+      "price": 129.99,
+      "category": 3,
+      "rating": 5,
+      "image": "mb30-087.png",
+      "part_type": "AM4 ATX Motherboard"
+   }
+},
+ {
+   "pk": 88,
+   "model": "products.product",
+   "fields": {
+      "sku": "MB30-088",
+      "brand": "MSI",
+      "part_name": "MSI MPG B550I GAMING EDGE MAX WIFI",
+      "description": "MSI MPG B550I GAMING EDGE MAX WIFI Motherboard",
+      "price": 229.99,
+      "category": 3,
+      "rating": 5,
+      "image": "mb30-088.png",
+      "part_type": "AM4 Mini ITX Motherboard"
+   }
+},
+ {
+   "pk": 89,
+   "model": "products.product",
+   "fields": {
+      "sku": "MB30-089",
+      "brand": "MSI",
+      "part_name": "MSI MPG B550I GAMING EDGE WIFI",
+      "description": "MSI MPG B550I GAMING EDGE WIFI Motherboard",
+      "price": 174.99,
+      "category": 3,
+      "rating": 5,
+      "image": "mb30-089.png",
+      "part_type": "AM4 Mini ITX Motherboard"
+   }
+},
+ {
+   "pk": 90,
+   "model": "products.product",
+   "fields": {
+      "sku": "GP40-090",
+      "brand": "ASUS",
+      "part_name": "ASUS ROG STRIX GeForce RTX 3070",
+      "description": "ASUS ROG STRIX GeForce RTX 3070 8G GAMING",
+      "price": 999.99,
+      "category": 4,
+      "rating": 4,
+      "image": "gp40-090.png",
+      "part_type": "Nvidia GeForce RTX"
+   }
+},
+ {
+   "pk": 91,
+   "model": "products.product",
+   "fields": {
+      "sku": "GP40-091",
+      "brand": "ASUS",
+      "part_name": "ASUS ROG STRIX GeForce GTX 1660S",
+      "description": "ASUS ROG STRIX GeForce GTX 1660S 6G GAMING",
+      "price": 368.99,
+      "category": 11,
+      "rating": 5,
+      "image": "gp40-091.png",
+      "part_type": "Nvidia GeForce GTX"
+   }
+},
+ {
+   "pk": 92,
+   "model": "products.product",
+   "fields": {
+      "sku": "GP40-092",
+      "brand": "ASUS",
+      "part_name": "ASUS ROG STRIX Radeon RX 5700XT",
+      "description": "ASUS ROG STRIX Radeon RX 5700XT 8G GAMING",
+      "price": 368.99,
+      "category": 4,
+      "rating": 5,
+      "image": "gp40-092.png",
+      "part_type": "AMD Radeon RX"
+   }
+},
+ {
+   "pk": 93,
+   "model": "products.product",
+   "fields": {
+      "sku": "GP40-093",
+      "brand": "ASUS",
+      "part_name": "ASUS ROG STRIX GeForce RTX 3080",
+      "description": "ASUS ROG STRIX GeForce RTX 3080 10G GAMING",
+      "price": 368.99,
+      "category": 4,
+      "rating": 3,
+      "image": "gp40-093.png",
+      "part_type": "Nvidia GeForce RTX"
+   }
+},
+ {
+   "pk": 94,
+   "model": "products.product",
+   "fields": {
+      "sku": "GP40-094",
+      "brand": "ASUS",
+      "part_name": "ASUS ROG STRIX GeForce RTX 3090",
+      "description": "ASUS ROG STRIX GeForce RTX 3090 24G GAMING",
+      "price": 2399.99,
+      "category": 4,
+      "rating": 3.5,
+      "image": "gp40-094.png",
+      "part_type": "Nvidia GeForce RTX"
+   }
+},
+ {
+   "pk": 95,
+   "model": "products.product",
+   "fields": {
+      "sku": "GP40-095",
+      "brand": "ASUS",
+      "part_name": "ASUS TUF GeForce RTX 3080",
+      "description": "ASUS TUF GeForce RTX 3080 10G GAMING",
+      "price": 368.99,
+      "category": 4,
+      "rating": 3,
+      "image": "gp40-095.png",
+      "part_type": "Nvidia GeForce RTX"
+   }
+},
+ {
+   "pk": 96,
+   "model": "products.product",
+   "fields": {
+      "sku": "GP40-096",
+      "brand": "ASUS",
+      "part_name": "ASUS TUF GeForce GTX 1660S",
+      "description": "ASUS TUF GeForce GTX 1660S 6G GAMING",
+      "price": 497.99,
+      "category": 11,
+      "rating": 5,
+      "image": "gp40-096.png",
+      "part_type": "Nvidia GeForce GTX"
+   }
+},
+ {
+   "pk": 97,
+   "model": "products.product",
+   "fields": {
+      "sku": "GP40-097",
+      "brand": "ASUS",
+      "part_name": "ASUS TUF GeForce RTX 3070",
+      "description": "ASUS TUF GeForce RTX 3070 8G GAMING",
+      "price": 999.99,
+      "category": 4,
+      "rating": 4,
+      "image": "gp40-097.png",
+      "part_type": "Nvidia GeForce RTX"
+   }
+},
+ {
+   "pk": 98,
+   "model": "products.product",
+   "fields": {
+      "sku": "GP40-098",
+      "brand": "ASUS",
+      "part_name": "ASUS TUF GeForce RTX 3090",
+      "description": "ASUS TUF GeForce RTX 3090 24G GAMING",
+      "price": 2399.99,
+      "category": 4,
+      "rating": 3.5,
+      "image": "gp40-098.png",
+      "part_type": "Nvidia GeForce RTX"
+   }
+},
+ {
+   "pk": 99,
+   "model": "products.product",
+   "fields": {
+      "sku": "GP40-099",
+      "brand": "ASUS",
+      "part_name": "ASUS TUF GeForce GTX 1650S",
+      "description": "ASUS TUF GeForce GTX 1650S 4G GAMING",
+      "price": 412.99,
+      "category": 11,
+      "rating": 5,
+      "image": "gp40-099.png",
+      "part_type": "Nvidia GeForce GTX"
+   }
+},
+ {
+   "pk": 100,
+   "model": "products.product",
+   "fields": {
+      "sku": "GP40-100",
+      "brand": "ASUS",
+      "part_name": "ASUS TUF GeForce RTX 3060TI",
+      "description": "ASUS TUF GeForce RTX 3060TI 8G GAMING",
+      "price": 584.99,
+      "category": 4,
+      "rating": 3.5,
+      "image": "gp40-100.png",
+      "part_type": "Nvidia GeForce RTX"
+   }
+},
+ {
+   "pk": 101,
+   "model": "products.product",
+   "fields": {
+      "sku": "GP40-101",
+      "brand": "EVGA",
+      "part_name": "EVGA GeForce GTX 1660 SUPER SC ULTRA",
+      "description": "EVGA GeForce GTX 1660 SUPER SC ULTRA GAMING",
+      "price": 497.99,
+      "category": 11,
+      "rating": 5,
+      "image": "gp40-101.png",
+      "part_type": "Nvidia GeForce GTX"
+   }
+},
+ {
+   "pk": 102,
+   "model": "products.product",
+   "fields": {
+      "sku": "GP40-102",
+      "brand": "EVGA",
+      "part_name": "EVGA GeForce GTX 1660TI SC ULTRA",
+      "description": "EVGA GeForce GTX 1660TI SC ULTRA GAMING",
+      "price": 497.99,
+      "category": 11,
+      "rating": 5,
+      "image": "gp40-102.png",
+      "part_type": "Nvidia GeForce GTX"
+   }
+},
+ {
+   "pk": 103,
+   "model": "products.product",
+   "fields": {
+      "sku": "GP40-103",
+      "brand": "EVGA",
+      "part_name": "EVGA GeForce RTX 3060TI XC",
+      "description": "EVGA GeForce RTX 3060TI XC GAMING",
+      "price": 449.99,
+      "category": 4,
+      "rating": 3.5,
+      "image": "gp40-103.png",
+      "part_type": "Nvidia GeForce RTX"
+   }
+},
+ {
+   "pk": 104,
+   "model": "products.product",
+   "fields": {
+      "sku": "GP40-104",
+      "brand": "EVGA",
+      "part_name": "EVGA GeForce RTX 3080 XC3 ULTRA",
+      "description": "EVGA GeForce RTX 3080 XC3 ULTRA GAMING",
+      "price": 368.99,
+      "category": 4,
+      "rating": 3,
+      "image": "gp40-104.png",
+      "part_type": "Nvidia GeForce RTX"
+   }
+},
+ {
+   "pk": 105,
+   "model": "products.product",
+   "fields": {
+      "sku": "GP40-105",
+      "brand": "EVGA",
+      "part_name": "EVGA GeForce RTX 3070 XC3 ULTRA",
+      "description": "EVGA GeForce RTX 3070 XC3 ULTRA GAMING",
+      "price": 969.99,
+      "category": 4,
+      "rating": 4,
+      "image": "gp40-105.png",
+      "part_type": "Nvidia GeForce RTX"
+   }
+},
+ {
+   "pk": 106,
+   "model": "products.product",
+   "fields": {
+      "sku": "GP40-106",
+      "brand": "EVGA",
+      "part_name": "EVGA GeForce RTX 3090 XC3 ULTRA",
+      "description": "EVGA GeForce RTX 3090 XC3 ULTRA GAMING",
+      "price": 2399.99,
+      "category": 4,
+      "rating": 3.5,
+      "image": "gp40-106.png",
+      "part_type": "Nvidia GeForce RTX"
+   }
+},
+ {
+   "pk": 107,
+   "model": "products.product",
+   "fields": {
+      "sku": "GP40-107",
+      "brand": "Gigabyte",
+      "part_name": "Gigabyte GeForce RTX 3060TI EAGLE OC",
+      "description": "Gigabyte GeForce RTX 3060TI EAGLE OC 8G",
+      "price": 449.99,
+      "category": 4,
+      "rating": 3.5,
+      "image": "gp40-107.png",
+      "part_type": "Nvidia GeForce RTX"
+   }
+},
+ {
+   "pk": 108,
+   "model": "products.product",
+   "fields": {
+      "sku": "GP40-108",
+      "brand": "Gigabyte",
+      "part_name": "Gigabyte GeForce RTX 3070 GAMING OC",
+      "description": "Gigabyte GeForce RTX 3070 GAMING OC 8G",
+      "price": 989.99,
+      "category": 4,
+      "rating": 4,
+      "image": "gp40-108.png",
+      "part_type": "Nvidia GeForce RTX"
+   }
+},
+ {
+   "pk": 109,
+   "model": "products.product",
+   "fields": {
+      "sku": "GP40-109",
+      "brand": "Gigabyte",
+      "part_name": "Gigabyte GeForce GTX 1660 SUPER GAMING OC",
+      "description": "Gigabyte GeForce GTX 1660 SUPER GAMING OC 6G",
+      "price": 649.99,
+      "category": 11,
+      "rating": 5,
+      "image": "gp40-109.png",
+      "part_type": "Nvidia GeForce GTX"
+   }
+},
+ {
+   "pk": 110,
+   "model": "products.product",
+   "fields": {
+      "sku": "GP40-110",
+      "brand": "Gigabyte",
+      "part_name": "Gigabyte GeForce RTX 3060TI GAMING OC",
+      "description": "Gigabyte GeForce RTX 3060TI GAMING OC 8G",
+      "price": 449.99,
+      "category": 4,
+      "rating": 3.5,
+      "image": "gp40-110.png",
+      "part_type": "Nvidia GeForce RTX"
+   }
+},
+ {
+   "pk": 111,
+   "model": "products.product",
+   "fields": {
+      "sku": "GP40-111",
+      "brand": "Gigabyte",
+      "part_name": "Gigabyte Radeon RX 5700XT GAMING OC",
+      "description": "Gigabyte Radeon RX 5700XT GAMING OC 8G",
+      "price": 368.99,
+      "category": 4,
+      "rating": 5,
+      "image": "gp40-111.png",
+      "part_type": "AMD Radeon RX"
+   }
+},
+ {
+   "pk": 112,
+   "model": "products.product",
+   "fields": {
+      "sku": "GP40-112",
+      "brand": "Gigabyte",
+      "part_name": "Gigabyte GeForce GTX 1660TI OC",
+      "description": "Gigabyte GeForce GTX 1660TI OC 6G",
+      "price": 649.99,
+      "category": 11,
+      "rating": 5,
+      "image": "gp40-112.png",
+      "part_type": "Nvidia GeForce GTX"
+   }
+},
+ {
+   "pk": 113,
+   "model": "products.product",
+   "fields": {
+      "sku": "GP40-113",
+      "brand": "Gigabyte",
+      "part_name": "Gigabyte GeForce RTX 3070 VISION OC",
+      "description": "Gigabyte GeForce RTX 3070 VISION OC 8G",
+      "price": 989.99,
+      "category": 4,
+      "rating": 4,
+      "image": "gp40-113.png",
+      "part_type": "Nvidia GeForce RTX"
+   }
+},
+ {
+   "pk": 114,
+   "model": "products.product",
+   "fields": {
+      "sku": "GP40-114",
+      "brand": "Gigabyte",
+      "part_name": "Gigabyte GeForce RTX 3080 VISION OC",
+      "description": "Gigabyte GeForce RTX 3080 VISION OC 10G",
+      "price": 368.99,
+      "category": 4,
+      "rating": 3,
+      "image": "gp40-114.png",
+      "part_type": "Nvidia GeForce RTX"
+   }
+},
+ {
+   "pk": 115,
+   "model": "products.product",
+   "fields": {
+      "sku": "GP40-115",
+      "brand": "MSI",
+      "part_name": "MSI GeForce GTX 1650 SUPER AERO ITX",
+      "description": "MSI GeForce GTX 1650 SUPER AERO ITX",
+      "price": 349.99,
+      "category": 11,
+      "rating": 5,
+      "image": "gp40-115.png",
+      "part_type": "Nvidia GeForce GTX"
+   }
+},
+ {
+   "pk": 116,
+   "model": "products.product",
+   "fields": {
+      "sku": "GP40-116",
+      "brand": "MSI",
+      "part_name": "MSI GeForce GTX 1650 D6 GAMING X",
+      "description": "MSI GeForce GTX 1650 D6 GAMING X",
+      "price": 349.99,
+      "category": 11,
+      "rating": 5,
+      "image": "gp40-116.png",
+      "part_type": "Nvidia GeForce GTX"
+   }
+},
+ {
+   "pk": 117,
+   "model": "products.product",
+   "fields": {
+      "sku": "GP40-117",
+      "brand": "MSI",
+      "part_name": "MSI GeForce GTX 1660TI GAMING X",
+      "description": "MSI GeForce GTX 1660TI GAMING X 6G",
+      "price": 599.99,
+      "category": 11,
+      "rating": 5,
+      "image": "gp40-117.png",
+      "part_type": "Nvidia GeForce GTX"
+   }
+},
+ {
+   "pk": 118,
+   "model": "products.product",
+   "fields": {
+      "sku": "GP40-118",
+      "brand": "MSI",
+      "part_name": "MSI GeForce GTX 1650 SUPER GAMING X",
+      "description": "MSI GeForce GTX 1650 SUPER GAMING X",
+      "price": 454.99,
+      "category": 11,
+      "rating": 5,
+      "image": "gp40-118.png",
+      "part_type": "Nvidia GeForce GTX"
+   }
+},
+ {
+   "pk": 119,
+   "model": "products.product",
+   "fields": {
+      "sku": "GP40-119",
+      "brand": "MSI",
+      "part_name": "MSI GeForce GTX 1660 SUPER GAMING X",
+      "description": "MSI GeForce GTX 1660 SUPER GAMING X",
+      "price": 649.99,
+      "category": 11,
+      "rating": 5,
+      "image": "gp40-119.png",
+      "part_type": "Nvidia GeForce GTX"
+   }
+},
+ {
+   "pk": 120,
+   "model": "products.product",
+   "fields": {
+      "sku": "GP40-120",
+      "brand": "MSI",
+      "part_name": "MSI Radeon RX 5700XT GAMING X",
+      "description": "MSI Radeon RX 5700XT GAMING X",
+      "price": 799.99,
+      "category": 4,
+      "rating": 5,
+      "image": "gp40-120.png",
+      "part_type": "AMD Radeon RX"
+   }
+},
+ {
+   "pk": 121,
+   "model": "products.product",
+   "fields": {
+      "sku": "GP40-121",
+      "brand": "MSI",
+      "part_name": "MSI Radeon RX 5500XT GAMING X",
+      "description": "MSI Radeon RX 5500XT GAMING X 8G",
+      "price": 449.99,
+      "category": 4,
+      "rating": 5,
+      "image": "gp40-121.png",
+      "part_type": "AMD Radeon RX"
+   }
+},
+ {
+   "pk": 122,
+   "model": "products.product",
+   "fields": {
+      "sku": "GP40-122",
+      "brand": "MSI",
+      "part_name": "MSI GeForce GTX 1650 GAMING X",
+      "description": "MSI GeForce GTX 1650 GAMING X 4G",
+      "price": 338.99,
+      "category": 11,
+      "rating": 5,
+      "image": "gp40-122.png",
+      "part_type": "Nvidia GeForce GTX"
+   }
+},
+ {
+   "pk": 123,
+   "model": "products.product",
+   "fields": {
+      "sku": "GP40-123",
+      "brand": "MSI",
+      "part_name": "MSI GeForce GTX 1050TI GAMING X",
+      "description": "MSI GeForce GTX 1050TI GAMING X 4G",
+      "price": 199.99,
+      "category": 11,
+      "rating": 5,
+      "image": "gp40-123.png",
+      "part_type": "Nvidia GeForce GTX"
+   }
+},
+ {
+   "pk": 124,
+   "model": "products.product",
+   "fields": {
+      "sku": "GP40-124",
+      "brand": "MSI",
+      "part_name": "MSI GeForce GTX 1050TI 4GT OC",
+      "description": "MSI GeForce GTX 1050TI 4GT OC",
+      "price": 199.99,
+      "category": 11,
+      "rating": 5,
+      "image": "gp40-124.png",
+      "part_type": "Nvidia GeForce GTX"
+   }
+},
+ {
+   "pk": 125,
+   "model": "products.product",
+   "fields": {
+      "sku": "GP40-125",
+      "brand": "MSI",
+      "part_name": "MSI Radeon RX 5500XT MECH 8G OC",
+      "description": "MSI Radeon RX 5500XT MECH 8G OC",
+      "price": 399.99,
+      "category": 4,
+      "rating": 5,
+      "image": "gp40-125.png",
+      "part_type": "AMD Radeon RX"
+   }
+},
+ {
+   "pk": 126,
+   "model": "products.product",
+   "fields": {
+      "sku": "RA50-126",
+      "brand": "Corsair",
+      "part_name": "Corsair Dominator Platinum RGB 32GB 2 x 16GB DDR4 3200MHz C16",
+      "description": "Corsair Dominator Platinum RGB 32GB 2 x 16GB DDR4 3200MHz C16 Memory Kit",
+      "price": 226.99,
+      "category": 5,
+      "rating": 5,
+      "image": "ra50-126.png",
+      "part_type": "Corsair Dominator"
+   }
+},
+ {
+   "pk": 127,
+   "model": "products.product",
+   "fields": {
+      "sku": "RA50-127",
+      "brand": "Corsair",
+      "part_name": "Corsair Dominator Platinum RGB 64GB 4 x 16GB DDR4 3200MHz C16",
+      "description": "Corsair Dominator Platinum RGB 64GB 4 x 16GB DDR4 3200MHz C16 Memory Kit",
+      "price": 499.99,
+      "category": 5,
+      "rating": 4,
+      "image": "ra50-127.png",
+      "part_type": "Corsair Dominator"
+   }
+},
+ {
+   "pk": 128,
+   "model": "products.product",
+   "fields": {
+      "sku": "RA50-128",
+      "brand": "Corsair",
+      "part_name": "Corsair Dominator Platinum RGB 16GB 2 x 8GB DDR4 3200MHz C16",
+      "description": "Corsair Dominator Platinum RGB 16GB 2 x 8GB DDR4 3200MHz C16 Memory Kit",
+      "price": 127.99,
+      "category": 5,
+      "rating": 5,
+      "image": "ra50-128.png",
+      "part_type": "Corsair Dominator"
+   }
+},
+ {
+   "pk": 129,
+   "model": "products.product",
+   "fields": {
+      "sku": "RA50-129",
+      "brand": "Corsair",
+      "part_name": "Corsair Dominator Platinum RGB 32GB 2 x 16GB DDR4 3600MHz C18",
+      "description": "Corsair Dominator Platinum RGB 32GB 2 x 16GB DDR4 3600MHz C18 Memory Kit",
+      "price": 299.99,
+      "category": 5,
+      "rating": 5,
+      "image": "ra50-129.png",
+      "part_type": "Corsair Dominator"
+   }
+},
+ {
+   "pk": 130,
+   "model": "products.product",
+   "fields": {
+      "sku": "RA50-130",
+      "brand": "Corsair",
+      "part_name": "Corsair Vengeance LPX 16GB 2 x 8GB DDR4 3200MHz C16",
+      "description": "Corsair Vengeance LPX 16GB 2 x 8GB DDR4 3200MHz C16 Memory Kit Black",
+      "price": 74.99,
+      "category": 5,
+      "rating": 5,
+      "image": "ra50-130.png",
+      "part_type": "Corsair Vengeance"
+   }
+},
+ {
+   "pk": 131,
+   "model": "products.product",
+   "fields": {
+      "sku": "RA50-131",
+      "brand": "Corsair",
+      "part_name": "Corsair Vengeance LPX 16GB 2 x 8GB DDR4 3600MHz C18",
+      "description": "Corsair Vengeance LPX 16GB 2 x 8GB DDR4 3600MHz C18 Memory Kit Black",
+      "price": 74.99,
+      "category": 5,
+      "rating": 5,
+      "image": "ra50-131.png",
+      "part_type": "Corsair Vengeance"
+   }
+},
+ {
+   "pk": 132,
+   "model": "products.product",
+   "fields": {
+      "sku": "RA50-132",
+      "brand": "Corsair",
+      "part_name": "Corsair Vengeance LPX 32GB 2 x 16GB DDR4 3200MHz C16",
+      "description": "Corsair Vengeance LPX 32GB 2 x 16GB DDR4 3200MHz C16 Memory Kit Black",
+      "price": 158.99,
+      "category": 5,
+      "rating": 5,
+      "image": "ra50-132.png",
+      "part_type": "Corsair Vengeance"
+   }
+},
+ {
+   "pk": 133,
+   "model": "products.product",
+   "fields": {
+      "sku": "RA50-133",
+      "brand": "Corsair",
+      "part_name": "Corsair Vengeance LPX 16GB 2 x 8GB DDR4 3000MHz C15",
+      "description": "Corsair Vengeance LPX 16GB 2 x 8GB DDR4 3000MHz C15 Memory Kit Black",
+      "price": 56.99,
+      "category": 5,
+      "rating": 5,
+      "image": "ra50-133.png",
+      "part_type": "Corsair Vengeance"
+   }
+},
+ {
+   "pk": 134,
+   "model": "products.product",
+   "fields": {
+      "sku": "RA50-134",
+      "brand": "Corsair",
+      "part_name": "Corsair Dominator Platinum RGB 16GB 2 x 8GB DDR4 4000MHz C19",
+      "description": "Corsair Dominator Platinum RGB 16GB 2 x 8GB DDR4 4000MHz C19 Memory Kit White",
+      "price": 299.99,
+      "category": 5,
+      "rating": 5,
+      "image": "ra50-134.png",
+      "part_type": "Corsair Dominator"
+   }
+},
+ {
+   "pk": 135,
+   "model": "products.product",
+   "fields": {
+      "sku": "RA50-135",
+      "brand": "Corsair",
+      "part_name": "Corsair Dominator Platinum RGB 32GB 4 x 8GB DDR4 3600MHz C18",
+      "description": "Corsair Dominator Platinum RGB 32GB 4 x 8GB DDR4 3600MHz C18 Memory Kit White",
+      "price": 324.99,
+      "category": 5,
+      "rating": 4,
+      "image": "ra50-135.png",
+      "part_type": "Corsair Dominator"
+   }
+},
+ {
+   "pk": 136,
+   "model": "products.product",
+   "fields": {
+      "sku": "RA50-136",
+      "brand": "Corsair",
+      "part_name": "Corsair Dominator Platinum RGB 16GB 2 x 8GB DDR4 3200MHz C16",
+      "description": "Corsair Dominator Platinum RGB 16GB 2 x 8GB DDR4 3200MHz C16 Memory Kit White",
+      "price": 127.99,
+      "category": 5,
+      "rating": 5,
+      "image": "ra50-136.png",
+      "part_type": "Corsair Dominator"
+   }
+},
+ {
+   "pk": 137,
+   "model": "products.product",
+   "fields": {
+      "sku": "RA50-137",
+      "brand": "Corsair",
+      "part_name": "Corsair Dominator Platinum RGB 16GB 2 x 8GB DDR4 3600MHz C18",
+      "description": "Corsair Dominator Platinum RGB 16GB 2 x 8GB DDR4 3600MHz C18 Memory Kit White",
+      "price": 144.99,
+      "category": 5,
+      "rating": 5,
+      "image": "ra50-137.png",
+      "part_type": "Corsair Dominator"
+   }
+},
+ {
+   "pk": 138,
+   "model": "products.product",
+   "fields": {
+      "sku": "RA50-138",
+      "brand": "Corsair",
+      "part_name": "Corsair Dominator Platinum Special Edition 32GB 4 x 8GB DDR4 3200MHz C14 Memory Kit Chrome",
+      "description": "Corsair Dominator Platinum Special Edition 32GB 4 x 8GB DDR4 3200MHz C14 Memory Kit Chrome",
+      "price": 466.99,
+      "category": 10,
+      "rating": 4,
+      "image": "ra50-138.png",
+      "part_type": "Corsair Dominator"
+   }
+},
+ {
+   "pk": 139,
+   "model": "products.product",
+   "fields": {
+      "sku": "RA50-139",
+      "brand": "Corsair",
+      "part_name": "Corsair Dominator Platinum Special Edition 32GB 4 x 8GB DDR4 3200MHz C14 Memory Kit Blackout",
+      "description": "Corsair Dominator Platinum Special Edition 32GB 4 x 8GB DDR4 3200MHz C14 Memory Kit Blackout",
+      "price": 466.99,
+      "category": 10,
+      "rating": 4,
+      "image": "ra50-139.png",
+      "part_type": "Corsair Dominator"
+   }
+},
+ {
+   "pk": 140,
+   "model": "products.product",
+   "fields": {
+      "sku": "RA50-140",
+      "brand": "Crucial",
+      "part_name": "Crucial Ballistix 16GB Kit 2 x 8GB DDR4 3000MHz Desktop Gaming Memory Black",
+      "description": "Crucial Ballistix 16GB Kit 2 x 8GB DDR4 3000MHz Desktop Gaming Memory Black",
+      "price": 74.99,
+      "category": 5,
+      "rating": 3,
+      "image": "ra50-140.png",
+      "part_type": "Crucial Ballistix"
+   }
+},
+ {
+   "pk": 141,
+   "model": "products.product",
+   "fields": {
+      "sku": "RA50-141",
+      "brand": "Crucial",
+      "part_name": "Crucial Ballistix 32GB Kit 2 x 16GB DDR4 3000MHz Desktop Gaming Memory Black",
+      "description": "Crucial Ballistix 32GB Kit 2 x 16GB DDR4 3000MHz Desktop Gaming Memory Black",
+      "price": 149.99,
+      "category": 5,
+      "rating": 3,
+      "image": "ra50-141.png",
+      "part_type": "Crucial Ballistix"
+   }
+},
+ {
+   "pk": 142,
+   "model": "products.product",
+   "fields": {
+      "sku": "RA50-142",
+      "brand": "Crucial",
+      "part_name": "Crucial Ballistix 16GB Kit 2 x 8GB DDR4 3200MHz Desktop Gaming Memory Black",
+      "description": "Crucial Ballistix 16GB Kit 2 x 8GB DDR4 3200MHz Desktop Gaming Memory Black",
+      "price": 74.99,
+      "category": 5,
+      "rating": 3,
+      "image": "ra50-142.png",
+      "part_type": "Crucial Ballistix"
+   }
+},
+ {
+   "pk": 143,
+   "model": "products.product",
+   "fields": {
+      "sku": "RA50-143",
+      "brand": "Crucial",
+      "part_name": "Crucial Ballistix 32GB Kit 2 x 16GB DDR4 3200MHz Desktop Gaming Memory Black",
+      "description": "Crucial Ballistix 32GB Kit 2 x 16GB DDR4 3200MHz Desktop Gaming Memory Black",
+      "price": 149.99,
+      "category": 5,
+      "rating": 3,
+      "image": "ra50-143.png",
+      "part_type": "Crucial Ballistix"
+   }
+},
+ {
+   "pk": 144,
+   "model": "products.product",
+   "fields": {
+      "sku": "RA50-144",
+      "brand": "Crucial",
+      "part_name": "Crucial Ballistix 64GB Kit 2 x 32GB DDR4 3200MHz Desktop Gaming Memory Black",
+      "description": "Crucial Ballistix 64GB Kit 2 x 32GB DDR4 3200MHz Desktop Gaming Memory Black",
+      "price": 299.99,
+      "category": 5,
+      "rating": 3,
+      "image": "ra50-144.png",
+      "part_type": "Crucial Ballistix"
+   }
+},
+ {
+   "pk": 145,
+   "model": "products.product",
+   "fields": {
+      "sku": "RA50-145",
+      "brand": "Crucial",
+      "part_name": "Crucial Ballistix 16GB Kit 2 x 8GB DDR4 3600MHz Desktop Gaming Memory Black",
+      "description": "Crucial Ballistix 16GB Kit 2 x 8GB DDR4 3600MHz Desktop Gaming Memory Black",
+      "price": 79.99,
+      "category": 5,
+      "rating": 3,
+      "image": "ra50-145.png",
+      "part_type": "Crucial Ballistix"
+   }
+},
+ {
+   "pk": 146,
+   "model": "products.product",
+   "fields": {
+      "sku": "RA50-146",
+      "brand": "Crucial",
+      "part_name": "Crucial Ballistix 32GB Kit 2 x 16GB DDR4 3600MHz Desktop Gaming Memory Black",
+      "description": "Crucial Ballistix 32GB Kit 2 x 16GB DDR4 3600MHz Desktop Gaming Memory Black",
+      "price": 159.99,
+      "category": 5,
+      "rating": 3,
+      "image": "ra50-146.png",
+      "part_type": "Crucial Ballistix"
+   }
+},
+ {
+   "pk": 147,
+   "model": "products.product",
+   "fields": {
+      "sku": "RA50-147",
+      "brand": "Crucial",
+      "part_name": "Crucial Ballistix 64GB Kit 2 x 32GB DDR4 3600MHz Desktop Gaming Memory Black",
+      "description": "Crucial Ballistix 64GB Kit 2 x 32GB DDR4 3600MHz Desktop Gaming Memory Black",
+      "price": 324.99,
+      "category": 5,
+      "rating": 3,
+      "image": "ra50-147.png",
+      "part_type": "Crucial Ballistix"
+   }
+},
+ {
+   "pk": 148,
+   "model": "products.product",
+   "fields": {
+      "sku": "RA50-148",
+      "brand": "Crucial",
+      "part_name": "Crucial Ballistix 16GB Kit 2 x 8GB DDR4 3000MHz Desktop Gaming Memory White",
+      "description": "Crucial Ballistix 16GB Kit 2 x 8GB DDR4 3000MHz Desktop Gaming Memory White",
+      "price": 74.99,
+      "category": 5,
+      "rating": 4,
+      "image": "ra50-148.png",
+      "part_type": "Crucial Ballistix"
+   }
+},
+ {
+   "pk": 149,
+   "model": "products.product",
+   "fields": {
+      "sku": "RA50-149",
+      "brand": "Crucial",
+      "part_name": "Crucial Ballistix 32GB Kit 2 x 16GB DDR4 3000MHz Desktop Gaming Memory White",
+      "description": "Crucial Ballistix 32GB Kit 2 x 16GB DDR4 3000MHz Desktop Gaming Memory White",
+      "price": 149.99,
+      "category": 5,
+      "rating": 4,
+      "image": "ra50-149.png",
+      "part_type": "Crucial Ballistix"
+   }
+},
+ {
+   "pk": 150,
+   "model": "products.product",
+   "fields": {
+      "sku": "RA50-150",
+      "brand": "Crucial",
+      "part_name": "Crucial Ballistix 16GB Kit 2 x 8GB DDR4 3200MHz Desktop Gaming Memory White",
+      "description": "Crucial Ballistix 16GB Kit 2 x 8GB DDR4 3200MHz Desktop Gaming Memory White",
+      "price": 74.99,
+      "category": 5,
+      "rating": 4,
+      "image": "ra50-150.png",
+      "part_type": "Crucial Ballistix"
+   }
+},
+ {
+   "pk": 151,
+   "model": "products.product",
+   "fields": {
+      "sku": "RA50-151",
+      "brand": "Crucial",
+      "part_name": "Crucial Ballistix 32GB Kit 2 x 16GB DDR4 3200MHz Desktop Gaming Memory White",
+      "description": "Crucial Ballistix 32GB Kit 2 x 16GB DDR4 3200MHz Desktop Gaming Memory White",
+      "price": 149.99,
+      "category": 5,
+      "rating": 4,
+      "image": "ra50-151.png",
+      "part_type": "Crucial Ballistix"
+   }
+},
+ {
+   "pk": 152,
+   "model": "products.product",
+   "fields": {
+      "sku": "RA50-152",
+      "brand": "Crucial",
+      "part_name": "Crucial Ballistix 16GB Kit 2 x 8GB DDR4 3600MHz Desktop Gaming Memory White",
+      "description": "Crucial Ballistix 16GB Kit 2 x 8GB DDR4 3600MHz Desktop Gaming Memory White",
+      "price": 79.99,
+      "category": 5,
+      "rating": 4,
+      "image": "ra50-152.png",
+      "part_type": "Crucial Ballistix"
+   }
+},
+ {
+   "pk": 153,
+   "model": "products.product",
+   "fields": {
+      "sku": "RA50-153",
+      "brand": "Crucial",
+      "part_name": "Crucial Ballistix 32GB Kit 2 x 16GB DDR4 3600MHz Desktop Gaming Memory White",
+      "description": "Crucial Ballistix 32GB Kit 2 x 16GB DDR4 3600MHz Desktop Gaming Memory White",
+      "price": 159.99,
+      "category": 5,
+      "rating": 4,
+      "image": "ra50-153.png",
+      "part_type": "Crucial Ballistix"
+   }
+},
+ {
+   "pk": 154,
+   "model": "products.product",
+   "fields": {
+      "sku": "RA50-154",
+      "brand": "Crucial",
+      "part_name": "Crucial Ballistix 16GB Kit 2 x 8GB DDR4 3000MHz Desktop Gaming Memory Red",
+      "description": "Crucial Ballistix 16GB Kit 2 x 8GB DDR4 3000MHz Desktop Gaming Memory Red",
+      "price": 74.99,
+      "category": 5,
+      "rating": 5,
+      "image": "ra50-154.png",
+      "part_type": "Crucial Ballistix"
+   }
+},
+ {
+   "pk": 155,
+   "model": "products.product",
+   "fields": {
+      "sku": "RA50-155",
+      "brand": "Crucial",
+      "part_name": "Crucial Ballistix 32GB Kit 2 x 16GB DDR4 3000MHz Desktop Gaming Memory Red",
+      "description": "Crucial Ballistix 32GB Kit 2 x 16GB DDR4 3000MHz Desktop Gaming Memory Red",
+      "price": 149.99,
+      "category": 5,
+      "rating": 5,
+      "image": "ra50-155.png",
+      "part_type": "Crucial Ballistix"
+   }
+},
+ {
+   "pk": 156,
+   "model": "products.product",
+   "fields": {
+      "sku": "RA50-156",
+      "brand": "Crucial",
+      "part_name": "Crucial Ballistix 16GB Kit 2 x 8GB DDR4 3200MHz Desktop Gaming Memory Red",
+      "description": "Crucial Ballistix 16GB Kit 2 x 8GB DDR4 3200MHz Desktop Gaming Memory Red",
+      "price": 74.99,
+      "category": 5,
+      "rating": 5,
+      "image": "ra50-156.png",
+      "part_type": "Crucial Ballistix"
+   }
+},
+ {
+   "pk": 157,
+   "model": "products.product",
+   "fields": {
+      "sku": "RA50-157",
+      "brand": "Crucial",
+      "part_name": "Crucial Ballistix 32GB Kit 2 x 16GB DDR4 3200MHz Desktop Gaming Memory Red",
+      "description": "Crucial Ballistix 32GB Kit 2 x 16GB DDR4 3200MHz Desktop Gaming Memory Red",
+      "price": 149.99,
+      "category": 5,
+      "rating": 5,
+      "image": "ra50-157.png",
+      "part_type": "Crucial Ballistix"
+   }
+},
+ {
+   "pk": 158,
+   "model": "products.product",
+   "fields": {
+      "sku": "RA50-158",
+      "brand": "Crucial",
+      "part_name": "Crucial Ballistix 16GB Kit 2 x 8GB DDR4 3600MHz Desktop Gaming Memory Red",
+      "description": "Crucial Ballistix 16GB Kit 2 x 8GB DDR4 3600MHz Desktop Gaming Memory Red",
+      "price": 79.99,
+      "category": 5,
+      "rating": 5,
+      "image": "ra50-158.png",
+      "part_type": "Crucial Ballistix"
+   }
+},
+ {
+   "pk": 159,
+   "model": "products.product",
+   "fields": {
+      "sku": "RA50-159",
+      "brand": "Crucial",
+      "part_name": "Crucial Ballistix 32GB Kit 2 x 16GB DDR4 3600MHz Desktop Gaming Memory Red",
+      "description": "Crucial Ballistix 32GB Kit 2 x 16GB DDR4 3600MHz Desktop Gaming Memory Red",
+      "price": 159.99,
+      "category": 5,
+      "rating": 5,
+      "image": "ra50-159.png",
+      "part_type": "Crucial Ballistix"
+   }
+},
+ {
+   "pk": 160,
+   "model": "products.product",
+   "fields": {
+      "sku": "RA50-160",
+      "brand": "Kingston HyperX",
+      "part_name": "Kingston HyperX Fury DDR4 RGB 3000MHz 2 x 8GB",
+      "description": "Kingston HyperX Fury DDR4 RGB 3000MHz 2 x 8GB",
+      "price": 226.99,
+      "category": 5,
+      "rating": 3,
+      "image": "ra50-160.png",
+      "part_type": "Kingston HyperX Fury"
+   }
+},
+ {
+   "pk": 161,
+   "model": "products.product",
+   "fields": {
+      "sku": "RA50-161",
+      "brand": "Kingston HyperX",
+      "part_name": "Kingston HyperX Fury DDR4 RGB 3000MHz 4 x 8GB",
+      "description": "Kingston HyperX Fury DDR4 RGB 3000MHz 4 x 8GB",
+      "price": 499.99,
+      "category": 5,
+      "rating": 4,
+      "image": "ra50-161.png",
+      "part_type": "Kingston HyperX Fury"
+   }
+},
+ {
+   "pk": 162,
+   "model": "products.product",
+   "fields": {
+      "sku": "RA50-162",
+      "brand": "Kingston HyperX",
+      "part_name": "Kingston HyperX Fury DDR4 RGB 3000MHz 2 x 16GB",
+      "description": "Kingston HyperX Fury DDR4 RGB 3000MHz 2 x 16GB",
+      "price": 127.99,
+      "category": 5,
+      "rating": 3,
+      "image": "ra50-162.png",
+      "part_type": "Kingston HyperX Fury"
+   }
+},
+ {
+   "pk": 163,
+   "model": "products.product",
+   "fields": {
+      "sku": "RA50-163",
+      "brand": "Kingston HyperX",
+      "part_name": "Kingston HyperX Fury DDR4 RGB 3000MHz 4 x 16GB",
+      "description": "Kingston HyperX Fury DDR4 RGB 3000MHz 4 x 16GB",
+      "price": 299.99,
+      "category": 5,
+      "rating": 4,
+      "image": "ra50-163.png",
+      "part_type": "Kingston HyperX Fury"
+   }
+},
+ {
+   "pk": 164,
+   "model": "products.product",
+   "fields": {
+      "sku": "RA50-164",
+      "brand": "Kingston HyperX",
+      "part_name": "Kingston HyperX Fury DDR4 RGB 3000MHz 2 x 32GB",
+      "description": "Kingston HyperX Fury DDR4 RGB 3000MHz 2 x 32GB",
+      "price": 74.99,
+      "category": 5,
+      "rating": 3,
+      "image": "ra50-164.png",
+      "part_type": "Kingston HyperX Fury"
+   }
+},
+ {
+   "pk": 165,
+   "model": "products.product",
+   "fields": {
+      "sku": "RA50-165",
+      "brand": "Kingston HyperX",
+      "part_name": "Kingston HyperX Fury DDR4 RGB 3200MHz 2 x 8GB",
+      "description": "Kingston HyperX Fury DDR4 RGB 3200MHz 2 x 8GB",
+      "price": 74.99,
+      "category": 5,
+      "rating": 5,
+      "image": "ra50-165.png",
+      "part_type": "Kingston HyperX Fury"
+   }
+},
+ {
+   "pk": 166,
+   "model": "products.product",
+   "fields": {
+      "sku": "RA50-166",
+      "brand": "Kingston HyperX",
+      "part_name": "Kingston HyperX Fury DDR4 RGB 3200MHz 4 x 8GB",
+      "description": "Kingston HyperX Fury DDR4 RGB 3200MHz 4 x 8GB",
+      "price": 158.99,
+      "category": 5,
+      "rating": 4,
+      "image": "ra50-166.png",
+      "part_type": "Kingston HyperX Fury"
+   }
+},
+ {
+   "pk": 167,
+   "model": "products.product",
+   "fields": {
+      "sku": "RA50-167",
+      "brand": "Kingston HyperX",
+      "part_name": "Kingston HyperX Fury DDR4 RGB 3200MHz 2 x 16GB",
+      "description": "Kingston HyperX Fury DDR4 RGB 3200MHz 2 x 16GB",
+      "price": 56.99,
+      "category": 5,
+      "rating": 5,
+      "image": "ra50-167.png",
+      "part_type": "Kingston HyperX Fury"
+   }
+},
+ {
+   "pk": 168,
+   "model": "products.product",
+   "fields": {
+      "sku": "RA50-168",
+      "brand": "Kingston HyperX",
+      "part_name": "Kingston HyperX Fury DDR4 RGB 3200MHz 4 x 16GB",
+      "description": "Kingston HyperX Fury DDR4 RGB 3200MHz 4 x 16GB",
+      "price": 299.99,
+      "category": 5,
+      "rating": 4,
+      "image": "ra50-168.png",
+      "part_type": "Kingston HyperX Fury"
+   }
+},
+ {
+   "pk": 169,
+   "model": "products.product",
+   "fields": {
+      "sku": "RA50-169",
+      "brand": "Kingston HyperX",
+      "part_name": "Kingston HyperX Fury DDR4 RGB 3200MHz 2 x 32GB",
+      "description": "Kingston HyperX Fury DDR4 RGB 3200MHz 2 x 32GB",
+      "price": 324.99,
+      "category": 5,
+      "rating": 5,
+      "image": "ra50-169.png",
+      "part_type": "Kingston HyperX Fury"
+   }
+},
+ {
+   "pk": 170,
+   "model": "products.product",
+   "fields": {
+      "sku": "RA50-170",
+      "brand": "Kingston HyperX",
+      "part_name": "Kingston HyperX Fury DDR4 RGB 3600MHz 2 x 8GB",
+      "description": "Kingston HyperX Fury DDR4 RGB 3600MHz 2 x 8GB",
+      "price": 127.99,
+      "category": 5,
+      "rating": 3.5,
+      "image": "ra50-170.png",
+      "part_type": "Kingston HyperX Fury"
+   }
+},
+ {
+   "pk": 171,
+   "model": "products.product",
+   "fields": {
+      "sku": "RA50-171",
+      "brand": "Kingston HyperX",
+      "part_name": "Kingston HyperX Fury DDR4 RGB 3600MHz 4 x 8GB",
+      "description": "Kingston HyperX Fury DDR4 RGB 3600MHz 4 x 8GB",
+      "price": 144.99,
+      "category": 5,
+      "rating": 4,
+      "image": "ra50-171.png",
+      "part_type": "Kingston HyperX Fury"
+   }
+},
+ {
+   "pk": 172,
+   "model": "products.product",
+   "fields": {
+      "sku": "RA50-172",
+      "brand": "Kingston HyperX",
+      "part_name": "Kingston HyperX Fury DDR4 RGB 3600MHz 2 x 16GB",
+      "description": "Kingston HyperX Fury DDR4 RGB 3600MHz 2 x 16GB",
+      "price": 466.99,
+      "category": 5,
+      "rating": 3.5,
+      "image": "ra50-172.png",
+      "part_type": "Kingston HyperX Fury"
+   }
+},
+ {
+   "pk": 173,
+   "model": "products.product",
+   "fields": {
+      "sku": "RA50-173",
+      "brand": "Kingston HyperX",
+      "part_name": "Kingston HyperX Fury DDR4 RGB 3600MHz 4 x 16GB",
+      "description": "Kingston HyperX Fury DDR4 RGB 3600MHz 4 x 16GB",
+      "price": 466.99,
+      "category": 5,
+      "rating": 4,
+      "image": "ra50-173.png",
+      "part_type": "Kingston HyperX Fury"
+   }
+},
+ {
+   "pk": 174,
+   "model": "products.product",
+   "fields": {
+      "sku": "RA50-174",
+      "brand": "Kingston HyperX",
+      "part_name": "Kingston HyperX Fury DDR4 RGB 3600MHz 2 x 32GB",
+      "description": "Kingston HyperX Fury DDR4 RGB 3600MHz 2 x 32GB",
+      "price": 74.99,
+      "category": 5,
+      "rating": 3.5,
+      "image": "ra50-174.png",
+      "part_type": "Kingston HyperX Fury"
+   }
+},
+ {
+   "pk": 175,
+   "model": "products.product",
+   "fields": {
+      "sku": "RA50-175",
+      "brand": "Kingston HyperX",
+      "part_name": "Kingston HyperX Fury DDR4 3000MHz 2 x 8GB",
+      "description": "Kingston HyperX Fury DDR4 3000MHz 2 x 8GB",
+      "price": 149.99,
+      "category": 5,
+      "rating": 5,
+      "image": "ra50-175.png",
+      "part_type": "Kingston HyperX Fury"
+   }
+},
+ {
+   "pk": 176,
+   "model": "products.product",
+   "fields": {
+      "sku": "RA50-176",
+      "brand": "Kingston HyperX",
+      "part_name": "Kingston HyperX Fury DDR4 3000MHz 4 x 8GB",
+      "description": "Kingston HyperX Fury DDR4 3000MHz 4 x 8GB",
+      "price": 299.99,
+      "category": 5,
+      "rating": 4.5,
+      "image": "ra50-176.png",
+      "part_type": "Kingston HyperX Fury"
+   }
+},
+ {
+   "pk": 177,
+   "model": "products.product",
+   "fields": {
+      "sku": "RA50-177",
+      "brand": "Kingston HyperX",
+      "part_name": "Kingston HyperX Fury DDR4 3000MHz 2 x 16GB",
+      "description": "Kingston HyperX Fury DDR4 3000MHz 2 x 16GB",
+      "price": 79.99,
+      "category": 5,
+      "rating": 5,
+      "image": "ra50-177.png",
+      "part_type": "Kingston HyperX Fury"
+   }
+},
+ {
+   "pk": 178,
+   "model": "products.product",
+   "fields": {
+      "sku": "RA50-178",
+      "brand": "Kingston HyperX",
+      "part_name": "Kingston HyperX Fury DDR4 3000MHz 4 x 16GB",
+      "description": "Kingston HyperX Fury DDR4 3000MHz 4 x 16GB",
+      "price": 159.99,
+      "category": 5,
+      "rating": 4.5,
+      "image": "ra50-178.png",
+      "part_type": "Kingston HyperX Fury"
+   }
+},
+ {
+   "pk": 179,
+   "model": "products.product",
+   "fields": {
+      "sku": "RA50-179",
+      "brand": "Kingston HyperX",
+      "part_name": "Kingston HyperX Fury DDR4 3200MHz 2 x 8GB",
+      "description": "Kingston HyperX Fury DDR4 3200MHz 2 x 8GB",
+      "price": 149.99,
+      "category": 5,
+      "rating": 5,
+      "image": "ra50-179.png",
+      "part_type": "Kingston HyperX Fury"
+   }
+},
+ {
+   "pk": 180,
+   "model": "products.product",
+   "fields": {
+      "sku": "RA50-180",
+      "brand": "Kingston HyperX",
+      "part_name": "Kingston HyperX Fury DDR4 3200MHz 4 x 8GB",
+      "description": "Kingston HyperX Fury DDR4 3200MHz 4 x 8GB",
+      "price": 74.99,
+      "category": 5,
+      "rating": 4.5,
+      "image": "ra50-180.png",
+      "part_type": "Kingston HyperX Fury"
+   }
+},
+ {
+   "pk": 181,
+   "model": "products.product",
+   "fields": {
+      "sku": "RA50-181",
+      "brand": "Kingston HyperX",
+      "part_name": "Kingston HyperX Fury DDR4 3200MHz 2 x 16GB",
+      "description": "Kingston HyperX Fury DDR4 3200MHz 2 x 16GB",
+      "price": 149.99,
+      "category": 5,
+      "rating": 5,
+      "image": "ra50-181.png",
+      "part_type": "Kingston HyperX Fury"
+   }
+},
+ {
+   "pk": 182,
+   "model": "products.product",
+   "fields": {
+      "sku": "RA50-182",
+      "brand": "Kingston HyperX",
+      "part_name": "Kingston HyperX Fury DDR4 3200MHz 4 x 16GB",
+      "description": "Kingston HyperX Fury DDR4 3200MHz 4 x 16GB",
+      "price": 79.99,
+      "category": 5,
+      "rating": 4.5,
+      "image": "ra50-182.png",
+      "part_type": "Kingston HyperX Fury"
+   }
+},
+ {
+   "pk": 183,
+   "model": "products.product",
+   "fields": {
+      "sku": "RA50-183",
+      "brand": "Kingston HyperX",
+      "part_name": "Kingston HyperX Fury DDR4 3200MHz 2 x 32GB",
+      "description": "Kingston HyperX Fury DDR4 3200MHz 2 x 32GB",
+      "price": 159.99,
+      "category": 5,
+      "rating": 5,
+      "image": "ra50-183.png",
+      "part_type": "Kingston HyperX Fury"
+   }
+},
+ {
+   "pk": 184,
+   "model": "products.product",
+   "fields": {
+      "sku": "RA50-184",
+      "brand": "Kingston HyperX",
+      "part_name": "Kingston HyperX Fury DDR4 3600MHz 2 x 8GB",
+      "description": "Kingston HyperX Fury DDR4 3600MHz 2 x 8GB",
+      "price": 74.99,
+      "category": 5,
+      "rating": 5,
+      "image": "ra50-184.png",
+      "part_type": "Kingston HyperX Fury"
+   }
+},
+ {
+   "pk": 185,
+   "model": "products.product",
+   "fields": {
+      "sku": "RA50-185",
+      "brand": "Kingston HyperX",
+      "part_name": "Kingston HyperX Fury DDR4 3600MHz 4 x 8GB",
+      "description": "Kingston HyperX Fury DDR4 3600MHz 4 x 8GB",
+      "price": 149.99,
+      "category": 5,
+      "rating": 4.5,
+      "image": "ra50-185.png",
+      "part_type": "Kingston HyperX Fury"
+   }
+},
+ {
+   "pk": 186,
+   "model": "products.product",
+   "fields": {
+      "sku": "RA50-186",
+      "brand": "Kingston HyperX",
+      "part_name": "Kingston HyperX Fury DDR4 3600MHz 2 x 16GB",
+      "description": "Kingston HyperX Fury DDR4 3600MHz 2 x 16GB",
+      "price": 74.99,
+      "category": 5,
+      "rating": 5,
+      "image": "ra50-186.png",
+      "part_type": "Kingston HyperX Fury"
+   }
+},
+ {
+   "pk": 187,
+   "model": "products.product",
+   "fields": {
+      "sku": "RA50-187",
+      "brand": "Kingston HyperX",
+      "part_name": "Kingston HyperX Fury DDR4 3600MHz 4 x 16GB",
+      "description": "Kingston HyperX Fury DDR4 3600MHz 4 x 16GB",
+      "price": 149.99,
+      "category": 5,
+      "rating": 4.5,
+      "image": "ra50-187.png",
+      "part_type": "Kingston HyperX Fury"
+   }
+},
+ {
+   "pk": 188,
+   "model": "products.product",
+   "fields": {
+      "sku": "RA50-188",
+      "brand": "Kingston HyperX",
+      "part_name": "Kingston HyperX Fury DDR4 3600MHz 2 x 32GB",
+      "description": "Kingston HyperX Fury DDR4 3600MHz 2 x 32GB",
+      "price": 79.99,
+      "category": 5,
+      "rating": 5,
+      "image": "ra50-188.png",
+      "part_type": "Kingston HyperX Fury"
+   }
+},
+ {
+   "pk": 189,
+   "model": "products.product",
+   "fields": {
+      "sku": "ST60-189",
+      "brand": "Crucial",
+      "part_name": "Crucial BX500 2TB 3D NAND SATA 2.5 inch SSD",
+      "description": "Crucial BX500 2TB 3D NAND SATA 2.5 inch SSD",
+      "price": 184.99,
+      "category": 6,
+      "rating": 5,
+      "image": "st60-189.png",
+      "part_type": "Crucial BX500 SSD SATA"
+   }
+},
+ {
+   "pk": 190,
+   "model": "products.product",
+   "fields": {
+      "sku": "ST60-190",
+      "brand": "Crucial",
+      "part_name": "Crucial BX500 1TB 3D NAND SATA 2.5 inch SSD",
+      "description": "Crucial BX500 1TB 3D NAND SATA 2.5 inch SSD",
+      "price": 67.99,
+      "category": 6,
+      "rating": 5,
+      "image": "st60-190.png",
+      "part_type": "Crucial BX500 SSD SATA"
+   }
+},
+ {
+   "pk": 191,
+   "model": "products.product",
+   "fields": {
+      "sku": "ST60-191",
+      "brand": "Crucial",
+      "part_name": "Crucial BX500 480GB 3D NAND SATA 2.5 inch SSD",
+      "description": "Crucial BX500 480GB 3D NAND SATA 2.5 inch SSD",
+      "price": 39.99,
+      "category": 6,
+      "rating": 4.5,
+      "image": "st60-191.png",
+      "part_type": "Crucial BX500 SSD SATA"
+   }
+},
+ {
+   "pk": 192,
+   "model": "products.product",
+   "fields": {
+      "sku": "ST60-192",
+      "brand": "Crucial",
+      "part_name": "Crucial BX500 240GB 3D NAND SATA 2.5 inch SSD",
+      "description": "Crucial BX500 240GB 3D NAND SATA 2.5 inch SSD",
+      "price": 26.99,
+      "category": 6,
+      "rating": 4,
+      "image": "st60-192.png",
+      "part_type": "Crucial BX500 SSD SATA"
+   }
+},
+ {
+   "pk": 193,
+   "model": "products.product",
+   "fields": {
+      "sku": "ST60-193",
+      "brand": "Crucial",
+      "part_name": "Crucial MX500 2TB 3D NAND SATA 2.5 inch SSD",
+      "description": "Crucial MX500 2TB 3D NAND SATA 2.5 inch SSD",
+      "price": 213.99,
+      "category": 6,
+      "rating": 5,
+      "image": "st60-193.png",
+      "part_type": "Crucial MX500 SSD SATA"
+   }
+},
+ {
+   "pk": 194,
+   "model": "products.product",
+   "fields": {
+      "sku": "ST60-194",
+      "brand": "Crucial",
+      "part_name": "Crucial MX500 1TB 3D NAND SATA 2.5 inch SSD",
+      "description": "Crucial MX500 1TB 3D NAND SATA 2.5 inch SSD",
+      "price": 106.99,
+      "category": 6,
+      "rating": 5,
+      "image": "st60-194.png",
+      "part_type": "Crucial MX500 SSD SATA"
+   }
+},
+ {
+   "pk": 195,
+   "model": "products.product",
+   "fields": {
+      "sku": "ST60-195",
+      "brand": "Crucial",
+      "part_name": "Crucial MX500 250GB 3D NAND SATA 2.5 inch SSD",
+      "description": "Crucial MX500 250GB 3D NAND SATA 2.5 inch SSD",
+      "price": 43.99,
+      "category": 6,
+      "rating": 4,
+      "image": "st60-195.png",
+      "part_type": "Crucial MX500 SSD SATA"
+   }
+},
+ {
+   "pk": 196,
+   "model": "products.product",
+   "fields": {
+      "sku": "ST60-196",
+      "brand": "Crucial",
+      "part_name": "Crucial MX500 500GB 3D NAND SATA 2.5 inch SSD",
+      "description": "Crucial MX500 500GB 3D NAND SATA 2.5 inch SSD",
+      "price": 64.99,
+      "category": 6,
+      "rating": 5,
+      "image": "st60-196.png",
+      "part_type": "Crucial MX500 SSD SATA"
+   }
+},
+ {
+   "pk": 197,
+   "model": "products.product",
+   "fields": {
+      "sku": "ST60-197",
+      "brand": "Intel",
+      "part_name": "Intel SSD 660p Series 1TB M.2 80mm",
+      "description": "Intel SSD 660p Series 1TB M.2 80mm",
+      "price": 94.99,
+      "category": 6,
+      "rating": 5,
+      "image": "st60-197.png",
+      "part_type": "Intel 660p SSD M.2"
+   }
+},
+ {
+   "pk": 198,
+   "model": "products.product",
+   "fields": {
+      "sku": "ST60-198",
+      "brand": "Intel",
+      "part_name": "Intel SSD 660p Series 2TB M.2 80mm",
+      "description": "Intel SSD 660p Series 2TB M.2 80mm",
+      "price": 189.99,
+      "category": 6,
+      "rating": 5,
+      "image": "st60-198.png",
+      "part_type": "Intel 660p SSD M.2"
+   }
+},
+ {
+   "pk": 199,
+   "model": "products.product",
+   "fields": {
+      "sku": "ST60-199",
+      "brand": "Intel",
+      "part_name": "Intel SSD 660p Series 512GB M.2 80mm",
+      "description": "Intel SSD 660p Series 512GB M.2 80mm",
+      "price": 54.99,
+      "category": 6,
+      "rating": 5,
+      "image": "st60-199.png",
+      "part_type": "Intel 660p SSD M.2"
+   }
+},
+ {
+   "pk": 200,
+   "model": "products.product",
+   "fields": {
+      "sku": "ST60-200",
+      "brand": "Kingston",
+      "part_name": "Kingston A400 SATA SSD 120GB 2.5 inch",
+      "description": "Kingston A400 SATA SSD 120GB 2.5 inch",
+      "price": 22.99,
+      "category": 6,
+      "rating": 5,
+      "image": "st60-200.png",
+      "part_type": "Kingston A400 SSD SATA"
+   }
+},
+ {
+   "pk": 201,
+   "model": "products.product",
+   "fields": {
+      "sku": "ST60-201",
+      "brand": "Kingston",
+      "part_name": "Kingston A400 SATA SSD 120GB M.2",
+      "description": "Kingston A400 SATA SSD 120GB M.2",
+      "price": 22.99,
+      "category": 6,
+      "rating": 5,
+      "image": "st60-201.png",
+      "part_type": "Kingston A400 SSD M.2"
+   }
+},
+ {
+   "pk": 202,
+   "model": "products.product",
+   "fields": {
+      "sku": "ST60-202",
+      "brand": "Kingston",
+      "part_name": "Kingston A400 SATA SSD 240GB 2.5 inch",
+      "description": "Kingston A400 SATA SSD 240GB 2.5 inch",
+      "price": 29.99,
+      "category": 6,
+      "rating": 4,
+      "image": "st60-202.png",
+      "part_type": "Kingston A400 SSD SATA"
+   }
+},
+ {
+   "pk": 203,
+   "model": "products.product",
+   "fields": {
+      "sku": "ST60-203",
+      "brand": "Kingston",
+      "part_name": "Kingston A400 SATA SSD 240GB M.2",
+      "description": "Kingston A400 SATA SSD 240GB M.2",
+      "price": 29.99,
+      "category": 6,
+      "rating": 4,
+      "image": "st60-203.png",
+      "part_type": "Kingston A400 SSD M.2"
+   }
+},
+ {
+   "pk": 204,
+   "model": "products.product",
+   "fields": {
+      "sku": "ST60-204",
+      "brand": "Kingston",
+      "part_name": "Kingston A400 SATA SSD 480GB 2.5 inch",
+      "description": "Kingston A400 SATA SSD 480GB 2.5 inch",
+      "price": 52.99,
+      "category": 6,
+      "rating": 4,
+      "image": "st60-204.png",
+      "part_type": "Kingston A400 SSD SATA"
+   }
+},
+ {
+   "pk": 205,
+   "model": "products.product",
+   "fields": {
+      "sku": "ST60-205",
+      "brand": "Kingston",
+      "part_name": "Kingston A400 SATA SSD 480GB M.2",
+      "description": "Kingston A400 SATA SSD 480GB M.2",
+      "price": 52.99,
+      "category": 6,
+      "rating": 4,
+      "image": "st60-205.png",
+      "part_type": "Kingston A400 SSD M.2"
+   }
+},
+ {
+   "pk": 206,
+   "model": "products.product",
+   "fields": {
+      "sku": "ST60-206",
+      "brand": "Seagate",
+      "part_name": "Seagate FireCuda SSHD 2.5 inch 2TB",
+      "description": "Seagate FireCuda SSHD 2.5 inch 2TB",
+      "price": 184.99,
+      "category": 11,
+      "rating": 5,
+      "image": "st60-206.png",
+      "part_type": "Seagate FireCuda SSHD SATA"
+   }
+},
+ {
+   "pk": 207,
+   "model": "products.product",
+   "fields": {
+      "sku": "ST60-207",
+      "brand": "Seagate",
+      "part_name": "Seagate FireCuda SSHD 2.5 inch 1TB",
+      "description": "Seagate FireCuda SSHD 2.5 inch 1TB",
+      "price": 67.99,
+      "category": 11,
+      "rating": 5,
+      "image": "st60-207.png",
+      "part_type": "Seagate FireCuda SSHD SATA"
+   }
+},
+ {
+   "pk": 208,
+   "model": "products.product",
+   "fields": {
+      "sku": "ST60-208",
+      "brand": "Seagate",
+      "part_name": "Seagate FireCuda SSHD 2.5 inch 500GB",
+      "description": "Seagate FireCuda SSHD 2.5 inch 500GB",
+      "price": 39.99,
+      "category": 11,
+      "rating": 5,
+      "image": "st60-208.png",
+      "part_type": "Seagate FireCuda SSHD SATA"
+   }
+},
+ {
+   "pk": 209,
+   "model": "products.product",
+   "fields": {
+      "sku": "ST60-209",
+      "brand": "Seagate",
+      "part_name": "Seagate FireCuda SSHD 3.5 inch 2TB",
+      "description": "Seagate FireCuda SSHD 3.5 inch 2TB",
+      "price": 26.99,
+      "category": 11,
+      "rating": 5,
+      "image": "st60-209.png",
+      "part_type": "Seagate FireCuda SSHD SATA"
+   }
+},
+ {
+   "pk": 210,
+   "model": "products.product",
+   "fields": {
+      "sku": "ST60-210",
+      "brand": "Seagate",
+      "part_name": "Seagate FireCuda SSHD 3.5 inch 1TB",
+      "description": "Seagate FireCuda SSHD 3.5 inch 1TB",
+      "price": 213.99,
+      "category": 11,
+      "rating": 5,
+      "image": "st60-210.png",
+      "part_type": "Seagate FireCuda SSHD SATA"
+   }
+},
+ {
+   "pk": 211,
+   "model": "products.product",
+   "fields": {
+      "sku": "ST60-211",
+      "brand": "Seagate",
+      "part_name": "Seagate FireCuda SSD 510 2TB M.2",
+      "description": "Seagate FireCuda SSD 510 2TB M.2",
+      "price": 106.99,
+      "category": 6,
+      "rating": 5,
+      "image": "st60-211.png",
+      "part_type": "Seagate FireCuda SSD M.2"
+   }
+},
+ {
+   "pk": 212,
+   "model": "products.product",
+   "fields": {
+      "sku": "ST60-212",
+      "brand": "Seagate",
+      "part_name": "Seagate FireCuda SSD 510 1TB M.2",
+      "description": "Seagate FireCuda SSD 510 1TB M.2",
+      "price": 43.99,
+      "category": 6,
+      "rating": 5,
+      "image": "st60-212.png",
+      "part_type": "Seagate FireCuda SSD M.2"
+   }
+},
+ {
+   "pk": 213,
+   "model": "products.product",
+   "fields": {
+      "sku": "ST60-213",
+      "brand": "Seagate",
+      "part_name": "Seagate FireCuda SSD 510 500GB M.2",
+      "description": "Seagate FireCuda SSD 510 500GB M.2",
+      "price": 64.99,
+      "category": 6,
+      "rating": 5,
+      "image": "st60-213.png",
+      "part_type": "Seagate FireCuda SSD M.2"
+   }
+},
+ {
+   "pk": 214,
+   "model": "products.product",
+   "fields": {
+      "sku": "ST60-214",
+      "brand": "Seagate",
+      "part_name": "Seagate FireCuda SSD 510 250GB M.2",
+      "description": "Seagate FireCuda SSD 510 250GB M.2",
+      "price": 94.99,
+      "category": 6,
+      "rating": 5,
+      "image": "st60-214.png",
+      "part_type": "Seagate FireCuda SSD M.2"
+   }
+},
+ {
+   "pk": 215,
+   "model": "products.product",
+   "fields": {
+      "sku": "ST60-215",
+      "brand": "Seagate",
+      "part_name": "Seagate FireCuda SSD 120 4TB",
+      "description": "Seagate FireCuda SSD 120 4TB",
+      "price": 189.99,
+      "category": 6,
+      "rating": 4,
+      "image": "st60-215.png",
+      "part_type": "Seagate FireCuda SSD SATA"
+   }
+},
+ {
+   "pk": 216,
+   "model": "products.product",
+   "fields": {
+      "sku": "ST60-216",
+      "brand": "Seagate",
+      "part_name": "Seagate FireCuda SSD 120 2TB",
+      "description": "Seagate FireCuda SSD 120 2TB",
+      "price": 54.99,
+      "category": 6,
+      "rating": 4,
+      "image": "st60-216.png",
+      "part_type": "Seagate FireCuda SSD SATA"
+   }
+},
+ {
+   "pk": 217,
+   "model": "products.product",
+   "fields": {
+      "sku": "ST60-217",
+      "brand": "Seagate",
+      "part_name": "Seagate FireCuda SSD 120 1TB",
+      "description": "Seagate FireCuda SSD 120 1TB",
+      "price": 22.99,
+      "category": 6,
+      "rating": 4,
+      "image": "st60-217.png",
+      "part_type": "Seagate FireCuda SSD SATA"
+   }
+},
+ {
+   "pk": 218,
+   "model": "products.product",
+   "fields": {
+      "sku": "ST60-218",
+      "brand": "Seagate",
+      "part_name": "Seagate FireCuda SSD 120 500GB",
+      "description": "Seagate FireCuda SSD 120 500GB",
+      "price": 22.99,
+      "category": 6,
+      "rating": 4,
+      "image": "st60-218.png",
+      "part_type": "Seagate FireCuda SSD SATA"
+   }
+},
+ {
+   "pk": 219,
+   "model": "products.product",
+   "fields": {
+      "sku": "ST60-219",
+      "brand": "Seagate",
+      "part_name": "Seagate FireCuda SSD 520 2TB M.2",
+      "description": "Seagate FireCuda SSD 520 2TB M.2",
+      "price": 29.99,
+      "category": 6,
+      "rating": 5,
+      "image": "st60-219.png",
+      "part_type": "Seagate FireCuda SSD M.2"
+   }
+},
+ {
+   "pk": 220,
+   "model": "products.product",
+   "fields": {
+      "sku": "ST60-220",
+      "brand": "Seagate",
+      "part_name": "Seagate FireCuda SSD 520 1TB M.2",
+      "description": "Seagate FireCuda SSD 520 1TB M.2",
+      "price": 29.99,
+      "category": 6,
+      "rating": 5,
+      "image": "st60-220.png",
+      "part_type": "Seagate FireCuda SSD M.2"
+   }
+},
+ {
+   "pk": 221,
+   "model": "products.product",
+   "fields": {
+      "sku": "ST60-221",
+      "brand": "Seagate",
+      "part_name": "Seagate FireCuda SSD 520 500GB M.2",
+      "description": "Seagate FireCuda SSD 520 500GB M.2",
+      "price": 52.99,
+      "category": 6,
+      "rating": 5,
+      "image": "st60-221.png",
+      "part_type": "Seagate FireCuda SSD M.2"
+   }
+},
+ {
+   "pk": 222,
+   "model": "products.product",
+   "fields": {
+      "sku": "PS70-222",
+      "brand": "Aerocool",
+      "part_name": "Aerocool Xpredator Gold 550W GM Power Supply",
+      "description": "Aerocool Xpredator Gold 550W GM Power Supply",
+      "price": 74.99,
+      "category": 11,
+      "rating": 5,
+      "image": "ps70-222.png",
+      "part_type": "Gold PSU"
+   }
+},
+ {
+   "pk": 223,
+   "model": "products.product",
+   "fields": {
+      "sku": "PS70-223",
+      "brand": "Aerocool",
+      "part_name": "Aerocool Xpredator Gold GM 1000W Power Supply",
+      "description": "Aerocool Xpredator Gold GM 1000W Power Supply",
+      "price": 149.99,
+      "category": 11,
+      "rating": 4,
+      "image": "ps70-223.png",
+      "part_type": "Gold PSU"
+   }
+},
+ {
+   "pk": 224,
+   "model": "products.product",
+   "fields": {
+      "sku": "PS70-224",
+      "brand": "ASUS",
+      "part_name": "ASUS ROG STRIX 850G Gold PSU",
+      "description": "ASUS ROG STRIX 850G Gold PSU",
+      "price": 128.99,
+      "category": 7,
+      "rating": 5,
+      "image": "ps70-224.png",
+      "part_type": "Gold PSU"
+   }
+},
+ {
+   "pk": 225,
+   "model": "products.product",
+   "fields": {
+      "sku": "PS70-225",
+      "brand": "ASUS",
+      "part_name": "ASUS ROG STRIX 550G Gold PSU",
+      "description": "ASUS ROG STRIX 550G Gold PSU",
+      "price": 74.99,
+      "category": 7,
+      "rating": 5,
+      "image": "ps70-225.png",
+      "part_type": "Gold PSU"
+   }
+},
+ {
+   "pk": 226,
+   "model": "products.product",
+   "fields": {
+      "sku": "PS70-226",
+      "brand": "ASUS",
+      "part_name": "ASUS ROG STRIX 650G Gold PSU",
+      "description": "ASUS ROG STRIX 650G Gold PSU",
+      "price": 99.99,
+      "category": 7,
+      "rating": 5,
+      "image": "ps70-226.png",
+      "part_type": "Gold PSU"
+   }
+},
+ {
+   "pk": 227,
+   "model": "products.product",
+   "fields": {
+      "sku": "PS70-227",
+      "brand": "ASUS",
+      "part_name": "ASUS ROG STRIX 750G Gold PSU",
+      "description": "ASUS ROG STRIX 750G Gold PSU",
+      "price": 108.99,
+      "category": 7,
+      "rating": 4,
+      "image": "ps70-227.png",
+      "part_type": "Gold PSU"
+   }
+},
+ {
+   "pk": 228,
+   "model": "products.product",
+   "fields": {
+      "sku": "PS70-228",
+      "brand": "ASUS",
+      "part_name": "ASUS ROG THOR 1200P Platinum PSU",
+      "description": "ASUS ROG THOR 1200P Platinum PSU",
+      "price": 210.99,
+      "category": 7,
+      "rating": 5,
+      "image": "ps70-228.png",
+      "part_type": "Platinum PSU"
+   }
+},
+ {
+   "pk": 229,
+   "model": "products.product",
+   "fields": {
+      "sku": "PS70-229",
+      "brand": "ASUS",
+      "part_name": "ASUS ROG THOR 850P Platinum PSU",
+      "description": "ASUS ROG THOR 850P Platinum PSU",
+      "price": 158.99,
+      "category": 7,
+      "rating": 5,
+      "image": "ps70-229.png",
+      "part_type": "Platinum PSU"
+   }
+},
+ {
+   "pk": 230,
+   "model": "products.product",
+   "fields": {
+      "sku": "PS70-230",
+      "brand": "Corsair",
+      "part_name": "Corsair SF750 750W 80 Plus Platinum SFX PSU",
+      "description": "Corsair SF750 750W 80 Plus Platinum SFX PSU",
+      "price": 148.99,
+      "category": 7,
+      "rating": 4,
+      "image": "ps70-230.png",
+      "part_type": "Platinum PSU"
+   }
+},
+ {
+   "pk": 231,
+   "model": "products.product",
+   "fields": {
+      "sku": "PS70-231",
+      "brand": "Corsair",
+      "part_name": "Corsair SF600 600W 80 Plus Platinum SFX PSU",
+      "description": "Corsair SF600 600W 80 Plus Platinum SFX PSU",
+      "price": 111.99,
+      "category": 7,
+      "rating": 5,
+      "image": "ps70-231.png",
+      "part_type": "Platinum PSU"
+   }
+},
+ {
+   "pk": 232,
+   "model": "products.product",
+   "fields": {
+      "sku": "PS70-232",
+      "brand": "Corsair",
+      "part_name": "Corsair CX750F RGB 750W 80 Plus Bronze PSU",
+      "description": "Corsair CX750F RGB 750W 80 Plus Bronze PSU",
+      "price": 99.99,
+      "category": 7,
+      "rating": 4,
+      "image": "ps70-232.png",
+      "part_type": "Bronze PSU"
+   }
+},
+ {
+   "pk": 233,
+   "model": "products.product",
+   "fields": {
+      "sku": "PS70-233",
+      "brand": "Corsair",
+      "part_name": "Corsair CX650F RGB 650W 80 Plus Bronze PSU",
+      "description": "Corsair CX650F RGB 650W 80 Plus Bronze PSU",
+      "price": 89.99,
+      "category": 7,
+      "rating": 5,
+      "image": "ps70-233.png",
+      "part_type": "Bronze PSU"
+   }
+},
+ {
+   "pk": 234,
+   "model": "products.product",
+   "fields": {
+      "sku": "PS70-234",
+      "brand": "Corsair",
+      "part_name": "Corsair CX550F RGB 550W 80 Plus Bronze PSU",
+      "description": "Corsair CX550F RGB 550W 80 Plus Bronze PSU",
+      "price": 79.99,
+      "category": 7,
+      "rating": 5,
+      "image": "ps70-234.png",
+      "part_type": "Bronze PSU"
+   }
+},
+ {
+   "pk": 235,
+   "model": "products.product",
+   "fields": {
+      "sku": "PS70-235",
+      "brand": "Corsair",
+      "part_name": "Corsair HX1200 1200W 80 Plus Platinum PSU",
+      "description": "Corsair HX1200 1200W 80 Plus Platinum PSU",
+      "price": 224.99,
+      "category": 7,
+      "rating": 5,
+      "image": "ps70-235.png",
+      "part_type": "Platinum PSU"
+   }
+},
+ {
+   "pk": 236,
+   "model": "products.product",
+   "fields": {
+      "sku": "PS70-236",
+      "brand": "Corsair",
+      "part_name": "Corsair HX850 850W 80 Plus Platinum PSU",
+      "description": "Corsair HX850 850W 80 Plus Platinum PSU",
+      "price": 148.99,
+      "category": 7,
+      "rating": 5,
+      "image": "ps70-236.png",
+      "part_type": "Platinum PSU"
+   }
+},
+ {
+   "pk": 237,
+   "model": "products.product",
+   "fields": {
+      "sku": "PS70-237",
+      "brand": "Corsair",
+      "part_name": "Corsair HX1000 1000W 80 Plus Platinum PSU",
+      "description": "Corsair HX1000 1000W 80 Plus Platinum PSU",
+      "price": 184.99,
+      "category": 7,
+      "rating": 5,
+      "image": "ps70-237.png",
+      "part_type": "Platinum PSU"
+   }
+},
+ {
+   "pk": 238,
+   "model": "products.product",
+   "fields": {
+      "sku": "PS70-238",
+      "brand": "Corsair",
+      "part_name": "Corsair HX750 750W 80 Plus Platinum PSU",
+      "description": "Corsair HX750 750W 80 Plus Platinum PSU",
+      "price": 124.99,
+      "category": 7,
+      "rating": 4,
+      "image": "ps70-238.png",
+      "part_type": "Platinum PSU"
+   }
+},
+ {
+   "pk": 239,
+   "model": "products.product",
+   "fields": {
+      "sku": "PS70-239",
+      "brand": "Corsair",
+      "part_name": "Corsair CV650 650W 80 Plus Bronze PSU",
+      "description": "Corsair CV650 650W 80 Plus Bronze PSU",
+      "price": 59.99,
+      "category": 7,
+      "rating": 5,
+      "image": "ps70-239.png",
+      "part_type": "Bronze PSU"
+   }
+},
+ {
+   "pk": 240,
+   "model": "products.product",
+   "fields": {
+      "sku": "PS70-240",
+      "brand": "Corsair",
+      "part_name": "Corsair CV550 550W 80 Plus Bronze PSU",
+      "description": "Corsair CV550 550W 80 Plus Bronze PSU",
+      "price": 56.99,
+      "category": 7,
+      "rating": 5,
+      "image": "ps70-240.png",
+      "part_type": "Bronze PSU"
+   }
+},
+ {
+   "pk": 241,
+   "model": "products.product",
+   "fields": {
+      "sku": "PS70-241",
+      "brand": "Corsair",
+      "part_name": "Corsair CX750F RGB White 750W 80 Plus Bronze PSU",
+      "description": "Corsair CX750F RGB White 750W 80 Plus Bronze PSU",
+      "price": 104.99,
+      "category": 7,
+      "rating": 4,
+      "image": "ps70-241.png",
+      "part_type": "Bronze PSU"
+   }
+},
+ {
+   "pk": 242,
+   "model": "products.product",
+   "fields": {
+      "sku": "PS70-242",
+      "brand": "Corsair",
+      "part_name": "Corsair CX650F RGB White 650W 80 Plus Bronze PSU",
+      "description": "Corsair CX650F RGB White 650W 80 Plus Bronze PSU",
+      "price": 94.99,
+      "category": 7,
+      "rating": 5,
+      "image": "ps70-242.png",
+      "part_type": "Bronze PSU"
+   }
+},
+ {
+   "pk": 243,
+   "model": "products.product",
+   "fields": {
+      "sku": "PS70-243",
+      "brand": "Corsair",
+      "part_name": "Corsair CX550F RGB White 550W 80 Plus Bronze PSU",
+      "description": "Corsair CX550F RGB White 550W 80 Plus Bronze PSU",
+      "price": 84.99,
+      "category": 7,
+      "rating": 5,
+      "image": "ps70-243.png",
+      "part_type": "Bronze PSU"
+   }
+},
+ {
+   "pk": 244,
+   "model": "products.product",
+   "fields": {
+      "sku": "PS70-244",
+      "brand": "Corsair",
+      "part_name": "Corsair TX750M 750W 80 Plus Gold PSU",
+      "description": "Corsair TX750M 750W 80 Plus Gold PSU",
+      "price": 119.99,
+      "category": 7,
+      "rating": 4,
+      "image": "ps70-244.png",
+      "part_type": "Gold PSU"
+   }
+},
+ {
+   "pk": 245,
+   "model": "products.product",
+   "fields": {
+      "sku": "PS70-245",
+      "brand": "Corsair",
+      "part_name": "Corsair TX650M 650W 80 Plus Gold PSU",
+      "description": "Corsair TX650M 650W 80 Plus Gold PSU",
+      "price": 109.99,
+      "category": 7,
+      "rating": 5,
+      "image": "ps70-245.png",
+      "part_type": "Gold PSU"
+   }
+},
+ {
+   "pk": 246,
+   "model": "products.product",
+   "fields": {
+      "sku": "PS70-246",
+      "brand": "Corsair",
+      "part_name": "Corsair TX850M 850W 80 Plus Gold PSU",
+      "description": "Corsair TX850M 850W 80 Plus Gold PSU",
+      "price": 124.99,
+      "category": 7,
+      "rating": 5,
+      "image": "ps70-246.png",
+      "part_type": "Gold PSU"
+   }
+},
+ {
+   "pk": 247,
+   "model": "products.product",
+   "fields": {
+      "sku": "PS70-247",
+      "brand": "Corsair",
+      "part_name": "Corsair TX550M 550W 80 Plus Gold PSU",
+      "description": "Corsair TX550M 550W 80 Plus Gold PSU",
+      "price": 99.99,
+      "category": 7,
+      "rating": 5,
+      "image": "ps70-247.png",
+      "part_type": "Gold PSU"
+   }
+},
+ {
+   "pk": 248,
+   "model": "products.product",
+   "fields": {
+      "sku": "PS70-248",
+      "brand": "Enermax",
+      "part_name": "Enermax CYBERBRON 500W 80 Plus Bronze PSU",
+      "description": "Enermax CYBERBRON 500W 80 Plus Bronze PSU",
+      "price": 68.99,
+      "category": 10,
+      "rating": 5,
+      "image": "ps70-248.png",
+      "part_type": "Bronze PSU"
+   }
+},
+ {
+   "pk": 249,
+   "model": "products.product",
+   "fields": {
+      "sku": "PS70-249",
+      "brand": "Enermax",
+      "part_name": "Enermax CYBERBRON 600W 80 Plus Bronze PSU",
+      "description": "Enermax CYBERBRON 600W 80 Plus Bronze PSU",
+      "price": 98.99,
+      "category": 10,
+      "rating": 5,
+      "image": "ps70-249.png",
+      "part_type": "Bronze PSU"
+   }
+},
+ {
+   "pk": 250,
+   "model": "products.product",
+   "fields": {
+      "sku": "PS70-250",
+      "brand": "Enermax",
+      "part_name": "Enermax CYBERBRON 700W 80 Plus Bronze PSU",
+      "description": "Enermax CYBERBRON 700W 80 Plus Bronze PSU",
+      "price": 118.99,
+      "category": 10,
+      "rating": 4,
+      "image": "ps70-250.png",
+      "part_type": "Bronze PSU"
+   }
+},
+ {
+   "pk": 251,
+   "model": "products.product",
+   "fields": {
+      "sku": "KB80-251",
+      "brand": "ASUS",
+      "part_name": "ASUS ROG Claymore",
+      "description": "ASUS ROG Claymore Gaming Keyboard",
+      "price": 115.99,
+      "category": 8,
+      "rating": 5,
+      "image": "kb80-251.png",
+      "part_type": "Gaming Keyboard"
+   }
+},
+ {
+   "pk": 252,
+   "model": "products.product",
+   "fields": {
+      "sku": "KB80-252",
+      "brand": "ASUS",
+      "part_name": "ASUS ROG Claymore Core",
+      "description": "ASUS ROG Claymore Core Gaming Keyboard",
+      "price": 115.99,
+      "category": 8,
+      "rating": 5,
+      "image": "kb80-252.png",
+      "part_type": "Gaming Keyboard"
+   }
+},
+ {
+   "pk": 253,
+   "model": "products.product",
+   "fields": {
+      "sku": "KB80-253",
+      "brand": "ASUS",
+      "part_name": "ASUS ROG Strix Scope TKL Deluxe",
+      "description": "ASUS ROG Strix Scope TKL Deluxe Gaming Keyboard",
+      "price": 115.99,
+      "category": 8,
+      "rating": 4.5,
+      "image": "kb80-253.png",
+      "part_type": "Gaming Keyboard"
+   }
+},
+ {
+   "pk": 254,
+   "model": "products.product",
+   "fields": {
+      "sku": "KB80-254",
+      "brand": "ASUS",
+      "part_name": "ASUS ROG Claymore II",
+      "description": "ASUS ROG Claymore II Gaming Keyboard",
+      "price": 115.99,
+      "category": 8,
+      "rating": 5,
+      "image": "kb80-254.png",
+      "part_type": "Gaming Keyboard"
+   }
+},
+ {
+   "pk": 255,
+   "model": "products.product",
+   "fields": {
+      "sku": "KB80-255",
+      "brand": "ASUS",
+      "part_name": "ASUS ROG Strix Scope Deluxe",
+      "description": "ASUS ROG Strix Scope Deluxe Gaming Keyboard",
+      "price": 115.99,
+      "category": 8,
+      "rating": 5,
+      "image": "kb80-255.png",
+      "part_type": "Gaming Keyboard"
+   }
+},
+ {
+   "pk": 256,
+   "model": "products.product",
+   "fields": {
+      "sku": "KB80-256",
+      "brand": "ASUS",
+      "part_name": "ASUS ROG Strix Scope PBT",
+      "description": "ASUS ROG Strix Scope PBT Gaming Keyboard",
+      "price": 115.99,
+      "category": 8,
+      "rating": 3.5,
+      "image": "kb80-256.png",
+      "part_type": "Gaming Keyboard"
+   }
+},
+ {
+   "pk": 257,
+   "model": "products.product",
+   "fields": {
+      "sku": "KB80-257",
+      "brand": "Cooler Master",
+      "part_name": "Cooler Master Devastator 3",
+      "description": "Cooler Master Devastator 3 Gaming Keyboard",
+      "price": 33.99,
+      "category": 8,
+      "rating": 4,
+      "image": "kb80-257.png",
+      "part_type": "Gaming Keyboard"
+   }
+},
+ {
+   "pk": 258,
+   "model": "products.product",
+   "fields": {
+      "sku": "KB80-258",
+      "brand": "Corsair",
+      "part_name": "Corsair K55 RGB PRO XT",
+      "description": "Corsair K55 RGB PRO XT Gaming Keyboard",
+      "price": 55.99,
+      "category": 8,
+      "rating": 5,
+      "image": "kb80-258.png",
+      "part_type": "Gaming Keyboard"
+   }
+},
+ {
+   "pk": 259,
+   "model": "products.product",
+   "fields": {
+      "sku": "KB80-259",
+      "brand": "Corsair",
+      "part_name": "Corsair K55 RGB PRO",
+      "description": "Corsair K55 RGB PRO Gaming Keyboard",
+      "price": 55.99,
+      "category": 8,
+      "rating": 5,
+      "image": "kb80-259.png",
+      "part_type": "Gaming Keyboard"
+   }
+},
+ {
+   "pk": 260,
+   "model": "products.product",
+   "fields": {
+      "sku": "KB80-260",
+      "brand": "Corsair",
+      "part_name": "Corsair K60 RGB PRO SE",
+      "description": "Corsair K60 RGB PRO SE Mechanical Gaming Keyboard",
+      "price": 68.99,
+      "category": 8,
+      "rating": 5,
+      "image": "kb80-260.png",
+      "part_type": "Gaming Keyboard"
+   }
+},
+ {
+   "pk": 261,
+   "model": "products.product",
+   "fields": {
+      "sku": "KB80-261",
+      "brand": "Corsair",
+      "part_name": "Corsair K60 RGB PRO",
+      "description": "Corsair K60 RGB PRO Mechanical Gaming Keyboard",
+      "price": 68.99,
+      "category": 8,
+      "rating": 5,
+      "image": "kb80-261.png",
+      "part_type": "Gaming Keyboard"
+   }
+},
+ {
+   "pk": 262,
+   "model": "products.product",
+   "fields": {
+      "sku": "KB80-262",
+      "brand": "Corsair",
+      "part_name": "Corsair K60 RGB PRO Low Profile",
+      "description": "Corsair K60 RGB PRO Low Profile Mechanical Gaming Keyboard",
+      "price": 68.99,
+      "category": 8,
+      "rating": 5,
+      "image": "kb80-262.png",
+      "part_type": "Gaming Keyboard"
+   }
+},
+ {
+   "pk": 263,
+   "model": "products.product",
+   "fields": {
+      "sku": "KB80-263",
+      "brand": "Corsair",
+      "part_name": "Corsair K55 RGB",
+      "description": "Corsair K55 RGB Gaming Keyboard",
+      "price": 55.99,
+      "category": 8,
+      "rating": 5,
+      "image": "kb80-263.png",
+      "part_type": "Gaming Keyboard"
+   }
+},
+ {
+   "pk": 264,
+   "model": "products.product",
+   "fields": {
+      "sku": "KB80-264",
+      "brand": "Corsair",
+      "part_name": "Corsair K68",
+      "description": "Corsair K68 Mechanical Gaming Keyboard",
+      "price": 89.99,
+      "category": 11,
+      "rating": 5,
+      "image": "kb80-264.png",
+      "part_type": "Gaming Keyboard"
+   }
+},
+ {
+   "pk": 265,
+   "model": "products.product",
+   "fields": {
+      "sku": "KB80-265",
+      "brand": "Corsair",
+      "part_name": "Corsair K70 RAPIDFIRE",
+      "description": "Corsair K70 RAPIDFIRE Mechanical Gaming Keyboard",
+      "price": 119.99,
+      "category": 11,
+      "rating": 4,
+      "image": "kb80-265.png",
+      "part_type": "Gaming Keyboard"
+   }
+},
+ {
+   "pk": 266,
+   "model": "products.product",
+   "fields": {
+      "sku": "KB80-266",
+      "brand": "Corsair",
+      "part_name": "Corsair K70 LUX",
+      "description": "Corsair K70 LUX Mechanical Gaming Keyboard",
+      "price": 119.99,
+      "category": 11,
+      "rating": 4,
+      "image": "kb80-266.png",
+      "part_type": "Gaming Keyboard"
+   }
+},
+ {
+   "pk": 267,
+   "model": "products.product",
+   "fields": {
+      "sku": "KB80-267",
+      "brand": "Corsair",
+      "part_name": "Corsair K60 Pro",
+      "description": "Corsair K60 Pro Mechanical Gaming Keyboard",
+      "price": 60.99,
+      "category": 11,
+      "rating": 5,
+      "image": "kb80-267.png",
+      "part_type": "Gaming Keyboard"
+   }
+},
+ {
+   "pk": 268,
+   "model": "products.product",
+   "fields": {
+      "sku": "KB80-268",
+      "brand": "SteelSeries",
+      "part_name": "SteelSeries Apex Pro",
+      "description": "SteelSeries Apex Pro Gaming Keyboard",
+      "price": 169.99,
+      "category": 8,
+      "rating": 5,
+      "image": "kb80-268.png",
+      "part_type": "Gaming Keyboard"
+   }
+},
+ {
+   "pk": 269,
+   "model": "products.product",
+   "fields": {
+      "sku": "KB80-269",
+      "brand": "SteelSeries",
+      "part_name": "SteelSeries Apex Pro TKL",
+      "description": "SteelSeries Apex Pro TKL Gaming Keyboard",
+      "price": 199.99,
+      "category": 8,
+      "rating": 5,
+      "image": "kb80-269.png",
+      "part_type": "Gaming Keyboard"
+   }
+},
+ {
+   "pk": 270,
+   "model": "products.product",
+   "fields": {
+      "sku": "KB80-270",
+      "brand": "SteelSeries",
+      "part_name": "SteelSeries Apex 7 Red Switch",
+      "description": "SteelSeries Apex 7 Red Switch Gaming Keyboard",
+      "price": 117.99,
+      "category": 8,
+      "rating": 4,
+      "image": "kb80-270.png",
+      "part_type": "Gaming Keyboard"
+   }
+},
+ {
+   "pk": 271,
+   "model": "products.product",
+   "fields": {
+      "sku": "KB80-271",
+      "brand": "SteelSeries",
+      "part_name": "SteelSeries Apex 7 Blue Switch",
+      "description": "SteelSeries Apex 7 Blue Switch Gaming Keyboard",
+      "price": 117.99,
+      "category": 8,
+      "rating": 4,
+      "image": "kb80-271.png",
+      "part_type": "Gaming Keyboard"
+   }
+},
+ {
+   "pk": 272,
+   "model": "products.product",
+   "fields": {
+      "sku": "KB80-272",
+      "brand": "SteelSeries",
+      "part_name": "SteelSeries Apex 7 Brown Switch",
+      "description": "SteelSeries Apex 7 Brown Switch Gaming Keyboard",
+      "price": 117.99,
+      "category": 8,
+      "rating": 4,
+      "image": "kb80-272.png",
+      "part_type": "Gaming Keyboard"
+   }
+},
+ {
+   "pk": 273,
+   "model": "products.product",
+   "fields": {
+      "sku": "KB80-273",
+      "brand": "SteelSeries",
+      "part_name": "SteelSeries Apex 5",
+      "description": "SteelSeries Apex 5 Gaming Keyboard",
+      "price": 84.99,
+      "category": 8,
+      "rating": 5,
+      "image": "kb80-273.png",
+      "part_type": "Gaming Keyboard"
+   }
+},
+ {
+   "pk": 274,
+   "model": "products.product",
+   "fields": {
+      "sku": "KB80-274",
+      "brand": "SteelSeries",
+      "part_name": "SteelSeries Apex 3",
+      "description": "SteelSeries Apex 3 Gaming Keyboard",
+      "price": 39.99,
+      "category": 8,
+      "rating": 3,
+      "image": "kb80-274.png",
+      "part_type": "Gaming Keyboard"
+   }
+},
+ {
+   "pk": 275,
+   "model": "products.product",
+   "fields": {
+      "sku": "MO90-275",
+      "brand": "ASUS",
+      "part_name": "ASUS ROG Gladius II Origin",
+      "description": "ASUS ROG Gladius II Origin Gaming Mouse",
+      "price": 52.99,
+      "category": 9,
+      "rating": 5,
+      "image": "mo90-275.png",
+      "part_type": "Gaming Mouse"
+   }
+},
+ {
+   "pk": 276,
+   "model": "products.product",
+   "fields": {
+      "sku": "MO90-276",
+      "brand": "Cooler Master",
+      "part_name": "Cooler Master MM710",
+      "description": "Cooler Master MM710 Gaming Mouse",
+      "price": 37.99,
+      "category": 9,
+      "rating": 3.5,
+      "image": "mo90-276.png",
+      "part_type": "Gaming Mouse"
+   }
+},
+ {
+   "pk": 277,
+   "model": "products.product",
+   "fields": {
+      "sku": "MO90-277",
+      "brand": "Corsair",
+      "part_name": "Corsair GLAIVE RGB PRO",
+      "description": "Corsair GLAIVE RGB PRO Gaming Mouse",
+      "price": 59.99,
+      "category": 9,
+      "rating": 5,
+      "image": "mo90-277.png",
+      "part_type": "Gaming Mouse"
+   }
+},
+ {
+   "pk": 278,
+   "model": "products.product",
+   "fields": {
+      "sku": "MO90-278",
+      "brand": "Corsair",
+      "part_name": "Corsair IRONCLAW RGB WIRELESS",
+      "description": "Corsair IRONCLAW RGB WIRELESS Gaming Mouse",
+      "price": 59.99,
+      "category": 9,
+      "rating": 4.5,
+      "image": "mo90-278.png",
+      "part_type": "Gaming Mouse"
+   }
+},
+ {
+   "pk": 279,
+   "model": "products.product",
+   "fields": {
+      "sku": "MO90-279",
+      "brand": "Corsair",
+      "part_name": "Corsair NIGHTSWORD RGB",
+      "description": "Corsair NIGHTSWORD RGB Gaming Mouse",
+      "price": 64.99,
+      "category": 9,
+      "rating": 4.5,
+      "image": "mo90-279.png",
+      "part_type": "Gaming Mouse"
+   }
+},
+ {
+   "pk": 280,
+   "model": "products.product",
+   "fields": {
+      "sku": "MO90-280",
+      "brand": "Corsair",
+      "part_name": "Corsair HARPOON RGB",
+      "description": "Corsair HARPOON RGB Gaming Mouse",
+      "price": 24.99,
+      "category": 11,
+      "rating": 4,
+      "image": "mo90-280.png",
+      "part_type": "Gaming Mouse"
+   }
+},
+ {
+   "pk": 281,
+   "model": "products.product",
+   "fields": {
+      "sku": "MO90-281",
+      "brand": "Corsair",
+      "part_name": "Corsair HARPOON RGB WIRELESS",
+      "description": "Corsair HARPOON RGB WIRELESS Gaming Mouse",
+      "price": 44.99,
+      "category": 11,
+      "rating": 4,
+      "image": "mo90-281.png",
+      "part_type": "Gaming Mouse"
+   }
+},
+ {
+   "pk": 282,
+   "model": "products.product",
+   "fields": {
+      "sku": "MO90-282",
+      "brand": "Corsair",
+      "part_name": "Corsair SCIMITAR RGB ELITE",
+      "description": "Corsair SCIMITAR RGB ELITE Optical MOBA/MMO Gaming Mouse",
+      "price": 71.99,
+      "category": 11,
+      "rating": 5,
+      "image": "mo90-282.png",
+      "part_type": "Gaming Mouse"
+   }
+},
+ {
+   "pk": 283,
+   "model": "products.product",
+   "fields": {
+      "sku": "MO90-283",
+      "brand": "Corsair",
+      "part_name": "Corsair M65 PRO RGB FPS",
+      "description": "Corsair M65 PRO RGB FPS Gaming Mouse",
+      "price": 56.99,
+      "category": 11,
+      "rating": 5,
+      "image": "mo90-283.png",
+      "part_type": "Gaming Mouse"
+   }
+},
+ {
+   "pk": 284,
+   "model": "products.product",
+   "fields": {
+      "sku": "MO90-284",
+      "brand": "Corsair",
+      "part_name": "Corsair SCIMITAR PRO RGB",
+      "description": "Corsair SCIMITAR PRO RGB Optical MOBA/MMO Gaming Mouse",
+      "price": 71.99,
+      "category": 11,
+      "rating": 5,
+      "image": "mo90-284.png",
+      "part_type": "Gaming Mouse"
+   }
+},
+ {
+   "pk": 285,
+   "model": "products.product",
+   "fields": {
+      "sku": "MO90-285",
+      "brand": "Kingston HyperX",
+      "part_name": "Kingston HyperX Pulsefire Core RGB",
+      "description": "Kingston HyperX Pulsefire Core RGB Gaming Mouse",
+      "price": 29.99,
+      "category": 9,
+      "rating": 3.5,
+      "image": "mo90-285.png",
+      "part_type": "Gaming Mouse"
+   }
+},
+ {
+   "pk": 286,
+   "model": "products.product",
+   "fields": {
+      "sku": "MO90-286",
+      "brand": "Kingston HyperX",
+      "part_name": "Kingston HyperX Pulsefire FPS Pro",
+      "description": "Kingston HyperX Pulsefire FPS Pro Gaming Mouse",
+      "price": 39.99,
+      "category": 9,
+      "rating": 3,
+      "image": "mo90-286.png",
+      "part_type": "Gaming Mouse"
+   }
+},
+ {
+   "pk": 287,
+   "model": "products.product",
+   "fields": {
+      "sku": "MO90-287",
+      "brand": "Kingston HyperX",
+      "part_name": "Kingston HyperX Pulsefire Haste",
+      "description": "Kingston HyperX Pulsefire Haste Gaming Mouse",
+      "price": 49.99,
+      "category": 9,
+      "rating": 4.5,
+      "image": "mo90-287.png",
+      "part_type": "Gaming Mouse"
+   }
+},
+ {
+   "pk": 288,
+   "model": "products.product",
+   "fields": {
+      "sku": "MO90-288",
+      "brand": "Kingston HyperX",
+      "part_name": "Kingston HyperX Pulsefire Surge RGB",
+      "description": "Kingston HyperX Pulsefire Surge RGB Gaming Mouse",
+      "price": 59.99,
+      "category": 9,
+      "rating": 5,
+      "image": "mo90-288.png",
+      "part_type": "Gaming Mouse"
+   }
+},
+ {
+   "pk": 289,
+   "model": "products.product",
+   "fields": {
+      "sku": "MO90-289",
+      "brand": "Kingston HyperX",
+      "part_name": "Kingston HyperX Pulsefire Raid",
+      "description": "Kingston HyperX Pulsefire Raid Gaming Mouse",
+      "price": 69.99,
+      "category": 9,
+      "rating": 4.5,
+      "image": "mo90-289.png",
+      "part_type": "Gaming Mouse"
+   }
+},
+ {
+   "pk": 290,
+   "model": "products.product",
+   "fields": {
+      "sku": "MO90-290",
+      "brand": "Kingston HyperX",
+      "part_name": "Kingston HyperX Pulsefire Dart Wireless",
+      "description": "Kingston HyperX Pulsefire Dart Wireless Gaming Mouse",
+      "price": 79.99,
+      "category": 9,
+      "rating": 4,
+      "image": "mo90-290.png",
+      "part_type": "Gaming Mouse"
+   }
+},
+ {
+   "pk": 291,
+   "model": "products.product",
+   "fields": {
+      "sku": "MO90-291",
+      "brand": "Mionix",
+      "part_name": "Mionix AVIOR 7000",
+      "description": "Mionix AVIOR 7000 Gaming Mouse",
+      "price": 53.99,
+      "category": 9,
+      "rating": 4,
+      "image": "mo90-291.png",
+      "part_type": "Gaming Mouse"
+   }
+},
+ {
+   "pk": 292,
+   "model": "products.product",
+   "fields": {
+      "sku": "MO90-292",
+      "brand": "Mionix",
+      "part_name": "Mionix AVIOR 8200",
+      "description": "Mionix AVIOR 8200 Gaming Mouse",
+      "price": 47.99,
+      "category": 9,
+      "rating": 4,
+      "image": "mo90-292.png",
+      "part_type": "Gaming Mouse"
+   }
+},
+ {
+   "pk": 293,
+   "model": "products.product",
+   "fields": {
+      "sku": "MO90-293",
+      "brand": "Mionix",
+      "part_name": "Mionix NAOS QG",
+      "description": "Mionix NAOS QG Gaming Mouse",
+      "price": 61.99,
+      "category": 9,
+      "rating": 4.5,
+      "image": "mo90-293.png",
+      "part_type": "Gaming Mouse"
+   }
+},
+ {
+   "pk": 294,
+   "model": "products.product",
+   "fields": {
+      "sku": "MO90-294",
+      "brand": "SteelSeries",
+      "part_name": "SteelSeries Aerox 3 Wireless",
+      "description": "SteelSeries Aerox 3 Wireless Gaming Mouse",
+      "price": 99.99,
+      "category": 9,
+      "rating": 3,
+      "image": "mo90-294.png",
+      "part_type": "Gaming Mouse"
+   }
+},
+ {
+   "pk": 295,
+   "model": "products.product",
+   "fields": {
+      "sku": "MO90-295",
+      "brand": "SteelSeries",
+      "part_name": "SteelSeries Aerox 3",
+      "description": "SteelSeries Aerox 3 Gaming Mouse",
+      "price": 59.99,
+      "category": 9,
+      "rating": 3,
+      "image": "mo90-295.png",
+      "part_type": "Gaming Mouse"
+   }
+},
+ {
+   "pk": 296,
+   "model": "products.product",
+   "fields": {
+      "sku": "MO90-296",
+      "brand": "SteelSeries",
+      "part_name": "SteelSeries Rival 3 Wireless",
+      "description": "SteelSeries Rival 3 Wireless Gaming Mouse",
+      "price": 54.99,
+      "category": 9,
+      "rating": 3,
+      "image": "mo90-296.png",
+      "part_type": "Gaming Mouse"
+   }
+},
+ {
+   "pk": 297,
+   "model": "products.product",
+   "fields": {
+      "sku": "MO90-297",
+      "brand": "SteelSeries",
+      "part_name": "SteelSeries Rival 650 Wireless",
+      "description": "SteelSeries Rival 650 Wireless Gaming Mouse",
+      "price": 109.99,
+      "category": 9,
+      "rating": 5,
+      "image": "mo90-297.png",
+      "part_type": "Gaming Mouse"
+   }
+},
+ {
+   "pk": 298,
+   "model": "products.product",
+   "fields": {
+      "sku": "MO90-298",
+      "brand": "SteelSeries",
+      "part_name": "SteelSeries Rival 600",
+      "description": "SteelSeries Rival 600 Gaming Mouse",
+      "price": 79.99,
+      "category": 9,
+      "rating": 5,
+      "image": "mo90-298.png",
+      "part_type": "Gaming Mouse"
+   }
+},
+ {
+   "pk": 299,
+   "model": "products.product",
+   "fields": {
+      "sku": "MO90-299",
+      "brand": "SteelSeries",
+      "part_name": "SteelSeries Rival 3",
+      "description": "SteelSeries Rival 3 Gaming Mouse",
+      "price": 34.99,
+      "category": 9,
+      "rating": 3,
+      "image": "mo90-299.png",
+      "part_type": "Gaming Mouse"
+   }
+},
+ {
+   "pk": 300,
+   "model": "products.product",
+   "fields": {
+      "sku": "MO90-300",
+      "brand": "SteelSeries",
+      "part_name": "SteelSeries Sensei Ten",
+      "description": "SteelSeries Sensei Ten Gaming Mouse",
+      "price": 69.99,
+      "category": 9,
+      "rating": 5,
+      "image": "mo90-300.png",
+      "part_type": "Gaming Mouse"
+   }
+},
+ {
+   "pk": 301,
+   "model": "products.product",
+   "fields": {
+      "sku": "MO90-301",
+      "brand": "SteelSeries",
+      "part_name": "SteelSeries Sensei Ten Neon Rider Edition",
+      "description": "SteelSeries Sensei Ten Neon Rider Edition Gaming Mouse",
+      "price": 79.99,
+      "category": 10,
+      "rating": 5,
+      "image": "mo90-301.png",
+      "part_type": "Gaming Mouse"
+   }
+},
+ {
+   "pk": 302,
+   "model": "products.product",
+   "fields": {
+      "sku": "MO90-302",
+      "brand": "SteelSeries",
+      "part_name": "SteelSeries Rival 310",
+      "description": "SteelSeries Rival 310 Gaming Mouse",
+      "price": 59.99,
+      "category": 9,
+      "rating": 3,
+      "image": "mo90-302.png",
+      "part_type": "Gaming Mouse"
+   }
+},
+ {
+   "pk": 303,
+   "model": "products.product",
+   "fields": {
+      "sku": "MO90-303",
+      "brand": "SteelSeries",
+      "part_name": "SteelSeries Rival 710",
+      "description": "SteelSeries Rival 710 Gaming Mouse",
+      "price": 99.99,
+      "category": 9,
+      "rating": 4,
+      "image": "mo90-303.png",
+      "part_type": "Gaming Mouse"
+   }
+},
+ {
+   "pk": 304,
+   "model": "products.product",
+   "fields": {
+      "sku": "MO90-304",
+      "brand": "SteelSeries",
+      "part_name": "SteelSeries Sensei 310",
+      "description": "SteelSeries Sensei 310 Gaming Mouse",
+      "price": 59.99,
+      "category": 9,
+      "rating": 3.5,
+      "image": "mo90-304.png",
+      "part_type": "Gaming Mouse"
+   }
+}
+]
