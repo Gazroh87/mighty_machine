@@ -1,5 +1,6 @@
 /* allows h-100 and vertical centering to work */
 html {
+    scroll-behavior: smooth;
     height: 100%;
 }
 
@@ -11,6 +12,7 @@ body {
     height: calc(100vh - 172px);
     color: #555;
     font-family: 'Roboto', sans-serif;
+    margin-bottom: 45px;
 }
 
 /* from Bulma - ensures font awesome icons stay centered and have consistent size */
@@ -28,6 +30,11 @@ body {
     object-fit: cover;
 }
 
+.mob-logo {
+    width: 72px;
+    height: 72px;
+}
+
 /* maintain uppercase with logo */
 .logo-case {
     text-transform: uppercase;
@@ -35,6 +42,10 @@ body {
 
 .nav-item {
     font-size: 1.5em;
+}
+
+.navbar-nav .dropdown-menu {
+    position: absolute;
 }
 
 /* -------------------------------- Buttons */
@@ -96,5 +107,12 @@ body {
     /* 172px is height of top header */
     .header-container {
         padding-top: 172px;
+    }
+}
+
+@media (max-width: 991px) {
+    .mob-top-header,
+    .navbar-nav {
+        display: contents!important;
     }
 }
