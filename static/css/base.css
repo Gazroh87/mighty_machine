@@ -123,11 +123,12 @@ body {
         display: contents!important;
     }
 
+    /* pad the top a bit when navbar is collapsed on mobile */
     .header-container {
-        padding-top: 116px;
+        padding-top: 138px;
     }
 
     body {
-        height: calc(100vh - 116px);
+        height: calc(100vh - 138px);
     }
 }
