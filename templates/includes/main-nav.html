@@ -1,58 +1,58 @@
-<div class="collapse navbar-collapse" id="main-nav">
+<div class="navbar-collapse collapse" id="main-nav">
     <ul class="navbar-nav w-auto mx-auto">
         <li class="nav-item dropdown px-2">
-            <a class="logo-case fw-bold nav-link text-black me-5" href="#" id="all-products-link" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a class="logo-font fw-bold nav-link text-black me-5" href="#" id="all-products-link" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 All Products
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="all-products-link">
-                <a href="" class="dropdown-item">By Price</a>
-                <a href="" class="dropdown-item ">By Rating</a>
-                <a href="" class="dropdown-item ">By Category</a>
-                <a href="" class="dropdown-item">All Products</a>
+                <a href="{% url 'products' %}?sort=price&direction=asc" class="dropdown-item">By Price</a>
+                <a href="{% url 'products' %}?sort=rating&direction=desc" class="dropdown-item ">By Rating</a>
+                <a href="{% url 'products' %}?sort=category&direction=asc" class="dropdown-item ">By Category</a>
+                <a href="{% url 'products' %}" class="dropdown-item">All Products</a>
             </div>
         </li>
 
         <li class="nav-item px-2">
-            <a class="logo-case fw-bold nav-link text-black me-5" href="#" id="case-link" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a class="logo-font fw-bold nav-link text-black me-5" href="{% url 'products' %}?category=cases" id="case-link" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Cases
             </a>
         </li>
 
         <li class="nav-item dropdown px-2">
-            <a class="logo-case fw-bold nav-link text-black me-5" href="#" id="internals-link" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a class="logo-font fw-bold nav-link text-black me-5" href="#" id="internals-link" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Internal Components
             </a>
-            <div class="dropdown-menu border-0" aria-labelledby="homeware-link">
-                <a href="" class="dropdown-item">Motherboard</a>
-                <a href="" class="dropdown-item">CPU (Central Processing Unit)</a>
-                <a href="" class="dropdown-item">GPU (Graphics Card)</a>
-                <a href="" class="dropdown-item">RAM (Memory)</a>
-                <a href="" class="dropdown-item">Storage</a>
-                <a href="" class="dropdown-item">PSU (Power Supply Unit)</a>
-                <a href="" class="dropdown-item">All Internals</a>
-                
+            <div class="dropdown-menu border-0" aria-labelledby="internals-link">
+                <a href="{% url 'products' %}?category=motherboard" class="dropdown-item">Motherboard</a>
+                <a href="{% url 'products' %}?category=cpu" class="dropdown-item">CPU (Central Processing Unit)</a>
+                <a href="{% url 'products' %}?category=gpu" class="dropdown-item">GPU (Graphics Card)</a>
+                <a href="{% url 'products' %}?category=ram" class="dropdown-item">RAM (Memory)</a>
+                <a href="{% url 'products' %}?category=storage" class="dropdown-item">Storage</a>
+                <a href="{% url 'products' %}?category=psu" class="dropdown-item">PSU (Power Supply Unit)</a>
+                <a href="{% url 'products' %}?category=motherboard,cpu,gpu,ram,storage,psu" class="dropdown-item">All Internals</a>
+                {% url 'products' %}
             </div>
         </li>
 
         <li class="nav-item dropdown px-2">
-            <a class="logo-case fw-bold nav-link text-black me-5" href="#" id="peripherals-link" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a class="logo-font fw-bold nav-link text-black me-5" href="#" id="peripherals-link" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Peripherals
             </a>
-            <div class="dropdown-menu border-0" aria-labelledby="homeware-link">
-                <a href="" class="dropdown-item"><i class="fas fa-keyboard fa-fw"></i> Keyboard</a>
-                <a href="" class="dropdown-item"><i class="fas fa-mouse fa-fw"></i> Mouse</a>
-                <a href="" class="dropdown-item">All Peripherals</a>
+            <div class="dropdown-menu border-0" aria-labelledby="peripherals-link">
+                <a href="{% url 'products' %}?category=keyboard" class="dropdown-item"><i class="fas fa-keyboard fa-fw"></i> Keyboard</a>
+                <a href="{% url 'products' %}?category=mouse" class="dropdown-item"><i class="fas fa-mouse fa-fw"></i> Mouse</a>
+                <a href="{% url 'products' %}?category=keyboard,mouse" class="dropdown-item">All Peripherals</a>
             </div>
         </li>
 
         <li class="nav-item dropdown px-2">
-            <a class="logo-case fw-bold nav-link text-black" href="#" id="specials-link" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a class="logo-font fw-bold nav-link text-black" href="#" id="hot_deals-link" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Hot Deals
             </a>
-            <div class="dropdown-menu border-0" aria-labelledby="specials-link">
-                <a href="" class="dropdown-item">New Items</a>
-                <a href="" class="dropdown-item">Clearance</a>
-                <a href="" class="dropdown-item">All Deals</a>
+            <div class="dropdown-menu border-0" aria-labelledby="hot_deals-link">
+                <a href="{% url 'products' %}?category=new_items" class="dropdown-item">New Items</a>
+                <a href="{% url 'products' %}?category=clearance" class="dropdown-item">Clearance</a>
+                <a href="{% url 'products' %}?category=new_items,clearance" class="dropdown-item">All Deals</a>
             </div>
         </li>
     </ul>

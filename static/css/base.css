@@ -36,16 +36,13 @@ body {
 }
 
 /* maintain uppercase with logo */
-.logo-case {
+.logo-font {
+    letter-spacing: .1rem;
     text-transform: uppercase;
 }
 
 .nav-item {
     font-size: 1.5em;
-}
-
-.navbar-nav .dropdown-menu {
-    position: absolute;
 }
 
 /* -------------------------------- Buttons */

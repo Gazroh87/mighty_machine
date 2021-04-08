@@ -1,7 +1,14 @@
 from django.shortcuts import render
+from .models import Product
 
 
 def all_products(request):
-    """ A view to display all products """
+    """A view to display all products, including sorting and search queries"""
 
-    return render(request, 'products/products.html')
+    products = Product.objects.all()
+
+    context = {
+        'products': products,
+    }
+
+    return render(request, 'products/products.html', context)
