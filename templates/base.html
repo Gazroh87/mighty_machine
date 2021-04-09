@@ -42,6 +42,7 @@
   <body>
       <header class="container-fluid fixed-top">
           <div id="topnav" class="row bg-white pt-lg-2 d-none d-lg-flex">
+              <!-- Large screen size site logo -->
               <div class="col-12 col-lg-4 my-auto py-1 py-lg-0 text-center text-lg-start">
                     <a href="{% url 'home' %}" id="logo">
                         <img src="{% static 'images/mighty-machine-logo.png' %}" class="logo" alt="MIGHTY MACHINE logo">
@@ -91,7 +92,7 @@
                         </div>
                       </li>
 
-                      <!-- Shopping cart link -->
+                      <!-- Shopping cart link with grand total -->
                       <li class="list-inline-item">
                           <a class="{% if grand_total %}text-info fw-bold{% else %}text-black{% endif %} nav-link" href="">
                             <div class="text-center">
@@ -109,6 +110,7 @@
                   </ul>
               </div>
           </div>
+          <!-- Includes the following templates-->
           <div class="row bg-white">
               <nav class="navbar navbar-expand-lg navbar-light w-100">
                   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">

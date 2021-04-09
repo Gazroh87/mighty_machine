@@ -58,6 +58,12 @@ body {
     color: white;
 }
 
+.btn-outline-black {
+    background: white;
+    color: black !important; /* use important to override link colors for <a> elements */
+    border: 1px solid black;
+}
+
 .shop-now-button:hover,
 .shop-now-button:active,
 .shop-now-button:focus,
@@ -66,6 +72,38 @@ body {
 .btn-black:focus {
     background: #222;
     color: white;
+}
+
+.btt-button {
+    width: 64px;
+    position: fixed;
+    bottom: 12px;
+    right: 12px;
+}
+
+.btt-button a {
+    display: block;
+}
+
+.btt-button i {
+    display: block;
+    margin: 0 auto 10px auto;
+    margin: 10px auto 0;
+    line-height: 16px;
+    text-align: center;
+    margin-top: 0;
+}
+
+.btt-button span{
+    padding-top: 8px;
+    display: block;
+}
+
+.btt-link,
+.update-link,
+.remove-item {
+    cursor: pointer;
+    text-decoration: none;
 }
 
 /* -------------------------------- Other */
@@ -92,7 +130,8 @@ body {
     z-index: -1;
 }
 
-a.category-badge > span.badge:hover {
+a.category-badge > span.badge:hover,
+div.btt-button > a.badge:hover {
     background: #212529 !important;
     color: #fff !important;
 }

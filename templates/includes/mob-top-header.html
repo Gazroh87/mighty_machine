@@ -1,6 +1,7 @@
 {% load static %}
 <div class="d-lg-none mob-top-header">
     <ul class="navbar-nav flex-row w-auto">
+        <!-- Search Bar for searching products -->
         <li class="list-inline-item">
             <a class="text-black nav-link d-block d-lg-none" href="#" id="mob-search" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 <div class="text-center">
@@ -23,11 +24,13 @@
                 </form>
             </div>
         </li>
+        <!-- Mobile screen size site logo-->
         <li class="list-inline-item">
             <a href="{% url 'home' %}" class="nav-link d-block d-lg-none" id="mob-logo">
                 <img src="{% static 'images/mm-logo.png' %}" class="mob-logo" alt="MM logo">
             </a>
         </li>
+        <!-- Account Dropdown menu -->
         <li class="list-inline-item dropdown">
             <a class="text-black nav-link d-block d-lg-none" href="#" id="user-options" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 <div class="text-center">
@@ -36,18 +39,22 @@
                 </div>
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="user-options">
+                <!-- Registered -->
                 {% if request.user.is_authenticated %}
+                    <!-- Superuser -->
                     {% if request.user.is_superuser %}
                         <a href="{% url 'account_logout' %}" class="dropdown-item">Manage Products</a>
                     {% endif %}
                     <a href="" class="dropdown-item">My Account</a>
                     <a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a>
+                <!-- Unregistered-->
                 {% else %}
                     <a href="{% url 'account_signup' %}" class="dropdown-item">Register</a>
                     <a href="{% url 'account_login' %}" class="dropdown-item">Login</a>
                 {% endif %}
             </div>
         </li>
+        <!-- Shopping cart link with grand total -->
         <li class="list-inline-item">
             <a class="{% if grand_total %}text-primary fw-bold{% else %}text-black{% endif %} nav-link d-block d-lg-none" href="">
                 <div class="text-center">
