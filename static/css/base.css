@@ -30,6 +30,16 @@ body {
     object-fit: cover;
 }
 
+#logo {
+    text-decoration: none;
+}
+
+.sub-heading {
+    font-family: 'Iceland', sans-serif;
+    font-size: 1.1rem;
+    letter-spacing: .1rem;
+}
+
 .mob-logo {
     width: 72px;
     height: 72px;

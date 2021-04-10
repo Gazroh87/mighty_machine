@@ -23,6 +23,7 @@ class Product(models.Model):
     brand = models.CharField(max_length=254)
     part_name = models.CharField(max_length=254)
     description = models.TextField()
+    has_colours = models.BooleanField(default=False, null=True, blank=True)
     price = models.DecimalField(max_digits=7, decimal_places=2)
     rating = models.DecimalField(
         max_digits=3, decimal_places=2, null=True, blank=True)

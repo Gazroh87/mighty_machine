@@ -43,16 +43,17 @@
       <header class="container-fluid fixed-top">
           <div id="topnav" class="row bg-white pt-lg-2 d-none d-lg-flex">
               <!-- Large screen size site logo -->
-              <div class="col-12 col-lg-4 my-auto py-1 py-lg-0 text-center text-lg-start">
+              <div class="col-12 col-lg-3 my-auto py-1 py-lg-0 text-center">
                     <a href="{% url 'home' %}" id="logo">
                         <img src="{% static 'images/mighty-machine-logo.png' %}" class="logo" alt="MIGHTY MACHINE logo">
                     </a>
+                    <h5 class="logo-font sub-heading text-black my-0">All the Power and Speed you need</h5>
               </div>
 
               <!-- Search Bar for searching products -->
-              <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
+              <div class="col-12 col-lg-6 my-auto py-1 py-lg-0">
                   <form method="GET" action="{% url 'products' %}">
-                      <div class="input-group w-100">
+                      <div class="input-group w-50 mx-auto">
                         <input class="form-control border border-black rounded-0" type="text" name="query" placeholder="Searching for?...">
                         <div class="input-group-text border border-black rounded-0">
                             <button class="form-control btn btn-black rounded-0" type="submit">
@@ -66,8 +67,8 @@
               </div>
 
               <!-- Account Dropdown menu -->
-              <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
-                  <ul class="list-inline list-unstyled text-center text-lg-end my-0">
+              <div class="col-12 col-lg-3 my-auto py-1 py-lg-0">
+                  <ul class="list-inline list-unstyled text-center my-0">
                       <li class="list-inline-item dropdown">
                         <a class="text-black nav-link" href="#" id="user-options" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             <div class="text-center">

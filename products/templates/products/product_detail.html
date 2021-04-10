@@ -53,6 +53,19 @@
                     <form class="form" action="{% url 'add_to_cart' product.id %}" method="POST">
                         {% csrf_token %}
                         <div class="form-row">
+                            {% with product.has_colours as c %}
+                            {% if c %}
+                                <div class="col-12">
+                                    <p><strong>Colour:</strong></p>
+                                    <select class="form-control rounded-0 w-50" name="product_colour" id="id_product_colour">
+                                        <option value="black" selected>Black</option>
+                                        <option value="blue">Blue</option>
+                                        <option value="green">Green</option>
+                                        <option value="red">Red</option>
+                                        <option value="white">White</option>
+                                    </select>
+                                </div>
+                            {% endif %}
                             <div class="col-12">
                                 <p class="mt-3"><strong>Quantity:</strong></p>
                                 <div class="form-group w-50">
@@ -63,7 +76,7 @@
                             </div>
                             
                             <!-- Keep shopping and add to cart buttons -->
-                            <div class="col-12">
+                            <div class="col{% if c %}-12 mt-2{% endif %}"></div>
                                 <a href="{% url 'products' %}" class="btn btn-outline-black rounded-0 mt-5">
                                     <span class="icon">
                                         <i class="fas fa-chevron-left"></i>
@@ -73,6 +86,7 @@
                                 <input type="submit" class="btn btn-black rounded-0 text-uppercase mt-5" value="Add to Cart">
                             </div>
                             <input type="hidden" name="redirect_url" value="{{ request.path }}">
+                            {% endwith %}
                         </div>
                     </form>
                 </div>
