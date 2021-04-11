@@ -8,8 +8,8 @@ html {
 body {
     background: url('/media/homepage_background_cropped.jpg') no-repeat center center fixed;
     background-size: cover;
-    /* 184px is height of top header */
-    height: calc(100vh - 184px);
+    /* 205px is height of top header */
+    height: calc(100vh - 205px);
     color: #555;
     font-family: 'Roboto', sans-serif;
     margin-bottom: 45px;
@@ -168,9 +168,9 @@ div.btt-button > a.badge:hover {
         z-index: 1030;
     }
 
-    /* 184px is height of top header */
+    /* 205px is height of top header */
     .header-container {
-        padding-top: 184px;
+        padding-top: 205px;
     }
 }
 
