@@ -1,0 +1,10 @@
+{% load static %}
+
+<div id="cart-preview" class="container-fluid position-fixed cart-preview bg-white border-black">
+    {% if cart_items %}
+    <h2 class="cart-header mt-2 p-2">Product</h2>
+    <div class="divider bg-secondary"></div>
+    {% for item in cart_items %}
+    {% endfor %}
+    {% endif %}
+</div>

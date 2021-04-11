@@ -18,10 +18,10 @@ body {
 /* from Bulma - ensures font awesome icons stay centered and have consistent size */
 .icon {
     align-items: center;
-    display: inline-flex;
+    display: inline-flex !important;
     justify-content: center;
-    height: 1.5rem;
     width: 1.5rem;
+    line-height: 1.2em !important;
 }
 
 .logo {
@@ -66,12 +66,24 @@ body {
 .btn-black {
     background: black;
     color: white;
+    border: 1px solid black;
 }
 
 .btn-outline-black {
     background: white;
     color: black !important; /* use important to override link colors for <a> elements */
     border: 1px solid black;
+}
+
+.cart-btn-group {
+    background: black;
+    display: inline-flex;
+    vertical-align: top;
+}
+
+#cart-dropdown {
+    padding: .5rem 1rem;
+    border: none;
 }
 
 .shop-now-button:hover,
@@ -102,7 +114,7 @@ body {
     display: block;
     margin: 0 auto 10px auto;
     margin: 10px auto 0;
-    line-height: 24px;
+    line-height: 26px;
     text-align: center;
     margin-top: 0;
 }
@@ -149,6 +161,36 @@ div.btt-button > a.badge:hover {
     color: #fff !important;
 }
 
+.price {
+    font-size: 1.2rem;
+}
+
+.price-detail {
+    font-size: 2rem;
+}
+
+.cart-preview {
+    display: none;
+    max-width: 50rem;
+    min-height: 15rem;
+    max-height: 30rem;
+    right: 0;
+    z-index: 9999;
+    overflow-y: auto;
+    overflow-x: hidden;
+    border: 1px solid #000;
+    border-radius: 5px;
+    box-shadow: 1px 1px 10px;
+}
+
+.cart-header {
+    font-size: 1.5rem;
+}
+
+.cart-sub-header {
+    font-size: 1rem;
+}
+
 /* -------------------------------- Media Queries */
 
 /* Slightly larger container on xl screens */
@@ -183,6 +225,10 @@ div.btt-button > a.badge:hover {
     /* pad the top a bit when navbar is collapsed on mobile */
     .header-container {
         padding-top: 138px;
+    }
+
+    #cart-preview {
+        display: none !important; /* bootstrap override */
     }
 
     body {
