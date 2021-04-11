@@ -32,10 +32,9 @@
                     {% endif %}
                 </div>
             </div>
-            <div class="col-12 col-md-6 col-lg-4">
+            <div class="col-10 col-sm-8 col-md-6 col-lg-4">
                 <div class="product-details-container mb-5 mt-md-5">
-                    <p class="mb-0">{{ product.part_name }}</p>
-                    <p class="lead mb-0 text-start fw-bold">£{{ product.price }}</p>
+                    <p class="my-0">{{ product.part_name }}</p>
                     {% if product.category %}
                     <p class="small mt-1 mb-0">
                         <a href="{% url 'products' %}?category={{ product.category.name }}" class="text-muted">
@@ -76,14 +75,15 @@
                             </div>
                             
                             <!-- Keep shopping and add to cart buttons -->
-                            <div class="col{% if c %}-12 mt-2{% endif %}"></div>
-                                <a href="{% url 'products' %}" class="btn btn-outline-black rounded-0 mt-5">
+                            <div class="col{% if c %}-12 mt-2{% endif %}">
+                                <p class="lead me-2 mb-1 mt-5 fw-bold price-detail">£{{ product.price }}</p>
+                                <a href="{% url 'products' %}" class="btn btn-outline-black rounded-0">
                                     <span class="icon">
                                         <i class="fas fa-chevron-left"></i>
                                     </span>
                                     <span class="text-uppercase">Keep Shopping</span>
                                 </a>
-                                <input type="submit" class="btn btn-black rounded-0 text-uppercase mt-5" value="Add to Cart">
+                                <input type="submit" class="btn btn-black rounded-0 text-uppercase" value="Add to Cart">
                             </div>
                             <input type="hidden" name="redirect_url" value="{{ request.path }}">
                             {% endwith %}
