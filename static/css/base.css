@@ -161,6 +161,10 @@ div.btt-button > a.badge:hover {
     color: #fff !important;
 }
 
+.fa-star {
+    color: #ffd700;
+}
+
 .price {
     font-size: 1.2rem;
 }
