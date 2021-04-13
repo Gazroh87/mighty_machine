@@ -133,6 +133,9 @@
 {% include 'products/includes/quantity_input_script.html' %}
 
 <script type="text/javascript">
+    // Disable cart preview when viewing the cart
+    $("#cart-dropdown").prop("disabled", true);
+
     // Update quantity on click
     $('.update-link').click(function(e) {
         var form = $(this).prev('.update-form');

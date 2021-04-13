@@ -195,6 +195,23 @@ div.btt-button > a.badge:hover {
     font-size: 1rem;
 }
 
+/* -------------------------------- Bootstrap Toasts */
+
+.msg-container {
+    position: fixed;
+    top: 113px;
+    right: 15px;
+    z-index: 999999999;
+}
+
+.custom-toast {
+    overflow: visible;
+}
+
+.toast-capper {
+    height: 2px;
+}
+
 /* -------------------------------- Media Queries */
 
 /* Slightly larger container on xl screens */

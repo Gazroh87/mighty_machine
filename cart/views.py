@@ -1,4 +1,8 @@
-from django.shortcuts import render, redirect, reverse, HttpResponse
+from django.shortcuts import (
+    render, redirect, reverse, HttpResponse, get_object_or_404)
+
+from django.contrib import messages
+from products.models import Product
 
 # Create your views here.
 
@@ -10,8 +14,9 @@ def view_cart(request):
 
 
 def add_to_cart(request, item_id):
-    """ A a quantity of the specified product to the shopping cart """
+    """ Add a quantity of the specified product to the shopping cart """
 
+    product = get_object_or_404(Product, pk=item_id)
     quantity = int(request.POST.get('quantity'))
     redirect_url = request.POST.get('redirect_url')
     colour = None
@@ -30,8 +35,12 @@ def add_to_cart(request, item_id):
     else:
         if item_id in list(cart.keys()):
             cart[item_id] += quantity
+            messages.success(
+                request, f'Added another {product.part_name} to your cart')
         else:
             cart[item_id] = quantity
+            messages.success(
+                request, f'Added {product.part_name} to your cart')
 
     request.session['cart'] = cart
     return redirect(redirect_url)
@@ -40,6 +49,7 @@ def add_to_cart(request, item_id):
 def mod_cart(request, item_id):
     """ Modify the quantity of the specific product to the specific amount """
 
+    product = get_object_or_404(Product, pk=item_id)
     quantity = int(request.POST.get('quantity'))
     colour = None
     if 'product_colour' in request.POST:

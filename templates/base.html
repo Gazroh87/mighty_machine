@@ -55,7 +55,7 @@
                     <a href="{% url 'home' %}" id="logo">
                         <img src="{% static 'images/mighty-machine-logo.png' %}" class="logo" alt="MIGHTY MACHINE logo">
                     </a>
-                    <h5 class="logo-font sub-heading text-black my-0">All the Power and Speed you need</h5>
+                    <h5 class="logo-font sub-heading text-black my-0">All the <strong>Power and Speed</strong> you need</h5>
               </div>
 
               <!-- Search Bar for searching products -->
@@ -116,7 +116,7 @@
                                 </p>
                             </div>
                         </a>
-                        <button id="cart-dropdown" type="button" class="btn btn-black dropdown-toggle rounded-pill"></button>
+                        <button id="cart-dropdown" type="button" class="btn btn-black dropdown-toggle rounded-pill" data-bs-toggle="tooltip" data-placement="bottom" title="Click to preview your cart"></button>
                       </li>
                   </ul>
                   {% include 'includes/cart_preview.html' %}
@@ -140,7 +140,21 @@
       </header>
 
       {% if messages %}
-        <div class="msg-container"></div>
+        <div class="msg-container">
+            {% for message in messages %}
+                    {% with message.level as level %}
+                        {% if level == 40 %}
+                            {% include 'includes/toasts/toast_error.html' %}
+                        {% elif level == 30 %}
+                            {% include 'includes/toasts/toast_warning.html' %}
+                        {% elif level == 25 %}
+                            {% include 'includes/toasts/toast_success.html' %}
+                        {% else %}
+                            {% include 'includes/toasts/toast_info.html' %}
+                        {% endif %}
+                    {% endwith %}
+            {% endfor %}
+        </div>
       {% endif %}
 
       {% block page_header%}
@@ -150,7 +164,7 @@
       {% endblock %}
 
       {% block postloadjs %}
-        <script src="{% static 'js/base.js' %}"></script>
+        <script src="{% static 'js/base.js' %}" type="text/javascript"></script>
       {% endblock %}
   </body>
 </html> 
