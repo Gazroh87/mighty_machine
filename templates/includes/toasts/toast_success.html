@@ -14,7 +14,7 @@
         <div class="row">
             <div class="col">
                 {{ message }}
-                <hr class="mt-1 mb-3">git ast
+                <hr class="mt-1 mb-3">
             </div>
         </div>
         {% if grand_total %}
@@ -23,11 +23,19 @@
                 {% for item in cart_items %}
                     <div class="row">
                         <div class="col-3 my-1">
-                            <img class="w-100" src="{{ item.product.image.url }}">
+                            {% if item.product.image %}
+                            <img class="w-100" src="{{ item.product.image.url }}" alt="{{ item.product.name }}">
+                            {% else %}
+                            <img class="w-100" src="{{ MEDIA_URL }}noimage.png" alt="{{ item.product.name }}">
+                            {% endif %}
                         </div>
                         <div class="col-9">
                             <p class="my-0"><strong>{{ item.product.part_name }}</strong></p>
                             <p class="my-0 small">Colour: {% if item.product.has_colours %}{{ item.colour|upper }}{% else %}N/A{% endif %}</p>
+                            <p class="my-0 small text-muted">Qty: {{ item.quantity }}</p>
+                        </div>
+                    </div>
+                {% endfor %}
             </div>
             <div class="row">
                 <div class="col">
