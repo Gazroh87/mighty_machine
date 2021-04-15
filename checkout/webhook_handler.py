@@ -1,4 +1,11 @@
 from django.http import HttpResponse
+from django.conf import settings
+
+from .models import Order, OrderLineItem
+from products.models import Product
+
+import json
+import time
 
 
 class StripeWH_Handler:
@@ -12,13 +19,15 @@ class StripeWH_Handler:
         Handle a generic/unknown/unexpected webhook event
         """
         return HttpResponse(
-            content=f'Webhook received: {event["type"]}',
+            content=f'Unhandled Webhook received: {event["type"]}',
             status=200)
 
     def handle_payment_intent_succeeded(self, event):
         """
         Handle the payment_intent.succeeded webhook from Stripe
         """
+        intent = event.data.object
+        print(intent)
         return HttpResponse(
             content=f'Webhook received: {event["type"]}',
             status=200)
