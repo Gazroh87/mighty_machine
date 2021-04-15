@@ -20,7 +20,7 @@
                 <hr>
             </div>
         </div>
-
+        <!-- Product details -->
         <div class="row">
             <div class="col">
                 {% if cart_items %}
@@ -84,6 +84,7 @@
                                     </td>
                                 </tr>
                             {% endfor %}
+                            <!-- Price of cart items plus delivery and then grand total -->
                             <tr>
                                 <td colspan="5" class="pt-5 text-end">
                                     <h6><strong>Cart Total: £{{ total|floatformat:2 }}</strong></h6>
@@ -96,6 +97,7 @@
                                     {% endif %}
                                 </td>
                             </tr>
+                            <!-- User has the option to return to products and shop more or proceed to checkout -->
                             <tr>
                                 <td colspan="5" class="text-end">
                                     <a href="{% url 'products' %}" class="btn btn-outline-black rounded-0 btn-lg">
