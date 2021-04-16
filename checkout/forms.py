@@ -1,6 +1,8 @@
 from django import forms
 from .models import Order
 
+from django_countries.widgets import CountrySelectWidget
+
 
 class OrderForm(forms.ModelForm):
     class Meta:
@@ -9,6 +11,7 @@ class OrderForm(forms.ModelForm):
                   'street_address1', 'street_address2',
                   'town_or_city', 'postcode', 'country',
                   'county',)
+        widgets = {'country': CountrySelectWidget()}
 
     def __init__(self, *args, **kwargs):
         """
@@ -34,6 +37,6 @@ class OrderForm(forms.ModelForm):
                     placeholder = f'{placeholders[field]} *'
                 else:
                     placeholder = placeholders[field]
-            self.fields[field].widget.attrs['placeholder'] = placeholder
+                self.fields[field].widget.attrs['placeholder'] = placeholder
             self.fields[field].widget.attrs['class'] = 'stripe-style-input'
             self.fields[field].label = False
