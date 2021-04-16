@@ -8,8 +8,8 @@ from .forms import OrderForm
 from .models import Order, OrderLineItem
 
 from products.models import Product
-from profiles.forms import UserProfileForm
 from profiles.models import UserProfile
+from profiles.forms import UserProfileForm
 from cart.contexts import cart_contents
 
 import stripe
@@ -87,6 +87,7 @@ def checkout(request):
                     order.delete()
                     return redirect(reverse('view cart'))
 
+             # Save the info to the user's profile if all is well
             request.session['save_info'] = 'save-info' in request.POST
             return redirect(reverse(
                 'checkout_success', args=[order.order_number]))

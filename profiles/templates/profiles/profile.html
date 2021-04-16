@@ -61,7 +61,7 @@
                                             <li class="small">
                                                 {% if item.product.has_colours %}
                                                     Colour {{ item.product.colour|upper }}
-                                                {% endif %}{{ item.product.name }} x{{ item.quantity }}
+                                                {% endif %}{{ item.product.part_name }} x{{ item.quantity }}
                                             </li>
                                         {% endfor %}
                                     </ul>
