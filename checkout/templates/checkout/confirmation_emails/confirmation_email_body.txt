@@ -1,0 +1,22 @@
+Hello {{ order.full_name }}!
+
+This is a confirmation of your order at Mighty Machine. Your order information is below:
+
+Order Number: {{ order.order_number }}
+Order Date: {{ order.date }}
+
+Order Total: ${{ order.order_total }}
+Delivery: ${{ order.delivery_cost }}
+Grand Total: ${{ order.grand_total }}
+
+Your order will be shipped to {{ order.street_address1 }} in {{ order.town_or_city }}, {{ order.country }}.
+
+SHould we need to contact you, we'll use the phone number you have provided: {{ order.phone_number }}.
+
+If you have any questions, feel free to contact us at {{ contact_email }}.
+
+Thank you for shopping with us!
+
+Sincerely,
+
+Mighty Machine
