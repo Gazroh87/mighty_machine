@@ -167,6 +167,21 @@
 
       {% block postloadjs %}
         <script src="{% static 'js/base.js' %}" type="text/javascript"></script>
+        <script type="text/javascript">
+        // Remove item and reload on click
+        $('.remove-item').click(function(e) {
+            var csrfToken = "{{ csrf_token }}";
+            var itemId = $(this).attr('id').split('remove_')[1];
+            var colour = $(this).data('product_colour');
+            var url = `/cart/remove/${itemId}/`;
+            var data = {'csrfmiddlewaretoken': csrfToken, 'product_colour': colour};
+
+            $.post(url, data)
+            .done(function() {
+                location.reload();
+            });
+        })
+        </script>
       {% endblock %}
   </body>
 </html> 

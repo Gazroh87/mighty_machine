@@ -15,5 +15,9 @@ $(document).ready(function () {
     function displayCart() {
         $("#cart-preview").fadeToggle(200);
     }
-});
 
+    $('#close-btn').on('click', function(){
+    $('#cart-dropdown').trigger('click');
+    });
+
+});

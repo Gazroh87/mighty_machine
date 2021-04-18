@@ -158,6 +158,12 @@ body {
     z-index: -1;
 }
 
+.card-img-top {
+    width: 100%;
+    height: 168px;
+    object-fit: contain;
+}
+
 a.category-badge > span.badge:hover,
 div.btt-button > a.badge:hover {
     background: #212529 !important;
@@ -191,11 +197,35 @@ div.btt-button > a.badge:hover {
 }
 
 .cart-header {
+    display: flex;
+    align-items: center;
+    padding: .5rem .75rem;
+    justify-content: space-between;
+    position: relative;
     font-size: 1.5rem;
+    background-clip: padding-box;
+    border-bottom: 1px solid rgba(0,0,0,.05);
+    border-top-left-radius: calc(.25rem - 1px);
+    border-top-right-radius: calc(.25rem - 1px);
+}
+
+.cart-preview-wrapper {
+    height: 200px;
+    overflow-x: hidden;
+    overflow-y: auto;
 }
 
 .cart-sub-header {
     font-size: 1rem;
+}
+
+.fa-times {
+    cursor: pointer;
+}
+
+.remove-icon {
+    margin-top: 1.8rem;
+    width: 100%;
 }
 
 input[name='query']::placeholder {
@@ -223,6 +253,10 @@ input[name='query']::placeholder {
     align-items: flex-end;
     justify-content: space-between;
     position: relative;
+}
+
+.toast-img {
+    width: 10%;
 }
 
 /* from CSS-tricks.com: https://css-tricks.com/snippets/css/css-triangle/ */
