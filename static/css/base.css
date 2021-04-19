@@ -56,30 +56,34 @@ body {
     font-size: 1.5em;
 }
 
+ul li .nav-link:hover {
+    color: #6c757d !important;
+}
+
 /* -------------------------------- Buttons */
 
 .shop-now-button {
-    background: black;
-    color: white;
+    background: #000;
+    color: #fff;
     min-width: 260px;
     margin: 0 auto;
     display: block;
 }
 
 .btn-black {
-    background: black;
-    color: white;
-    border: 1px solid black;
+    background: #000;
+    color: #fff;
+    border: 1px solid #000;
 }
 
 .btn-outline-black {
-    background: white;
-    color: black !important; /* use important to override link colors for <a> elements */
-    border: 1px solid black;
+    background: #fff;
+    color: #000 !important; /* use important to override link colors for <a> elements */
+    border: 1px solid #000;
 }
 
 .cart-btn-group {
-    background: black;
+    background: #000;
     display: inline-flex;
     vertical-align: top;
 }
@@ -87,6 +91,7 @@ body {
 #cart-dropdown {
     padding: .5rem 1rem;
     border: none;
+    color: #fff;
 }
 
 .shop-now-button:hover,
@@ -94,32 +99,28 @@ body {
 .shop-now-button:focus,
 .btn-black:hover,
 .btn-black:active,
-.btn-black:focus,
+.btn-black:focus {
+    background: #6c757d;
+    color: #fff !important;
+}
+
 .btn-outline-black:hover,
 .btn-outline-black:active,
 .btn-outline-black:focus {
-    background: #222;
-    color: white !important;
+    background: #212529;
+    color: #fff !important;
 }
 
 .btt-button {
     width: 64px;
     position: fixed;
+    z-index: 1000;
     bottom: 12px;
     right: 12px;
 }
 
-.btt-button a {
-    display: block;
-}
-
 .btt-button i {
-    display: block;
-    margin: 0 auto 10px auto;
-    margin: 10px auto 0;
     line-height: 26px;
-    text-align: center;
-    margin-top: 0;
 }
 
 .btt-button span{
@@ -127,11 +128,13 @@ body {
     display: block;
 }
 
+.nav-item a,
 .btt-link,
 .update-link,
 .remove-item {
     cursor: pointer;
     text-decoration: none;
+    display: block;
 }
 
 /* -------------------------------- Other */
@@ -141,7 +144,7 @@ body {
 }
 
 .border-black {
-    border: 1px solid black !important;
+    border: 1px solid #000 !important;
 }
 
 .bg-black {
@@ -154,7 +157,7 @@ body {
     top: 0;
     left: 0;
     position: fixed;
-    background: white;
+    background: #fff;
     z-index: -1;
 }
 
@@ -164,10 +167,19 @@ body {
     object-fit: contain;
 }
 
+ul .nav-item:hover,
+ul .nav-item:hover > a span,
+ul .nav-item > a:hover,
+ul .nav-item a span:hover,
 a.category-badge > span.badge:hover,
-div.btt-button > a.badge:hover {
+.btt-button > a.badge:hover {
     background: #212529 !important;
     color: #fff !important;
+}
+
+.dropdown-item:active {
+    background-color: #e9ecef;
+    color: #1e2125;
 }
 
 .fa-star {
@@ -186,8 +198,7 @@ div.btt-button > a.badge:hover {
     display: none;
     max-width: 50rem;
     min-height: 15rem;
-    max-height: 30rem;
-    right: 0;
+    right: 15px;
     z-index: 9999;
     overflow-y: auto;
     overflow-x: hidden;
@@ -196,7 +207,7 @@ div.btt-button > a.badge:hover {
     box-shadow: 1px 1px 10px;
 }
 
-.cart-header {
+.cart-head {
     display: flex;
     align-items: center;
     padding: .5rem .75rem;
@@ -210,12 +221,12 @@ div.btt-button > a.badge:hover {
 }
 
 .cart-preview-wrapper {
-    height: 200px;
+    height: 25vh;
     overflow-x: hidden;
     overflow-y: auto;
 }
 
-.cart-sub-header {
+.cart-sub-head {
     font-size: 1rem;
 }
 
@@ -230,6 +241,25 @@ div.btt-button > a.badge:hover {
 
 input[name='query']::placeholder {
     color: #aab7c4;
+}
+
+table.scroll {
+    width: 100%;
+}
+
+table.scroll tbody,
+table.scroll thead { display: block; }
+
+table.scroll tbody {
+    height: 50vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.cart-item-img {
+    width: 100%;
+    height: 168px;
+    object-fit: contain;
 }
 
 /* -------------------------------- Bootstrap Toasts */
@@ -265,7 +295,7 @@ input[name='query']::placeholder {
     height: 0; 
     border-left: 4px solid transparent;
     border-right: 4px solid transparent; 
-    border-bottom: 10px solid black;
+    border-bottom: 10px solid #000;
     position: absolute;
     top: -10px;
     right: 36px;
@@ -305,7 +335,7 @@ input[name='query']::placeholder {
 }
 
 .cart-notification-wrapper {
-    height: 100px;
+    height: 10vh;
     overflow-x: hidden;
     overflow-y: auto;
 }
@@ -356,8 +386,8 @@ input[name='query']::placeholder {
 .allauth-form-inner-content button:hover,
 .allauth-form-inner-content input[type='submit']:hover {	
 	color: #fff;
-    background-color: #222;
-    border-color: #222;
+    background-color: #212529;
+    border-color: #212529;
 }
 
 .allauth-form-inner-content a {
@@ -418,21 +448,34 @@ input[name='query']::placeholder {
 }
 
 @media (max-width: 991px) {
+    /* pad the top a bit when navbar is collapsed on mobile */
+    .header-container {
+        padding-top: 138px;
+    }
+
+    body {
+        height: calc(100vh - 138px);
+    }
+
+    .navbar-toggler {
+        padding: .375rem;
+        font-size: 1rem;
+    }
+
     .mob-top-header,
     .navbar-nav {
         display: contents!important;
     }
 
-    /* pad the top a bit when navbar is collapsed on mobile */
-    .header-container {
-        padding-top: 138px;
+    .mob-top-header ul li a div p {
+        display: none;
     }
 
     #cart-preview {
         display: none !important; /* bootstrap override */
     }
 
-    body {
-        height: calc(100vh - 138px);
+    .btt-button {
+    width: 44px;
     }
 }

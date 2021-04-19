@@ -22,10 +22,10 @@
         </div>
         <!-- Product details -->
         <div class="row">
+            {% if cart_items %}
             <div class="col">
-                {% if cart_items %}
                     <div class="table-responsive rounded">
-                        <table class="table table-sm table-borderless">
+                        <table class="table table-sm table-borderless scroll">
                             <thead class="text-black">
                                 <tr>
                                     <th scope="col">Product Info</th>
@@ -35,14 +35,14 @@
                                     <th scope="col">Subtotal</th>
                                 </tr>
                             </thead>
-
+                            <tbody>
                             {% for item in cart_items %}
-                                <tr>
+                                <tr class="{% if forloop.counter|divisibleby:2 %} bg-light{% endif %}">
                                     <td class="p-3 w-25">
                                         {% if item.product.image %}
-                                        <img class="img-fluid rounded" src="{{ item.product.image.url }}" alt="{{ item.product.part_name }}">
+                                        <img class="img-fluid cart-item-img" src="{{ item.product.image.url }}" alt="{{ item.product.part_name }}">
                                         {% else %}
-                                        <img class="img-fluid rounded" src="{{ MEDIA_URL }}noimage.png" alt="{{ item.product.part_name }}">
+                                        <img class="img-fluid cart-item-img" src="{{ MEDIA_URL }}noimage.png" alt="{{ item.product.part_name }}">
                                         {% endif %}
                                     </td>
                                     <td class="py-3">
@@ -89,39 +89,43 @@
                                     </td>
                                 </tr>
                             {% endfor %}
-                            <!-- Price of cart items plus delivery and then grand total -->
-                            <tr>
-                                <td colspan="5" class="pt-5 text-end">
-                                    <h6><strong>Cart Total: £{{ total|floatformat:2 }}</strong></h6>
-                                    <h6>Delivery: £{{ delivery|floatformat:2 }}</h6>
-                                    <h4 class="mt-4"><strong>Grand Total: £{{ grand_total|floatformat:2 }}</strong></h4>
-                                    {% if free_delivery_delta > 0 %}
-                                        <p class="mb-1 text-danger">
-                                            You could get free delivery by spending just <strong>£{{ free_delivery_delta }}</strong> more!
-                                        </p>
-                                    {% endif %}
-                                </td>
-                            </tr>
-                            <!-- User has the option to return to products and shop more or proceed to checkout -->
-                            <tr>
-                                <td colspan="5" class="text-end">
-                                    <a href="{% url 'products' %}" class="btn btn-outline-black rounded-0 btn-lg">
-                                        <span class="icon">
-                                            <i class="fas fa-chevron-left"></i>
-                                        </span>
-                                        <span class="text-uppercase">Keep Shopping</span>
-                                    </a>
-                                    <a href="{% url 'checkout' %}" class="btn btn-black rounded-0 btn-lg">
-                                        <span class="text-uppercase">Secure Checkout</span>
-                                        <span class="icon">
-                                            <i class="fas fa-lock"></i>
-                                        </span>
-                                    </a>
-                                </td>
-                            </tr>
+                            </tbody>
+                            <tfoot>
+                                <!-- Price of cart items plus delivery and then grand total -->
+                                <tr>
+                                    <td colspan="5" class="pt-5 text-end">
+                                        <h6><strong>Cart Total: £{{ total|floatformat:2 }}</strong></h6>
+                                        <h6>Delivery: £{{ delivery|floatformat:2 }}</h6>
+                                        <h4 class="mt-4"><strong>Grand Total: £{{ grand_total|floatformat:2 }}</strong></h4>
+                                        {% if free_delivery_delta > 0 %}
+                                            <p class="mb-1 text-danger">
+                                                You could get free delivery by spending just <strong>£{{ free_delivery_delta }}</strong> more!
+                                            </p>
+                                        {% endif %}
+                                    </td>
+                                </tr>
+                                <!-- User has the option to return to products and shop more or proceed to checkout -->
+                                <tr>
+                                    <td colspan="5" class="text-end">
+                                        <a href="{% url 'products' %}" class="btn btn-outline-black rounded-0 btn-lg">
+                                            <span class="icon">
+                                                <i class="fas fa-chevron-left"></i>
+                                            </span>
+                                            <span class="text-uppercase">Keep Shopping</span>
+                                        </a>
+                                        <a href="{% url 'checkout' %}" class="btn btn-black rounded-0 btn-lg">
+                                            <span class="text-uppercase">Secure Checkout</span>
+                                            <span class="icon">
+                                                <i class="fas fa-lock"></i>
+                                            </span>
+                                        </a>
+                                    </td>
+                                </tr>
+                            </tfoot>
                         </table>
                     </div>
                 {% else %}
+                <div class="col text-center">
                     <p class="lead mb-5">Your cart is empty.</p>
                     <a href="{% url 'products' %}" class="btn btn-outline-black rounded-0 btn-lg">
                         <span class="icon">
@@ -129,7 +133,8 @@
                         </span>
                         <span class="text-uppercase">Keep Shopping</span>
                     </a>
-                {% endif %}
+                </div>
+            {% endif %}
             </div>
         </div>
     </div>
@@ -167,5 +172,23 @@
              location.reload();
          });
     })
+
+    // Change the selector if needed
+    var $table = $('table.scroll'),
+        $bodyCells = $table.find('tbody tr:first').children(),
+        colWidth;
+
+    // Adjust the width of thead cells when window resizes
+    $(window).resize(function() {
+        // Get the tbody columns width array
+        colWidth = $bodyCells.map(function() {
+            return $(this).width();
+        }).get();
+        
+        // Set the width of thead columns
+        $table.find('thead tr').children().each(function(i, v) {
+            $(v).width(colWidth[i]);
+        });    
+    }).resize(); // Trigger resize handler
 </script>
 {% endblock %}

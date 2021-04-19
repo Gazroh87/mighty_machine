@@ -1,8 +1,8 @@
 <div class="navbar-collapse collapse" id="main-nav">
     <ul class="navbar-nav w-auto mx-auto">
-        <li class="nav-item dropdown px-2">
-            <a class="logo-font fw-bold nav-link text-black me-5" href="#" id="all-products-link" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                All Products
+        <li class="nav-item dropdown mx-2">
+            <a class="logo-font fw-bold main-nav-link text-black px-3" href="#" id="all-products-link" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <span class="p-1">All Products</span>
             </a>
             <!-- Dropdown menu for sorting all products by field -->
             <div class="dropdown-menu border-0" aria-labelledby="all-products-link">
@@ -13,15 +13,15 @@
             </div>
         </li>
         <!-- Dropdown menus for categories of products -->
-        <li class="nav-item px-2">
-            <a class="logo-font fw-bold nav-link text-black me-5" href="{% url 'products' %}?category=cases" id="case-link">
-                Cases
+        <li class="nav-item mx-2">
+            <a class="logo-font fw-bold main-nav-link text-black px-3" href="{% url 'products' %}?category=cases" id="case-link">
+                <span class="p-1">Cases</span>
             </a>
         </li>
 
-        <li class="nav-item dropdown px-2">
-            <a class="logo-font fw-bold nav-link text-black me-5" href="#" id="internals-link" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Internal Components
+        <li class="nav-item dropdown mx-2">
+            <a class="logo-font fw-bold main-nav-link text-black px-3" href="#" id="internals-link" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <span class="p-1">Internal Components</span>
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="internals-link">
                 <a href="{% url 'products' %}?category=motherboard" class="dropdown-item">Motherboard</a>
@@ -34,9 +34,9 @@
             </div>
         </li>
 
-        <li class="nav-item dropdown px-2">
-            <a class="logo-font fw-bold nav-link text-black me-5" href="#" id="peripherals-link" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Peripherals
+        <li class="nav-item dropdown mx-2">
+            <a class="logo-font fw-bold main-nav-link text-black px-3" href="#" id="peripherals-link" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                 <span class="p-1">Peripherals</span>
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="peripherals-link">
                 <a href="{% url 'products' %}?category=keyboard" class="dropdown-item"><i class="fas fa-keyboard fa-fw"></i> Keyboard</a>
@@ -45,9 +45,9 @@
             </div>
         </li>
 
-        <li class="nav-item dropdown px-2">
-            <a class="logo-font fw-bold nav-link text-black" href="#" id="hot_deals-link" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Hot Deals
+        <li class="nav-item dropdown mx-2">
+            <a class="logo-font fw-bold main-nav-link text-black px-3" href="#" id="hot_deals-link" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                 <span class="p-1">Hot Deals</span>
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="hot_deals-link">
                 <a href="{% url 'products' %}?category=new_items" class="dropdown-item">New Items</a>

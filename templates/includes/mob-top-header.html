@@ -32,7 +32,7 @@
         </li>
         <!-- Account Dropdown menu -->
         <li class="list-inline-item dropdown">
-            <a class="text-black nav-link d-block d-lg-none" href="#" id="user-options" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a class="text-black nav-link d-block d-lg-none" href="#" id="user-options-mob" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 <div class="text-center">
                     <div><i class="fas fa-user fa-lg"></i></div>
                     <p class="my-0 logo-font">Account</p>
@@ -56,7 +56,7 @@
         </li>
         <!-- Shopping cart link with grand total -->
         <li class="list-inline-item">
-            <a class="{% if grand_total %}text-primary fw-bold{% else %}text-black{% endif %} nav-link d-block d-lg-none" href="{% url 'view_cart' %}">
+            <a class="{% if grand_total %}text-info fw-bold{% else %}text-black{% endif %} nav-link d-block d-lg-none" href="{% url 'view_cart' %}">
                 <div class="text-center">
                     <div><i class="fas fa-shopping-cart fa-lg"></i></div>
                     <p class="my-0">
