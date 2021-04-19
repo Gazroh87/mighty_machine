@@ -17,7 +17,6 @@ def add_to_cart(request, item_id):
     """ Add a quantity of the specified product to the shopping cart """
 
     product = get_object_or_404(Product, pk=item_id)
-    request.session['item_added'] = {}
     quantity = int(request.POST.get('quantity'))
     redirect_url = request.POST.get('redirect_url')
     colour = None
@@ -49,7 +48,6 @@ def add_to_cart(request, item_id):
             messages.success(
                 request, f'Added {product.part_name} to your cart')
 
-    request.session['added_item'] = item_id
     request.session['cart'] = cart
     return redirect(redirect_url)
 

@@ -61,6 +61,11 @@ select option[value=""] {
     color: #aab7c4 !important;
 }
 
+.submit-button a,
+.submit-button button {
+    width: 49.67%;
+}
+
 #loading-overlay {
     display: none;
     position: fixed;
