@@ -18,23 +18,14 @@ Another blue button should appear to click: *Open Browser*.
 
 In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
 
-## Updates Since The Instructional Video
+<p align="center"> 
+<img src="https://github.com/Gazroh87/mighty_machine/blob/master/static/images/mighty-machine-logo.png">
+</p>
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+# ReadMe
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
-
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
-
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
-
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
-
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
-
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+Link to view the website - htts://
 
 I'm building an E-commerce website for selling PC components/accessories and is called Mighty Machine. 
 Users can browse through different products and will be able to purchase them using Stripe. Initially the website 
@@ -46,6 +37,7 @@ they will be able to purchase them by entering in shipping and payment details. 
 their purchase history linked to their username. If the customer currently does not have an account then they will 
 be able to create one. When they create an account, they will also be able to change their email address, password 
 and other details related to their account.
+
 
 # UX
 
@@ -61,7 +53,7 @@ products.
 *	I want to be able to see the different categories and be able to sort through them without having to see all the 
 products I might not be interested in.
 *	I want to be able to search for a specific product to see if it is available for purchase on the website.
-*	I want to see if the product(s) I want is in stock so I know they are available to purchase.
+*	(FUTURE) I want to see if the product(s) I want is in stock so I know they are available to purchase.
 
 ### Purchasing
 *	Once I have selected the items I want to buy and added them to the cart I want a notification with them shown 
@@ -85,4 +77,45 @@ successfully.
 ## Admin
 *	I want to be able to add a new product on the site.
 *	I want to be able to edit or update an existing product on the site.
-*	I want to be able to delete and remove an item which I no longer want on the site.
+*	I want to be able to delete and remove a product which I no longer want users to be able to purchase.
+
+
+# Features
+## Existing Features
+
+
+## Future features to implement
+
+
+## Technologies Used
+* I have used HTML, CSS, JavaScript and Python programming languages.
+* I used Gitpod (https://gitpod.io/) to build the website.
+* I used Django as I wanted to utilise a python based web framework for this project.
+* I used Django-Allauth (https://django-allauth.readthedocs.io/en/latest/installation.html) for the authentication system of the project as it has the security features I require.
+* I used Django Crispy Forms to helps to manage the forms and able adjust forms properties in the backend.
+* I used Django Countries which was used for the country field for user to be able to selct the contry they are from.
+* I used Stripe to set up the payment methods for the site allowing customers to pay by online card transactions.
+* I used Bootstrap for its mobile-first, responsive and simplistic layouts.
+* I used Pillow to be able to use the image field for the products on the site.
+* I used JQuery (https://jquery.com/) to decrease the amount of JavaScript code in the project.
+* I used Font Awesome (https://fontawesome.com) to add the icons used in the site.
+* Block templates were used so I don’t have to repeat my code to save time.
+
+
+## Committing files to GitHub
+When I make changes to each file I push them from GitHub from GitPod and below are the steps I do to do this. This is essential as to not losing any of the work I have done.
+1.	On my GitPod project scroll down and click on the command prompt at the bottom.
+2. Check status by typing in ‘git status’.
+3.	Type ‘git add .’ to add all files for staging or 'git add filepath' to add select files by path.
+4.	Type ‘git commit -m "Message" to commit the files.
+5.	Type ‘git push’ to push the files to GitHub.
+
+
+## Credits
+Product images - 
+
+Product descptions - 
+
+Logo - Was created in 
+
+Code Institte includeing the Boutique Ado project which helped me alot.
