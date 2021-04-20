@@ -1,6 +1,10 @@
 .order-history {
-    max-height: 416px; /* height of profile form + submit button */
+    max-height: 50vh; /* was 416px height of profile form + submit button */
     overflow-y: auto;
+}
+
+.hiddenRow {
+    padding: 0 !important;
 }
 
 #profile-update-form .form-control {

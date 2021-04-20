@@ -262,6 +262,10 @@ table.scroll tbody {
     object-fit: contain;
 }
 
+.cart-details {
+    width: 46.88rem;
+}
+
 /* -------------------------------- Bootstrap Toasts */
 
 .msg-container {

@@ -37,7 +37,8 @@
                         <p class="mb-1 mt-0 small text-muted">Subtotal</p>
                     </div>
                 </div>
-                {% for item in cart_items %}
+                <div class="order-summary-wrapper">
+                    {% for item in cart_items %}
                     <div class="row {% if forloop.counter|divisibleby:2 %} bg-light{% endif %}">
                         <div class="col-2 mb-1">
                             <a href="{% url 'product_detail' item.product.id %}">
@@ -57,7 +58,8 @@
                             <p class="my-0 small text-muted">£{{ item.product.price | calc_subtotal:item.quantity }}</p>
                         </div>
                     </div>
-                {% endfor %}
+                    {% endfor %}
+                </div>
                 <!-- Total cost details -->
                 <hr class="my-0">
                 <div class="row text-black text-end">

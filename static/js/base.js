@@ -19,5 +19,5 @@ $(document).ready(function () {
     $('#close-btn').on('click', function(){
     $('#cart-dropdown').trigger('click');
     });
-
+  
 });
