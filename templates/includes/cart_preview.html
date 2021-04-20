@@ -51,17 +51,17 @@
         </div>
         {% endfor %}
     </div>
-    <div class="cart-details pe-2 border-top">
+    <div class="cart-details px-2 border-top">
         <div class="row my-2">
-            <div class="col-10 text-end">
+            <div class="col-6 text-end">
                 <h4>Grand total</h4>
             </div>
-            <div class="col-2 text-end">
+            <div class="col-6 text-start">
                 <h4 class="preview-grand-total">£{{ grand_total|floatformat:2 }}</h4>
             </div>
         </div>
         <div class="row pb-1">
-            <div class="col-12 text-end text-white d-flex justify-content-end">
+            <div class="col-12 text-end text-white d-flex justify-content-evenly">
                 <a class="btn btn-outline-black rounded-0 btn-lg update-cart-btn" href="{% url 'view_cart' %}">
                     <span class="icon">
                         <i class="fas fa-shopping-cart"></i>

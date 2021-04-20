@@ -82,6 +82,18 @@ ul li .nav-link:hover {
     border: 1px solid #000;
 }
 
+.delete-btn {
+    background: #fff;
+    color: #dc3545;
+    border: 1px solid #000;
+}
+
+.edit-btn {
+    background: #ffc107;
+    color: #000 !important; /* use important to override link colors for <a> elements */
+    border: 1px solid #000;
+}
+
 .cart-btn-group {
     background: #000;
     display: inline-flex;
@@ -99,14 +111,20 @@ ul li .nav-link:hover {
 .shop-now-button:focus,
 .btn-black:hover,
 .btn-black:active,
-.btn-black:focus {
+.btn-black:focus,
+.edit-btn:hover,
+.edit-btn:active,
+.edit-btn:focus {
     background: #6c757d;
     color: #fff !important;
 }
 
 .btn-outline-black:hover,
 .btn-outline-black:active,
-.btn-outline-black:focus {
+.btn-outline-black:focus,
+.delete-btn:hover,
+.delete-btn:active,
+.delete-btn:focus {
     background: #212529;
     color: #fff !important;
 }
