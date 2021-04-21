@@ -10,18 +10,56 @@
 {% endblock %}
 
 {% block content %}
-    <div class="container h-100">
+    <div class="container-fluid h-100 mb-5">
+        <div id="slideshow" class="w-100">
+            <img src="/media/home_bg.jpg">
+            <img src="/media/home_bg2.jpg">
+            <img src="/media/home_bg3.jpg">
+            <img src="/media/home_bg4.jpg">
+            <img src="/media/home_bg5.jpg">
+            <img src="/media/home_bg6.jpg">
+            <img src="/media/home_bg7.jpg">
+        </div>
         <div class="row h-100">
-            <div class="col-7 col-md-6 my-auto">
-                <h1 class="display-4 logo-case text-black">
-                    The Latest tech is here!
+            <div class="col-7 col-md-4 offset-md-1 my-auto shadow-lg jumbotron">
+                <img src="{% static '/images/mm-pcparts-logo.png' %}" class="hero-logo mx-auto d-block my-2" alt="MM PC Parts logo">
+                <h1 class="display-4 logo-font mt-2 text-center">
+                    The Latest tech <br> has arrived...
                 </h1>
                 <div class="my-5">
                     <h4>
-                        <a href="{% url 'products' %}" class="shop-now-button btn btn-lg rounded-0 logo-case py-3">
+                        <a href="{% url 'products' %}" class="shop-now-button btn btn-lg rounded-0 logo-case py-3 col-6 mx-auto">
                             Shop Now
                         </a>
                     </h4>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="container text-center">
+            <h2 class="logo-font fw-bold">Be Inspired</h2>
+            <h3 class="logo-font mb-4">What will you build?</h3>
+            <hr class="w-50 mb-1 mx-auto">
+        </div>
+        <div class="row hp-section-1 mt-4">
+            <div class="container">
+                <div class="row row-cols-1 row-cols-md-3 mb-5">
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="card h-100">
+                            <img src="/media/pc_blue.jpg" alt="blue gaming computer">
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="card h-100">
+                            <img src="/media/pc_purple.jpg" alt="purple gaming computer">
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="card h-100">
+                            <img src="/media/pc_red.jpg" alt="red gaming computer">
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
