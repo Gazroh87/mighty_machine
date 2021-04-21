@@ -12,12 +12,26 @@
 
 {% block content %}
     <div class="overlay"></div>
-    <div class="container mb-2">
+    <div class="container mb-2 cart-container">
         <div class="row">
             <div class="col">
                 <hr>
                 <h2 class="logo-font mb-4">Shopping Cart</h2>
                 <hr>
+            </div>
+        </div>
+        <!--- Breadcrumbs --->
+        <div class="row shop-top-row">
+            <div class="col-12">
+                <div class="breadcrumbs">
+                    <p class="breadcrumbs-text">
+                        <a href="{% url 'home' %}" class="breadcrumb-link">Home</a>
+                        |
+                        <a href="{% url 'products' %}" class="breadcrumb-link">Products Home</a>
+                        |
+                        <span class="active-breadcrumb fw-bold">Shopping Cart</span>
+                    </p>
+                </div>
             </div>
         </div>
         <!-- Product details -->
@@ -80,9 +94,9 @@
                                                 </div>
                                             </div>
                                         </form>
-                                        <a class="update-link text-info float-end"><small>Update</small></a>
-                                        <a class="remove-item text-danger float-start" id="remove_{{ item.item_id }}" 
-                                            data-product_colour="{{ item.colour }}"><small>Remove</small></a>
+                                        <a class="update-link float-end fw-bold"><small>Update</small></a>
+                                        <a class="remove-item text-black float-start fw-bold" id="remove_{{ item.item_id }}" 
+                                            data-product_colour="{{ item.colour }}"><i class="fas fa-trash-alt"></i><small> Remove</small></a>
                                     </td>
                                     <td class="py-3">
                                         <p class="my-0">£{{ item.product.price | calc_subtotal:item.quantity }}</p>
@@ -126,7 +140,7 @@
                     </div>
                 {% else %}
                 <div class="col text-center">
-                    <p class="lead mb-5">Your cart is empty.</p>
+                    <p class="lead mb-5">Your cart is empty. Don't miss out on our great deals!</p>
                     <a href="{% url 'products' %}" class="btn btn-outline-black rounded-0 btn-lg">
                         <span class="icon">
                             <i class="fas fa-chevron-left"></i>

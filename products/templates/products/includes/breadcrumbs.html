@@ -1,0 +1,22 @@
+<div class="breadcrumbs">
+    <p class="breadcrumbs-text">
+        <a href="{% url 'home' %}" class="breadcrumb-link">Home</a>
+        |
+        <a href="{% url 'products' %}" class="breadcrumb-link">Products Home</a>
+        |
+        <!-- category breadcrumb -->
+        {% if current_categories %}
+        {% for category in current_categories %}
+        <span class="active-breadcrumb fw-bold">{{ category.friendly_name }} ({{ products|length}})</span>
+        {% endfor %}
+        <!-- search query breadcrumb -->
+        {% elif search_term %}
+        {{ products|length }} Products{% if search_term %} found searching <strong>"{{ search_term }}"</strong>{% endif %}
+        <!-- product tag breadcrumb -->
+        {% elif product_tag %}
+        <span class="active-breadcrumb fw-bold">{{ product_tag }} products ({{ products|length}})</span>
+        {% else %}
+        <span class="active-breadcrumb fw-bold">All products ({{ products|length}})</span>
+        {% endif %}
+    </p>
+</div>
