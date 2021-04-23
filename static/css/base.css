@@ -18,6 +18,30 @@ a {
     text-decoration: none;
 }
 
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2.5rem;
+}
+
+h3 {
+    font-size: 2.2rem;
+}
+
+h4 {
+    font-size: 2rem;
+}
+
+h5 {
+    font-size: 1.5rem;
+}
+
+p, .lead {
+    font-size: 1.2rem;
+}
+
 .cart-container,
 .product-detail-container,
 .checkout-success-container {
@@ -115,6 +139,7 @@ a {
     align-items: center;
     display: inline-flex !important;
     justify-content: center;
+    height: 1.5rem;
     width: 1.5rem;
     line-height: 1.2em !important;
 }
@@ -145,6 +170,14 @@ a {
     letter-spacing: .1rem;
     text-transform: uppercase;
     font-family: 'Iceland', sans-serif;
+}
+
+.main-nav-link {
+    font-size: 1.5rem;
+}
+
+.fa-shopping-cart:before {
+    font-size: 1.5rem;
 }
 
 .nav-item {
@@ -676,26 +709,62 @@ footer p {
 @media (max-width: 991px) {
     /* pad the top a bit when navbar is collapsed on mobile */
     .header-container {
-        padding-top: 162px;
+        padding-top: 140px;
     }
 
     body {
-        height: calc(100vh - 162px);
+        height: calc(100vh - 140px);
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    h2 {
+        font-size: 2.2rem;
+    }
+
+    h3 {
+        font-size: 2rem;
+    }
+
+    h4 {
+        font-size: 1.5rem;
+    }
+
+    h5 {
+        font-size: 1.2rem;
+    }
+
+    p, .lead {
+        font-size: 1rem;
+    }
+
+    .navbar-toggler {
+        font-size: 1.5rem;
+    }
+
+    .main-nav-link {
+        font-size: 1.5rem;
+    }
+
+    .logo-font {
+        font-size: 1.5rem;
     }
 
     .cart-container,
     .product-detail-container,
     .checkout-success-container {
-        height: calc(100vh - 262px);
+        height: calc(100vh - 240px);
     }
 
     #slideshow img {
-        height: calc(100vh - 162px);
+        height: calc(100vh - 140px);
     }
 
     .navbar-toggler {
         padding: .375rem;
-        font-size: 1rem;
+        font-size: 1.25rem;
     }
 
     .mob-top-header,
@@ -712,7 +781,77 @@ footer p {
     }
 
     .btt-button {
-    width: 44px;
-    bottom: 137px; 
+        width: 44px;
+        bottom: 137px; 
+    }
+
+    .footer {
+        max-height: 75px;
+    }
+}
+
+@media (max-width: 428px) {
+    /* pad the top a bit when navbar is collapsed on mobile */
+    .header-container {
+        padding-top: 162px;
+    }
+
+    body {
+        height: calc(100vh - 162px);
+    }
+
+    h1 {
+        font-size: 2.2rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    h3 {
+        font-size: 1.5rem;
+    }
+
+    h4 {
+        font-size: 1.2rem;
+    }
+
+    h5 {
+        font-size: 1rem;
+    }
+
+    p, .lead {
+        font-size: .75rem;
+    }
+
+    .navbar-toggler {
+        padding: .25rem;
+        font-size: 1rem;
+    }
+
+    .main-nav-link {
+        font-size: 1rem;
+    }
+
+    .logo-font {
+        font-size: 1rem;
+    }
+
+    .cart-container,
+    .product-detail-container,
+    .checkout-success-container {
+        height: calc(100vh - 262px);
+    }
+
+    #slideshow img {
+        height: calc(100vh - 162px);
+    }
+
+    .footer {
+        max-height: 50px;
+    }
+
+    .footer-link {
+        padding-bottom: .2rem;
     }
 }
