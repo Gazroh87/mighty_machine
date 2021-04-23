@@ -12,17 +12,17 @@
 {% block content %}
     <div class="container-fluid h-100 mb-5">
         <div id="slideshow" class="w-100">
-            <img src="/media/home_bg.jpg">
-            <img src="/media/home_bg2.jpg">
-            <img src="/media/home_bg3.jpg">
-            <img src="/media/home_bg4.jpg">
-            <img src="/media/home_bg5.jpg">
-            <img src="/media/home_bg6.jpg">
-            <img src="/media/home_bg7.jpg">
+            <img src="{{ MEDIA_URL }}home_bg.jpg">
+            <img src="{{ MEDIA_URL }}home_bg2.jpg">
+            <img src="{{ MEDIA_URL }}home_bg3.jpg">
+            <img src="{{ MEDIA_URL }}home_bg4.jpg">
+            <img src="{{ MEDIA_URL }}home_bg5.jpg">
+            <img src="{{ MEDIA_URL }}home_bg6.jpg">
+            <img src="{{ MEDIA_URL }}home_bg7.jpg">
         </div>
         <div class="row h-100">
             <div class="col-7 col-md-4 offset-md-1 my-auto shadow-lg jumbotron">
-                <img src="{% static '/images/mm-pcparts-logo.png' %}" class="hero-logo mx-auto d-block my-2" alt="MM PC Parts logo">
+                <img src="{% static 'images/mm-pcparts-logo.png' %}" class="hero-logo mx-auto d-block my-2" alt="MM PC Parts logo">
                 <h1 class="display-4 logo-font mt-2 text-center">
                     The Latest tech <br> has arrived...
                 </h1>
@@ -47,17 +47,17 @@
                 <div class="row row-cols-1 row-cols-md-3 mb-5">
                     <div class="col-12 col-md-6 col-lg-4">
                         <div class="card h-100">
-                            <img src="/media/pc_blue.jpg" alt="blue gaming computer">
+                            <img src="{{ MEDIA_URL }}pc_blue.jpg" alt="blue gaming computer">
                         </div>
                     </div>
                     <div class="col-12 col-md-6 col-lg-4">
                         <div class="card h-100">
-                            <img src="/media/pc_purple.jpg" alt="purple gaming computer">
+                            <img src="{{ MEDIA_URL }}pc_purple.jpg" alt="purple gaming computer">
                         </div>
                     </div>
                     <div class="col-12 col-md-6 col-lg-4">
                         <div class="card h-100">
-                            <img src="/media/pc_red.jpg" alt="red gaming computer">
+                            <img src="{{ MEDIA_URL }}pc_red.jpg" alt="red gaming computer">
                         </div>
                     </div>
                 </div>
