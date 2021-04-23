@@ -55,16 +55,6 @@
                     <div class="col-12 col-md-6 order-md-first">
                         <p class="text-muted mt-3 text-center text-md-start">
                             {% include 'products/includes/breadcrumbs.html' %}
-                            {% if search_term or current_categories or current_sorting != 'None_None' %}
-                            <div class="col text-center">
-                                <a href="{% url 'products' %}" class="btn btn-outline-black rounded-0 btn-lg">
-                                    <span class="icon">
-                                        <i class="fas fa-chevron-left"></i>
-                                    </span>
-                                    <span class="text-uppercase">Keep Shopping</span>
-                                </a>
-                            </div>
-                            {% endif %}
                         </p>
                     </div>
                 </div>

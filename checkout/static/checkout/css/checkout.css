@@ -69,7 +69,8 @@ select option[value=""] {
 
 .submit-button a,
 .submit-button button {
-    width: 49.67%;
+    margin-left: .5rem;
+    margin-right: 2rem;
 }
 
 #loading-overlay {

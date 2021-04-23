@@ -21,18 +21,20 @@
         <div class="row">
             <div class="col">
                 <hr>
-                <h2 class="logo-font mb-4 text-center">Checkout</h2>
+                <h2 class="logo-font text-center">Checkout</h2>
                 <hr>
             </div>
         </div>
         <!--- Breadcrumbs --->
-        <div class="row shop-top-row">
+        <div class="row">
             <div class="col-12">
                 <div class="breadcrumbs">
                     <p class="breadcrumbs-text">
                         <a href="{% url 'home' %}" class="breadcrumb-link">Home</a>
                         |
-                        <a href="{% url 'products' %}" class="breadcrumb-link">Products Home</a>
+                        <a href="{% url 'products' %}" class="breadcrumb-link">Products</a>
+                        |
+                        <a href="{% url 'view_cart' %}" class="breadcrumb-link">Shopping cart</a>
                         |
                         <span class="active-breadcrumb fw-bold">Checkout</span>
                     </p>
@@ -63,7 +65,7 @@
                                 {% endif %}
                             </a>
                         </div>
-                        <div class="col-7">
+                        <div class="col-7 mb-2">
                             <p class="my-0"><strong>{{ item.product.part_name }}</strong></p>
                             <p class="my-0 small">Colour: {% if item.product.has_colours %}{{ item.colour|upper }}{% else %}N/A{% endif %}</p>
                             <p class="my-0 small text-muted">Qty: {{ item.quantity }}</p>
@@ -77,12 +79,12 @@
                 <!-- Total cost details -->
                 <hr class="my-0">
                 <div class="row text-black text-end">
-                    <div class="col-7 offset-2">
+                    <div class="col-7 offset-2 mt-1">
                         <p class="my-0">Order Total:</p>
                         <p class="my-0">Delivery:</p>
                         <p class="my-0">Grand Total:</p>
                     </div>
-                    <div class="col-3">
+                    <div class="col-3 mt-1">
                         <p class="my-0">£{{ total | floatformat:2 }}</p>
                         <p class="my-0">£{{ delivery | floatformat:2 }}</p>
                         <p class="my-0"><strong>£{{ grand_total | floatformat:2 }}</strong></p>
@@ -95,12 +97,12 @@
                 <p class="text-muted">All fields labeled with (*) are required.</p>
                 <form action="{% url 'checkout' %}" method="POST" id="payment-form" class="border p-3">
                 {% csrf_token %}
-                <fieldset class="rounded px-3 mb-5">
+                <fieldset class="rounded px-3 mb-2">
                     <legend class="fieldset-label small text-black px-2 w-auto">Details</legend>
                     {{ order_form.full_name | as_crispy_field }}
                     {{ order_form.email | as_crispy_field }}
                 </fieldset>
-                <fieldset class="rounded px-3 mb-5">
+                <fieldset class="rounded px-3 mb-2">
                     <legend class="fieldset-label small text-black px-2 w-auto">Delivery</legend>
                     {{ order_form.phone_number | as_crispy_field }}
                     {{ order_form.street_address1 | as_crispy_field }}
@@ -132,7 +134,7 @@
                     <input type="hidden" value="{{ client_secret }}" name="client_secret">
                 </fieldset>
 
-                <div class="submit-button text-end mt-5 mb-2">                    
+                <div class="submit-button text-end my-3 d-flex justify-content-evenly">                    
                     <a href="{% url 'view_cart' %}" class="btn btn-outline-black rounded-0">
                         <span class="icon">
                             <i class="fas fa-chevron-left"></i>

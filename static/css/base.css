@@ -494,12 +494,13 @@ table.scroll tbody {
     margin-top: 1rem;
 }
 
-.breadcrumb-link, .breadcrumb-link:hover {
+.breadcrumb-link {
     color: #000;
     margin: 3px;
 }
 
 .breadcrumb-link:hover {
+    color: #2000ff;
     text-decoration: underline;
 }
 
