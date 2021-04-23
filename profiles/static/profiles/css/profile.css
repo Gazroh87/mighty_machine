@@ -1,3 +1,7 @@
+.profile-container {
+    margin-bottom: 65px;
+}
+
 .order-history {
     max-height: 50vh; /* was 416px height of profile form + submit button */
     overflow-y: auto;

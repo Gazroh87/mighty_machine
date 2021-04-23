@@ -11,6 +11,7 @@ body {
     color: #555;
     font-family: 'Roboto', sans-serif;
     margin-bottom: 4.5rem;
+    overflow-x: hidden;
 }
 
 a {
@@ -19,12 +20,12 @@ a {
 
 .cart-container,
 .product-detail-container,
-.checkout-success-container,
-.profile-container {
+.checkout-success-container {
     height: calc(100vh - 272px);
 }
 
-.products-container {
+.products-container,
+.profile-container {
     min-height: 80vh;
 }
 
@@ -206,7 +207,11 @@ ul li .nav-link:hover {
 
 .shop-now-button:hover,
 .shop-now-button:active,
-.shop-now-button:focus,
+.shop-now-button:focus {
+    background: #100080;
+    color: #fff !important;
+}
+
 .btn-black:hover,
 .btn-black:active,
 .btn-black:focus,
@@ -680,8 +685,7 @@ footer p {
 
     .cart-container,
     .product-detail-container,
-    .checkout-success-container,
-    .profile-container {
+    .checkout-success-container {
         height: calc(100vh - 262px);
     }
 
