@@ -56,7 +56,7 @@
         </li>
         <!-- Shopping cart link with grand total -->
         <li class="list-inline-item">
-            <a class="{% if grand_total %}text-info fw-bold{% else %}text-black{% endif %} nav-link d-block d-lg-none" href="{% url 'view_cart' %}">
+            <a class="{% if grand_total %}text-warning fw-bold{% else %}text-black{% endif %} nav-link d-block d-lg-none" href="{% url 'view_cart' %}">
                 <div class="text-center">
                     <div><i class="fas fa-shopping-cart fa-lg"></i></div>
                     <p class="my-0">
