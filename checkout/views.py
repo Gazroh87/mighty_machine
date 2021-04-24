@@ -71,7 +71,8 @@ def checkout(request):
                         )
                         order_line_item.save()
                     else:
-                        for colour, quantity in item_data['items_by_colour'].items():
+                        for colour, quantity in (
+                                item_data['items_by_colour'].items()):
                             order_line_item = OrderLineItem(
                                 order=order,
                                 product=product,
@@ -87,7 +88,7 @@ def checkout(request):
                     order.delete()
                     return redirect(reverse('view cart'))
 
-             # Save the info to the user's profile if all is well
+            # Save the info to the user's profile if all is well
             request.session['save_info'] = 'save-info' in request.POST
             return redirect(reverse(
                 'checkout_success', args=[order.order_number]))

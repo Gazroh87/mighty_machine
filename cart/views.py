@@ -29,15 +29,19 @@ def add_to_cart(request, item_id):
             if colour in cart[item_id]['items_by_colour'].keys():
                 cart[item_id]['items_by_colour'][colour] += quantity
                 messages.success(
-                    request, f'Changed colour of {colour.upper()} {product.part_name} quantity to {cart[item_id]["items_by_colour"][colour]}')
+                    request, f'Changed colour of {colour.upper()}'
+                             f'{product.part_name} quantity to '
+                             f'{cart[item_id]["items_by_colour"][colour]}')
             else:
                 cart[item_id]['items_by_colour'][colour] = quantity
                 messages.success(
-                    request, f'Added {product.part_name} in {colour.upper()} to your cart')
+                    request, f'Added {product.part_name} in {colour.upper()}'
+                             f' to your cart')
         else:
             cart[item_id] = {'items_by_colour': {colour: quantity}}
             messages.success(
-                request, f'Added {product.part_name} in {colour.upper()} to your cart')
+                request, f'Added {product.part_name} in {colour.upper()}'
+                         f' to your cart')
     else:
         if item_id in list(cart.keys()):
             cart[item_id] += quantity
@@ -66,19 +70,23 @@ def mod_cart(request, item_id):
         if quantity > 0:
             cart[item_id]['items_by_colour'][colour] = quantity
             messages.success(
-                request, f'Updated {colour.upper()} {product.part_name} quantity to {cart[item_id]["items_by_colour"][colour]}')
+                request, f'Updated {colour.upper()} {product.part_name}'
+                         f' quantity to '
+                         f'{cart[item_id]["items_by_colour"][colour]}')
 
         else:
             del cart[item_id]['items_by_colour'][colour]
             if not cart[item_id]['items_by_colour']:
                 cart.pop(item_id)
             messages.success(
-                request, f'Removed {product.part_name} in {colour.upper()} from your cart')
+                request, f'Removed {product.part_name} in {colour.upper()}'
+                         f'from your cart')
     else:
         if quantity > 0:
             cart[item_id] = quantity
             messages.success(
-                request, f'Updated {product.part_name} quantity to {cart[item_id]}')
+                request, f'Updated {product.part_name} quantity to '
+                         f'{cart[item_id]}')
         else:
             cart.pop(item_id)
             messages.success(
@@ -103,7 +111,8 @@ def remove_from_cart(request, item_id):
             if not cart[item_id]['items_by_colour']:
                 cart.pop(item_id)
             messages.success(
-                request, f'Removed {product.part_name} in {colour.upper()} from your cart')
+                request, f'Removed {product.part_name} in {colour.upper()}'
+                         f'from your cart')
         else:
             cart.pop(item_id)
             messages.success(
