@@ -196,3 +196,29 @@ def add_review(request, product_id):
                             'Please ensure the form is valid.'))
 
     return redirect(reverse('product_detail', args=[product_id]))
+
+
+@login_required
+def edit_review(request, review_id):
+    """
+    Saves review form edited by user
+    """
+    review = get_object_or_404(Review, pk=review_id)
+    review_form = ReviewForm(request.POST, instance=review)
+    product = Product.objects.get(part_name=review.product)
+    if review_form.is_valid():
+        review_form.save()
+
+        reviews = Review.objects.filter(product=product)
+        avg_rating = reviews.aggregate(Avg('rating'))['rating__avg']
+        product.avg_rating = int(avg_rating)
+        product.save()
+
+        # Success message if added
+        messages.success(request, 'Thanks! Your review has been updated')
+    else:
+        # Error message if form was invalid
+        messages.error(request, 'Something went wrong. '
+                                'Make sure the form is valid.')
+
+    return redirect(reverse('product_detail', args=(review.product.id,)))

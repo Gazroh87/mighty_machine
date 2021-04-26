@@ -214,8 +214,15 @@
                                     <div class="p-3 m-3 border">
                                         <div class="col-12 col-lg-4 text-center px-0">
                                             <p class="mb-0 fw-bold text-uppercase">{{ review.title }}</p>
-                                            <p class="rate-stars txt-small" data-value="{{ review.rating }}"></p>
+                                            <p class="rate-stars txt-small" data-bs-value="{{ review.rating }}"></p>
                                             {% if review.user == request.user %}
+                                            <div class="col m-auto text-center mb-2">
+                                                <!-- Edit button triggers modal to edit review -->
+                                                <a href="" class="p-1 text-secondary button text-decoration-none" data-bs-toggle="modal"
+                                                    data-bs-target="#editModal{{review.id}}">
+                                                    <i class="fas fa-pen"></i>
+                                                </a>
+                                            </div>
                                             {% endif %} 
                                             <div class="col-12 col-lg-8">
                                                 <p>"{{ review.review }}"</p>
@@ -227,6 +234,33 @@
                                                     </div>
                                                 </div>
                                             </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Edit review modal -->
+                                <div class="modal fade" id="editModal{{review.id}}" tabindex="-1" aria-labelledby="editModalLabel"
+                                    aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content rounded-0">
+                                            <!-- Modal header with title and close button -->
+                                            <div class="modal-header">
+                                                <h5 class="modal-title text-uppercase" id="editModalLabel">Edit your review</h5>
+                                                <button type="button" class="btn-close btn-close m-2" data-bs-dismiss="modal" aria-label="Close">
+                                                </button>
+                                            </div>
+                                            <!-- Review form -->
+                                            <form action="{% url 'edit_review' review.pk %}" method="POST">
+                                                <div class="modal-body">
+                                                    <!-- Render edit form  -->
+                                                    {% csrf_token %}
+                                                    {{ review_form|crispy }}
+                                                </div>
+                                                <!-- Footer containing Update and Cancel buttons -->
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-outline-black rounded-0" data-bs-dismiss="modal"><i class="fas fa-chevron-left"></i> Cancel</button>
+                                                    <button type="submit" class="btn btn-black rounded-0">Update Review</button>
+                                                </div>
+                                            </form>
                                         </div>
                                     </div>
                                 </div>
