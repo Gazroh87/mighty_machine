@@ -43,7 +43,8 @@ p, .lead {
 }
 
 .checkout-success-container,
-.account-container {
+.account-container,
+.error-container {
     height: calc(100vh - 272px);
 }
 
@@ -780,7 +781,8 @@ footer p {
     }
 
     .checkout-success-container,
-    .account-container {
+    .account-container,
+    .error-container {
         height: calc(100vh - 185px);
     }
 
@@ -864,7 +866,8 @@ footer p {
     }
 
     .checkout-success-container,
-    .account-container {
+    .account-container,
+    .error-container {
         height: calc(100vh + 100px);
     }
 
