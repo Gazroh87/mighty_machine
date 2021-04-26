@@ -6,8 +6,8 @@ html {
 
 /* ensures image stays to center of page */
 body {
-    /* 189px is height of top header */
-    height: calc(100vh - 189px);
+    /* 199px is height of top header */
+    height: calc(100vh - 199px);
     color: #555;
     font-family: 'Roboto', sans-serif;
     margin-bottom: 4.5rem;
@@ -110,7 +110,7 @@ p, .lead {
 
 #slideshow img {
     object-fit: cover;
-    height: calc(100vh - 189px);
+    height: calc(100vh - 199px);
     position: absolute;
     left: 0;
     min-width: 100%;
@@ -685,9 +685,9 @@ footer p {
         z-index: 1030;
     }
 
-    /* 189px is height of top header */
+    /* 199px is height of top header */
     .header-container {
-        padding-top: 189px;
+        padding-top: 199px;
     }
 }
 
