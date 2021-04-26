@@ -1,3 +1,10 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
 .profile-container {
     margin-bottom: 65px;
 }
@@ -13,6 +20,22 @@
 
 #profile-update-form .form-control {
     color: #000;
+}
+
+.profile-form-input::-webkit-input-placeholder {
+    color: #aab7c4;
+}
+
+.profile-form-input::-moz-placeholder {
+    color: #aab7c4;
+}
+
+.profile-form-input:-ms-input-placeholder {
+    color: #aab7c4;
+}
+
+.profile-form-input::-ms-input-placeholder {
+    color: #aab7c4;
 }
 
 .profile-form-input::placeholder {
