@@ -1,5 +1,5 @@
 from django.db import models
-from profiles.models import User
+from django.contrib.auth.models import User
 
 
 class Category(models.Model):
@@ -36,13 +36,14 @@ class Product(models.Model):
 
 
 class Review(models.Model):
-    RATING = (
+    RATING = [
         (1, '1'),
         (2, '2'),
         (3, '3'),
         (4, '4'),
         (5, '5'),
-    )
+    ]
+
     product = models.ForeignKey(
         'Product', null=True, blank=True, on_delete=models.CASCADE)
     user = models.ForeignKey(User, on_delete=models.CASCADE)

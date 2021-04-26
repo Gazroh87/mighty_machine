@@ -42,7 +42,6 @@ p, .lead {
     font-size: 1.2rem;
 }
 
-.product-detail-container,
 .checkout-success-container,
 .account-container {
     height: calc(100vh - 272px);
@@ -50,6 +49,7 @@ p, .lead {
 
 .cart-container,
 .products-container,
+.product-detail-container,
 .profile-container {
     min-height: 80vh;
 }
@@ -779,7 +779,6 @@ footer p {
         padding: .25rem .5rem !important;
     }
 
-    .product-detail-container,
     .checkout-success-container,
     .account-container {
         height: calc(100vh - 185px);
@@ -864,7 +863,6 @@ footer p {
         font-size: 1rem;
     }
 
-    .product-detail-container,
     .checkout-success-container,
     .account-container {
         height: calc(100vh + 100px);

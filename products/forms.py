@@ -47,7 +47,7 @@ class ReviewForm(forms.ModelForm):
         super().__init__(*args, **kwargs)
         placeholders = {
             'title': 'Title',
-            'review': 'Write a review..',
+            'review': 'Write your review here..',
         }
 
         # Add placeholders and classes to input fields
@@ -56,6 +56,4 @@ class ReviewForm(forms.ModelForm):
             if field != 'rating':
                 placeholder = placeholders[field]
                 self.fields[field].widget.attrs['placeholder'] = placeholder
-                self.fields[field].widget.attrs['title'] = 'Review content'
                 self.fields[field].label = False
-

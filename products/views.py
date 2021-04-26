@@ -1,11 +1,14 @@
 from django.shortcuts import render, redirect, reverse, get_object_or_404
 from django.contrib import messages
+from django.contrib.auth.models import User
 from django.contrib.auth.decorators import login_required
-from django.db.models import Q
+from django.views.decorators.http import require_POST
+from django.http import HttpResponse
+from django.db.models import Q, Avg
 from django.db.models.functions import Lower
 
-from .models import Product, Category
-from .forms import ProductForm
+from .models import Product, Category, Review
+from .forms import ProductForm, ReviewForm
 
 
 def all_products(request):
@@ -64,9 +67,25 @@ def product_detail(request, product_id):
     """A view to display individual product details"""
 
     product = get_object_or_404(Product, pk=product_id)
+    if request.user.is_authenticated:
+        user = User.objects.get(username=request.user)
+    else:
+        user = None
 
+    reviews = Review.objects.filter(product=product)
+
+    # If user has reviewed an item
+    try:
+        item_review = Review.objects.filter(user=user, product=product)
+
+    except Review.DoesNotExist:
+        edit_review_form = None
+
+    review_form = ReviewForm()
     context = {
         'product': product,
+        'reviews': reviews,
+        'review_form': review_form,
     }
 
     return render(request, 'products/product_detail.html', context)
@@ -141,3 +160,39 @@ def delete_product(request, product_id):
     product.delete()
     messages.success(request, 'Successfully deleted product!')
     return redirect(reverse('products'))
+
+
+@login_required
+def add_review(request, product_id):
+    """Add a review and rating"""
+
+    if request.method == 'POST':
+        user = User.objects.get(username=request.user)
+        review_form = ReviewForm(request.POST)
+        product = get_object_or_404(Product, pk=product_id)
+        review_form = ReviewForm()
+        review_details = {
+            'title': request.POST['title'],
+            'review': request.POST['review'],
+            'rating': request.POST['rating'],
+        }
+        review_form = ReviewForm(review_details)
+
+        if review_form.is_valid():
+            review = review_form.save(commit=False)
+            review.user = user
+            review.product = Product(pk=product_id)
+            review_form.save()
+
+            reviews = Review.objects.filter(product=product)
+            avg_rating = reviews.aggregate(Avg('rating'))['rating__avg']
+            product.avg_rating = int(avg_rating)
+            product.save()
+            messages.success(request, 'Thanks! Your review has been posted!')
+            return redirect(reverse('product_detail', args=[product_id]))
+        else:
+            messages.error(request,
+                           ('Failed to add review. '
+                            'Please ensure the form is valid.'))
+
+    return redirect(reverse('product_detail', args=[product_id]))
