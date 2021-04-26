@@ -112,7 +112,7 @@
                                             </span>
                                         </button>
                                         <input class="form-control qty_input" type="number" 
-                                            name="quantity" value="1" min="1" maxlength="99"
+                                            name="quantity" value="1" min="1" max="99"
                                             oninput="this.value = this.value > 99 ? 99 : Math.abs(this.value)"
                                             data-item_id="{{ product.id }}" 
                                             id="id_qty_{{ product.id }}">
@@ -160,7 +160,7 @@
                                 </div>
                                 <div class="modal-footer">
                                     <button type="button" class="btn btn-outline-black rounded-0" data-bs-dismiss="modal"><i class="fas fa-chevron-left"></i> Cancel</button>
-                                    <a href="{% url 'delete_product' product.id %}" class="btn btn-black rounded-0" type="button">Yes Delete <i class="fas fa-trash-alt"></i></a>
+                                    <a href="{% url 'delete_product' product.id %}" class="btn btn-black rounded-0">Yes Delete <i class="fas fa-trash-alt"></i></a>
                                 </div>
                             </div>
                         </div>

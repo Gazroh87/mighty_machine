@@ -20,7 +20,7 @@
                 <hr>
             </div>
         </div>
-        <!--- Breadcrumbs --->
+        <!-- Breadcrumbs -->
         <div class="row">
             <div class="col-12">
                 <div class="breadcrumbs">
@@ -136,14 +136,14 @@
 
 {% block postloadjs %}
 {{ block.super }}
-<script type="text/javascript">
+<script>
     $('.btt-link').click(function(e) {
         window.scrollTo(0,0)
     })
 </script>
 {% include 'products/includes/quantity_input_script.html' %}
 
-<script type="text/javascript">
+<script>
     // Disable cart preview when viewing the cart
     $("#cart-dropdown").prop("disabled", true);
 
