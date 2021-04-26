@@ -2,8 +2,6 @@ from django.shortcuts import render, redirect, reverse, get_object_or_404
 from django.contrib import messages
 from django.contrib.auth.models import User
 from django.contrib.auth.decorators import login_required
-from django.views.decorators.http import require_POST
-from django.http import HttpResponse
 from django.db.models import Q, Avg
 from django.db.models.functions import Lower
 
@@ -220,5 +218,33 @@ def edit_review(request, review_id):
         # Error message if form was invalid
         messages.error(request, 'Something went wrong. '
                                 'Make sure the form is valid.')
+
+    return redirect(reverse('product_detail', args=(review.product.id,)))
+
+
+def delete_review(request, review_id):
+    """
+    Deletes user's review
+    """
+    review = get_object_or_404(Review, pk=review_id)
+    product = Product.objects.get(part_name=review.product)
+
+    try:
+        review.delete()
+
+        reviews = Review.objects.filter(product=product)
+        avg_rating = reviews.aggregate(Avg('rating'))['rating__avg']
+        if avg_rating:
+            product.avg_rating = int(avg_rating)
+        else:
+            product.avg_rating = 0
+
+        product.save()
+        messages.success(request, 'Your review has been deleted')
+
+    # If deletion failed, return an error message
+    except Exception as e:
+        messages.error(request, "We couldn't delete your review because "
+                                f" error:{e} occured. Try again later.")
 
     return redirect(reverse('product_detail', args=(review.product.id,)))

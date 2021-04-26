@@ -26,7 +26,7 @@ const starRate = document.querySelectorAll('.rate-stars');
 
 
     starRate.forEach(rating => {
-        const ratingValue = parseInt(rating.getAttribute('data-value'));
+        const ratingValue = parseInt(rating.getAttribute('data-bs-value'));
         const fullStar = ratingValue;
         const emptyStar = 5 - fullStar;
         let stars = '';

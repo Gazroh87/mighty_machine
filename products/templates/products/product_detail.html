@@ -159,7 +159,7 @@
                                 </div>
                                 <div class="modal-footer">
                                     <button type="button" class="btn btn-outline-black rounded-0" data-bs-dismiss="modal"><i class="fas fa-chevron-left"></i> Cancel</button>
-                                    <a href="{% url 'delete_product' product.id %}" class="btn btn-black rounded-0">Yes Delete <i class="fas fa-trash-alt"></i></a>
+                                    <a href="{% url 'delete_product' product.id %}" class="btn btn-black rounded-0" type="button">Yes Delete <i class="fas fa-trash-alt"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -173,7 +173,7 @@
                     <h2 class="logo-font">Product Reviews</h2>
                     <hr class="w-50 mb-1 mx-auto">
                     <div class="mb-2 text-center">
-                        <span class="rate-stars" data-value="{{ product.rating }}"></span> <span>({{ reviews.count }})</span>
+                        <span class="rate-stars" data-bs-value="{{ product.rating }}"></span> <span>({{ reviews.count }})</span>
                     </div>
                     {% if user.is_authenticated %}
                     <div class="text-center mt-3">
@@ -181,7 +181,7 @@
                                 data-bs-target="#reviewModal">Add Review
                         </button>
                         <div class="modal fade" id="reviewModal" tabindex="-1" aria-labelledby="reviewModalLabel" aria-hidden="true">
-                            <div class="modal-dialog">
+                            <div class="modal-dialog modal-lg">
                                 <div class="modal-content rounded-0">
                                     <!-- Modal header with title and close button -->
                                     <div class="modal-header">
@@ -217,11 +217,14 @@
                                             <p class="rate-stars txt-small" data-bs-value="{{ review.rating }}"></p>
                                             {% if review.user == request.user %}
                                             <div class="col m-auto text-center mb-2">
-                                                <!-- Edit button triggers modal to edit review -->
-                                                <a href="" class="p-1 text-secondary button text-decoration-none" data-bs-toggle="modal"
-                                                    data-bs-target="#editModal{{review.id}}">
-                                                    <i class="fas fa-pen"></i>
-                                                </a>
+                                                <small class="ms-3">
+                                                    <!-- Edit button triggers modal to edit review -->
+                                                    <a href="" class="btn edit-btn btn-sm btn-block rounded-0" data-bs-toggle="modal"
+                                                    data-bs-target="#editModal{{review.id}}"><i class="fas fa-edit"></i> Edit</a>
+                                                    <!-- Delete button triggers modal to confirm review deletion -->
+                                                    <button data-bs-toggle="modal" data-bs-target="#deleteReview" class="btn delete-btn btn-sm btn-block rounded-0" type="button"><i
+                                                    class="fas fa-exclamation-circle"></i><strong> Delete</strong></button>
+                                                </small>
                                             </div>
                                             {% endif %} 
                                             <div class="col-12 col-lg-8">
@@ -240,7 +243,7 @@
                                 <!-- Edit review modal -->
                                 <div class="modal fade" id="editModal{{review.id}}" tabindex="-1" aria-labelledby="editModalLabel"
                                     aria-hidden="true">
-                                    <div class="modal-dialog">
+                                    <div class="modal-dialog modal-lg">
                                         <div class="modal-content rounded-0">
                                             <!-- Modal header with title and close button -->
                                             <div class="modal-header">
@@ -261,6 +264,30 @@
                                                     <button type="submit" class="btn btn-black rounded-0">Update Review</button>
                                                 </div>
                                             </form>
+                                        </div>
+                                    </div>
+                                </div>
+                                 <!-- Delete review modal -->
+                                <div class="modal fade" id="deleteReview" tabindex="-1" aria-labelledby="deleteUserReview"
+                                    aria-hidden="true">
+                                    <div class="modal-dialog modal-lg">
+                                        <div class="modal-content rounded-0">
+                                            <div class="modal-header bg-danger p-2 rounded-0 text-white text-center">
+                                                <i class="fas fa-exclamation-triangle fa-2x"></i>
+                                                <h2 class="modal-title logo-font"> Warning</h2>
+                                                <button type="button" class="btn-close btn-close-white m-2" data-bs-dismiss="modal" aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-header">
+                                                <h3 class="modal-title" id="deleteUserReview">Remove review from website?</h3>
+                                            </div>
+                                            <div class="modal-body text-center">
+                                                <p><strong class="text-danger text-uppercase">The review will be permanently removed from the website</strong></p>
+                                                <p class="fw-bold">Are you sure you want delete this review?</p>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-outline-black rounded-0" data-bs-dismiss="modal"><i class="fas fa-chevron-left"></i> Cancel</button>
+                                                <a href="{% url 'delete_review' review.id %}" class="btn btn-black rounded-0" type="button">Yes Delete <i class="fas fa-trash-alt"></i></a>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
