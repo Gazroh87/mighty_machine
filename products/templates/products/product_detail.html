@@ -112,7 +112,8 @@
                                             </span>
                                         </button>
                                         <input class="form-control qty_input" type="number" 
-                                            name="quantity" value="1" min="1" max="99" 
+                                            name="quantity" value="1" min="1" maxlength="99"
+                                            oninput="this.value = this.value > 99 ? 99 : Math.abs(this.value)"
                                             data-item_id="{{ product.id }}" 
                                             id="id_qty_{{ product.id }}">
                                         <button class="increment-qty btn btn-success rounded-0"

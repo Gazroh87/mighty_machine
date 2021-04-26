@@ -67,7 +67,7 @@ def mod_cart(request, item_id):
     cart = request.session.get('cart', {})
 
     if colour:
-        if quantity > 0:
+        if quantity in range(0, 99):
             cart[item_id]['items_by_colour'][colour] = quantity
             messages.success(
                 request, f'Updated {colour.upper()} {product.part_name}'
@@ -82,7 +82,7 @@ def mod_cart(request, item_id):
                 request, f'Removed {product.part_name} in {colour.upper()}'
                          f'from your cart')
     else:
-        if quantity > 0:
+        if quantity in range(0, 99):
             cart[item_id] = quantity
             messages.success(
                 request, f'Updated {product.part_name} quantity to '
