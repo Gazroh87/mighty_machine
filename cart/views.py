@@ -30,18 +30,21 @@ def add_to_cart(request, item_id):
                 cart[item_id]['items_by_colour'][colour] += quantity
                 messages.success(
                     request, f'Changed colour of {colour.upper()}'
-                             f'{product.part_name} quantity to '
-                             f'{cart[item_id]["items_by_colour"][colour]}')
+                    f'{product.part_name} quantity to '
+                    f'{cart[item_id]["items_by_colour"][colour]}'
+                                )
             else:
                 cart[item_id]['items_by_colour'][colour] = quantity
                 messages.success(
                     request, f'Added {product.part_name} in {colour.upper()}'
-                             f' to your cart')
+                    f' to your cart'
+                                )
         else:
             cart[item_id] = {'items_by_colour': {colour: quantity}}
             messages.success(
                 request, f'Added {product.part_name} in {colour.upper()}'
-                         f' to your cart')
+                f' to your cart'
+                            )
     else:
         if item_id in list(cart.keys()):
             cart[item_id] += quantity
@@ -71,8 +74,9 @@ def mod_cart(request, item_id):
             cart[item_id]['items_by_colour'][colour] = quantity
             messages.success(
                 request, f'Updated {colour.upper()} {product.part_name}'
-                         f' quantity to '
-                         f'{cart[item_id]["items_by_colour"][colour]}')
+                f' quantity to '
+                f'{cart[item_id]["items_by_colour"][colour]}'
+                            )
 
         else:
             del cart[item_id]['items_by_colour'][colour]
@@ -80,13 +84,15 @@ def mod_cart(request, item_id):
                 cart.pop(item_id)
             messages.success(
                 request, f'Removed {product.part_name} in {colour.upper()}'
-                         f'from your cart')
+                f'from your cart'
+                            )
     else:
         if quantity in range(0, 99):
             cart[item_id] = quantity
             messages.success(
                 request, f'Updated {product.part_name} quantity to '
-                         f'{cart[item_id]}')
+                f'{cart[item_id]}'
+                            )
         else:
             cart.pop(item_id)
             messages.success(
@@ -112,7 +118,8 @@ def remove_from_cart(request, item_id):
                 cart.pop(item_id)
             messages.success(
                 request, f'Removed {product.part_name} in {colour.upper()}'
-                         f'from your cart')
+                f'from your cart'
+                            )
         else:
             cart.pop(item_id)
             messages.success(
