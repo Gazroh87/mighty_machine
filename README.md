@@ -1,42 +1,47 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# [Mighty Machine](https://gazroh87-mighty-machine.herokuapp.com/) - PC Parts E-Commerce Web App
 
-## Gitpod Reminders
-
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
-
-`python3 -m http.server`
-
-A blue button should appear to click: *Make Public*,
-
-Another blue button should appear to click: *Open Browser*.
-
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
-
-A blue button should appear to click: *Make Public*,
-
-Another blue button should appear to click: *Open Browser*.
-
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
-
-<p align="center"> 
-<img src="https://github.com/Gazroh87/mighty_machine/blob/master/static/images/mighty-machine-logo.png">
+<p align="center">
+![Mighty Machine Logo](https://github.com/Gazroh87/mighty_machine/blob/master/static/images/mighty-machine-logo.png)
 </p>
 
+![readmeheroimg](readme_files/images/mm-hero-img.png)
 
-# ReadMe
+View the live website [here](https://gazroh87-mighty-machine.herokuapp.com/)
 
-Link to view the website - htts://
+## Code Institute - Final Milestone Project 4 - Full Stack Frameworks with Django
 
-I'm building an E-commerce website for selling PC components/accessories and is called Mighty Machine. 
-Users can browse through different products and will be able to purchase them using Stripe. Initially the website 
-will stock a limited number of categories of products but the plan is to expand upon the number down the line.
+***
 
-The website will have a login page that will direct them to the main store front where they will be able to browse 
-through all the products or select from different categories. Once a user adds their product(s) to the cart, then 
-they will be able to purchase them by entering in shipping and payment details. The user will also be able to view 
-their purchase history linked to their username. If the customer currently does not have an account then they will 
-be able to create one. When they create an account, they will also be able to change their email address, password 
-and other details related to their account.
+# Introduction
+
+I've built an E-commerce website for selling PC components/accessories. The reason for choosing the name 
+'Mighty Machine' comes from the idea that if someone or something, such as a computer built for a primary purpose 
+such as gaming, has a combination of both great power and speed or some other similar attribute(s), it can be called 
+mighty, and a user of my website can purchase everything they need to build a 'Mighty Machine' for such purpose from 
+my website. Users can 
+
+This application is primarily aimed towards custom PC builders, gamers, tech nerds and video editors and anyone else 
+who might require a powerful computer to build themselves or have someone build for them. The overall modern styling 
+mixed with tech/scifi font and imagery helps to increase appeal.
+
+The primary aim of this application was to allow users (registered or unregistered) to purchase products, from 
+landing on the homepage, to successfully completing a purchase. Registered users are also able to review any product 
+available for purchase on the website for others to see. I chose to develop an E-Commerce shop as it is in someways a 
+fairly complex but highly flexible application to challenge my understanding, and build upon my knowledge along the 
+way, of the technologies involved. Because of the sensitivity surrounding the handling of customer details, a great 
+deal of security consciosnous is required during the development of an application like this. 
+
+Users can register an account and change their email address, password and other details relating to their account. 
+The website has a login page that directs the user to the main store front where they can browse through different 
+categories of products. Once a user adds their product(s) to the cart they can then proceed to the checkout, enter in 
+their delivery information and purchase their products using the Stripe online payment method. At the moment the 
+website stocks a limited variety of categories of products but in future the store has the potential to grow much 
+larger and the inventory be greatly expanded upon. A logged in user can view their order history of purchases, directly 
+linked to their username.
+
+The store admin(s) will spend most of their time adding, editing and deleting products and categories among other 
+typical activities through the [Django admin](https://docs.djangoproject.com/en/3.2/ref/contrib/admin/) backend site,
+but they can also do some of the basic tasks through the website's own frontend UI.
 
 
 # UX
