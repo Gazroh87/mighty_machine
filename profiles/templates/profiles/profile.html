@@ -7,6 +7,7 @@
 {% endblock %}
 
 {% block page_header %}
+    <!-- Header -->
     <div class="container header-container">
         <div class="row">
             <div class="col"></div>
@@ -39,14 +40,18 @@
             </div>
         </div>
         <div class="row">
+            <!-- Delivery Info -->
             <div class="col-12 col-lg-6">
                 <h5 class="text-muted">Default Delivery Information</h5>
                 <form class="mt-3" action="{% url 'profile' %}" method="POST" id="profile-update-form">
                     {% csrf_token %}
                     {{ form|crispy }}
-                    <button class="btn btn-black rounded-0 text-uppercase float-end">Update Information <i class="fas fa-edit"></i></button>
+                    <button class="btn btn-black rounded-0 text-uppercase float-end">Update Information 
+                        <i class="fas fa-edit"></i>
+                    </button>
                 </form>
             </div>
+            <!-- Order History -->
             <div class="col-12 col-lg-6">
                 <h5 class="text-muted">Order History</h5>
                 <div class="order-history table-responsive">
@@ -59,10 +64,12 @@
                                 <th>Order Total</th>
                             </tr>
                         </thead>
+                        <!-- Previous order details -->
                         <tbody class="accordion accordion-flush" id="accordionFlushExample">
                             {% for order in orders %}
                             <tr data-toggle="collapse" data-target="#a{{ order.order_number }}" 
-                                class="accordion-header accordion-item accordion-toggle" id="heading-{{ order.order_number }}" 
+                                class="accordion-header accordion-item accordion-toggle" 
+                                id="heading-{{ order.order_number }}" 
                                 aria-expanded="true" aria-controls="a{{ order.order_number }}" role="button">
                                 <td>
                                     <a href="{% url 'order_history' order.order_number %}"
@@ -91,18 +98,22 @@
                                     <div class="accordion-body">
                                         <ul>
                                         {% for item in order.lineitems.all %}
-                                        <li class="small">
-                                            {% if item.product.image %}
-                                            <a href="{{ item.product.image.url }}" target="_blank">
-                                                <img class="card-img-top img-fluid" src="{{ item.product.image.url }}" alt="{{ item.product.part_name }}">
-                                            </a>
-                                            {% else %}
-                                            <a href="">
-                                                <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}noimage.png" alt="{{ item.product.part_name }}">
-                                            </a>
-                                            {% endif %}
-                                            {{ item.product.description }}
-                                        </li>
+                                            <li class="small">
+                                                {% if item.product.image %}
+                                                    <a href="{{ item.product.image.url }}" target="_blank">
+                                                        <img class="card-img-top img-fluid" 
+                                                            src="{{ item.product.image.url }}" 
+                                                            alt="{{ item.product.part_name }}">
+                                                    </a>
+                                                {% else %}
+                                                    <a href="">
+                                                        <img class="card-img-top img-fluid" 
+                                                            src="{{ MEDIA_URL }}noimage.png" 
+                                                            alt="{{ item.product.part_name }}">
+                                                    </a>
+                                                {% endif %}
+                                                {{ item.product.description }}
+                                            </li>
                                         {% endfor %}
                                         </ul>
                                     </div>

@@ -2,6 +2,7 @@
 {% load static %}
 
 {% block page_header %}
+    <!-- Header -->
     <div class="container header-container">
         <div class="row">
             <div class="col"></div>
@@ -16,8 +17,11 @@
             <div class="col text-center mt-3">
                 <h2 class="logo-font">Products</h2>
                 {% for c in current_categories %}
-                    <a class="category-badge text-decoration-none" href="{% url 'products' %}?category={{ c.name }}">
-                        <span class="p-2 mt-2 badge badge-white text-black rounded-0 border border-dark">{{ c.friendly_name }}</span>
+                    <a class="category-badge text-decoration-none" 
+                        href="{% url 'products' %}?category={{ c.name }}">
+                        <span class="p-2 mt-2 badge badge-white text-black rounded-0 border border-dark">
+                            {{ c.friendly_name }}
+                        </span>
                     </a>
                 {% endfor %}
                 <hr class="w-50 mb-1 mx-auto">
@@ -29,7 +33,8 @@
                 <div class="row mt-1 mb-2">
                     <div class="col-12 col-md-6 my-auto order-md-last d-flex justify-content-center justify-content-md-end">
                         <div class="sort-select-wrapper w-50">
-                            <select id="sort-selector" class="form-select form-select-sm rounded-0 border border-{% if current_sorting != 'None_None' %}info{% else %}black{% endif %}" aria-label=".form-select-sm">
+                            <select id="sort-selector" 
+                                class="form-select form-select-sm rounded-0 border border-{% if current_sorting != 'None_None' %}info{% else %}black{% endif %}" aria-label=".form-select-sm">
                                 <option value="reset" {% if current_sorting == 'None_None' %}selected{% endif %}>
                                     Sort by...</option>
                                 <option value="price_asc" {% if current_sorting == 'price_asc' %}selected{% endif %}>
@@ -64,13 +69,17 @@
                         <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 my-4">
                             <div class="card h-100 border-0">
                                 {% if product.image %}
-                                <a href="{% url 'product_detail' product.id %}">
-                                    <img class="card-img-top img-fluid" src="{{ product.image.url }}" alt="{{ product.part_name }}">
-                                </a>
+                                    <a href="{% url 'product_detail' product.id %}">
+                                        <img class="card-img-top img-fluid" 
+                                            src="{{ product.image.url }}" 
+                                            alt="{{ product.part_name }}">
+                                    </a>
                                 {% else %}
-                                <a href="{% url 'product_detail' product.id %}">
-                                    <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}noimage.png" alt="{{ product.part_name }}">
-                                </a>
+                                    <a href="{% url 'product_detail' product.id %}">
+                                        <img class="card-img-top img-fluid" 
+                                            src="{{ MEDIA_URL }}noimage.png" 
+                                            alt="{{ product.part_name }}">
+                                    </a>
                                 {% endif %}
                                 <div class="card-body pb-0">
                                     <h5 class="card-title">{{ product.part_name }}</h5>
@@ -86,7 +95,8 @@
                                                         {% if c %}
                                                             <div class="col-12">
                                                                 <p><strong>Colour:</strong></p>
-                                                                <select class="form-control rounded-0 w-50" name="product_colour">
+                                                                <select class="form-control rounded-0 w-50" 
+                                                                    name="product_colour">
                                                                     <option value="black" selected>Black</option>
                                                                     <option value="blue">Blue</option>
                                                                     <option value="green">Green</option>
@@ -97,51 +107,81 @@
                                                         {% endif %}
                                                     <input type="hidden" name="quantity" value="1">
                                                     <input type="hidden" name="redirect_url" value="{{ request.path }}">
-                                                    <p class="lead me-2 my-1 text-start fw-bold price">£{{ product.price }}</p>
-                                                    <button type="submit" class="btn btn-success rounded-0 text-uppercase mt-5 ms-2">Add <i class="icon fas fa-cart-plus"></i></button>
+                                                    <p class="lead me-2 my-1 text-start fw-bold price">
+                                                        £{{ product.price }}
+                                                    </p>
+                                                    <button type="submit" 
+                                                        class="btn btn-success rounded-0 text-uppercase mt-5 ms-2">
+                                                        Add <i class="icon fas fa-cart-plus"></i>
+                                                    </button>
                                                 </div>
                                                 {% endwith %}
                                             </form>
                                             {% if product.category %}
-                                            <p class="small mt-1 mb-0">
-                                                <a href="{% url 'products' %}?category={{ product.category.name }}" class="text-muted">
-                                                    <i class="fas fa-tag me-1"></i>{{ product.category.friendly_name }}
-                                                </a>
-                                            </p>
+                                                <p class="small mt-1 mb-0">
+                                                    <a href="{% url 'products' %}?category={{ product.category.name }}" 
+                                                        class="text-muted">
+                                                        <i class="fas fa-tag me-1"></i>
+                                                        {{ product.category.friendly_name }}
+                                                    </a>
+                                                </p>
                                             {% endif %}
                                             {% if product.rating %}
-                                                <small class="text-muted"><i class="fas fa-star me-1"></i>{{ product.rating }} / 5</small>
+                                                <small class="text-muted"><i class="fas fa-star me-1"></i>
+                                                    {{ product.rating }} / 5
+                                                </small>
                                             {% else %}
                                                 <small class="text-muted">No Rating</small>
                                             {% endif %}
                                             {% if request.user.is_superuser %}
                                                 <small class="ms-3">
-                                                    <a href="{% url 'edit_product' product.id %}" class="btn edit-btn btn-sm btn-block rounded-0"><i class="fas fa-edit"></i> Edit</a>
-                                                    <button data-bs-toggle="modal" data-bs-target="#a{{product.id}}" class="btn delete-btn btn-sm btn-block rounded-0"><i
-                                                    class="fas fa-exclamation-circle"></i><strong> Delete</strong></button>
+                                                    <a href="{% url 'edit_product' product.id %}" 
+                                                        class="btn edit-btn btn-sm btn-block rounded-0">
+                                                        <i class="fas fa-edit"></i> Edit
+                                                    </a>
+                                                    <button class="btn delete-btn btn-sm btn-block rounded-0" 
+                                                        data-bs-toggle="modal" 
+                                                        data-bs-target="#a{{product.id}}">
+                                                        <i class="fas fa-exclamation-circle"></i>
+                                                        <strong> Delete</strong>
+                                                    </button>
                                                 </small>
                                             {% endif %}
                                         </div>
                                         <!--Delete product modal -->
-                                        <div class="modal fade" id="a{{ product.id }}" tabindex="-1" aria-labelledby="b{{ product.id }}"
+                                        <div class="modal fade" id="a{{ product.id }}" tabindex="-1" 
+                                            aria-labelledby="b{{ product.id }}"
                                             aria-hidden="true">
                                             <div class="modal-dialog modal-lg">
                                                 <div class="modal-content rounded-0">
                                                     <div class="modal-header bg-danger p-2 rounded-0 text-white text-center">
                                                         <i class="fas fa-exclamation-triangle fa-2x"></i>
                                                         <h2 class="modal-title logo-font"> Warning</h2>
-                                                        <button type="button" class="btn-close btn-close-white m-2" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                        <button type="button" class="btn-close btn-close-white m-2" 
+                                                            data-bs-dismiss="modal" aria-label="Close">
+                                                        </button>
                                                     </div>
                                                     <div class="modal-header">
-                                                        <h3 class="modal-title" id="b{{ product.id }}">Remove product from inventory?</h3>
+                                                        <h3 class="modal-title" id="b{{ product.id }}">
+                                                            Remove product from inventory?
+                                                        </h3>
                                                     </div>
                                                     <div class="modal-body text-center">
-                                                        <p><strong class="text-danger text-uppercase">The product will be permanently removed from the database</strong></p>
-                                                        <p class="fw-bold">Are you sure you want delete this product?</p>
+                                                        <p><strong class="text-danger text-uppercase">
+                                                            The product will be permanently removed from the database</strong>
+                                                        </p>
+                                                        <p class="fw-bold">
+                                                            Are you sure you want delete this product?
+                                                        </p>
                                                     </div>
                                                     <div class="modal-footer">
-                                                        <button type="button" class="btn btn-outline-black rounded-0" data-bs-dismiss="modal"><i class="fas fa-chevron-left"></i> Cancel</button>
-                                                        <a href="{% url 'delete_product' product.id %}" class="btn btn-black rounded-0">Yes Delete <i class="fas fa-trash-alt"></i></a>
+                                                        <button type="button" class="btn btn-outline-black rounded-0" 
+                                                            data-bs-dismiss="modal"><i class="fas fa-chevron-left"></i> Cancel
+                                                        </button>
+                                                        <a href="{% url 'delete_product' product.id %}" 
+                                                            class="btn btn-black rounded-0">Yes Delete 
+                                                            <i class="fas fa-trash-alt"></i>
+                                                        </a>
                                                     </div>
                                                 </div>
                                             </div>

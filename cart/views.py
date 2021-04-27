@@ -14,7 +14,15 @@ def view_cart(request):
 
 
 def add_to_cart(request, item_id):
-    """ Add a quantity of the specified product to the shopping cart """
+    """ Add a quantity of the specified product to the shopping cart.
+    Args:
+        request: HTTP request object
+        item_id: Id for the item is passed into the funtion
+    Returns:
+        The process for adding items in the cart.
+        When user clicks the add to cart button, the item
+        will be added to the cart.
+    """
 
     product = get_object_or_404(Product, pk=item_id)
     quantity = int(request.POST.get('quantity'))
@@ -60,7 +68,15 @@ def add_to_cart(request, item_id):
 
 
 def mod_cart(request, item_id):
-    """ Modify the quantity of the specific product to the specific amount """
+    """ Modify the quantity of the specific product to the specific amount
+    Args:
+        request: HTTP request object
+        item_id: Id for the item is passed into the funtion
+    Returns:
+        The process of modifying the contents of the cart.
+        When the plus and minus buttons are clicked, quantity is adjusted.
+        The update button updates the quantity, price and subtotal of the item.
+    """
 
     product = get_object_or_404(Product, pk=item_id)
     quantity = int(request.POST.get('quantity'))
@@ -103,7 +119,14 @@ def mod_cart(request, item_id):
 
 
 def remove_from_cart(request, item_id):
-    """ Remove the item from the shopping cart """
+    """ Remove the item from the shopping cart
+    Args:
+        request: HTTP request object
+        item_id: Id for the item is passed into the funtion
+    Returns:
+        The process of the items being removed from the cart.
+        The remove button removes the whole quantity of the item.
+    """
 
     try:
         product = get_object_or_404(Product, pk=item_id)

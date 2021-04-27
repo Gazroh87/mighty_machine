@@ -2,6 +2,7 @@
 {% load static %}
 
 {% block page_header %}
+    <!-- Header -->
     <div class="container header-container">
         <div class="row">
             <div class="col"></div>
@@ -43,11 +44,15 @@
                 <div class="image-container my-5">
                     {% if product.image %}
                         <a href="{{ product.image.url }}" target="_blank">
-                            <img class="card-img-top img-fluid" src="{{ product.image.url }}" alt="{{ product.part_name }}">
+                            <img class="card-img-top img-fluid" 
+                                src="{{ product.image.url }}" 
+                                alt="{{ product.part_name }}">
                         </a>
                         {% else %}
                         <a href="">
-                            <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}noimage.png" alt="{{ product.part_name }}">
+                            <img class="card-img-top img-fluid" 
+                                src="{{ MEDIA_URL }}noimage.png" 
+                                alt="{{ product.part_name }}">
                         </a>
                     {% endif %}
                 </div>
@@ -69,18 +74,25 @@
                     {% endif %}
                     {% if request.user.is_authenticated %}
                         <small class="text-muted">
-                            <button type="button" class="btn btn-black btn-outline-secondary btn-sm rounded-0" data-bs-toggle="modal"
-                                data-bs-target="#reviewModal">Add Review</button>
+                            <button type="button" class="btn btn-black btn-outline-secondary btn-sm rounded-0" 
+                                data-bs-toggle="modal" data-bs-target="#reviewModal">Add Review
+                            </button>
                         </small>
                     {% endif %}
                     {% if request.user.is_superuser %}
                         <small class="ms-3">
-                            <a href="{% url 'edit_product' product.id %}" class="btn edit-btn btn-sm btn-block rounded-0"><i class="fas fa-edit"></i> Edit</a>
-                            <button data-bs-toggle="modal" data-bs-target="#a{{product.id}}" class="btn delete-btn btn-sm btn-block rounded-0"><i
-                            class="fas fa-exclamation-circle"></i><strong> Delete</strong></button>
+                            <a href="{% url 'edit_product' product.id %}" 
+                                class="btn edit-btn btn-sm btn-block rounded-0"><i class="fas fa-edit"></i> Edit
+                            </a>
+                            <button data-bs-toggle="modal" data-bs-target="#a{{product.id}}" 
+                                class="btn delete-btn btn-sm btn-block rounded-0">
+                                <i class="fas fa-exclamation-circle"></i><strong> Delete</strong>
+                            </button>
                         </small>
                         {% else %}
-                        <p>Please <a href="{% url 'account_login' %}">login</a> or <a href="{% url 'account_signup' %}"> register </a>to write a review.</p>
+                        <p>Please <a href="{% url 'account_login' %}">login</a> or 
+                            <a href="{% url 'account_signup' %}"> register </a>to write a review.
+                        </p>
                     {% endif %}
                     <p class="mt-3">{{ product.description }}</p>
                     <!-- Form to select product quantity to add to cart -->
@@ -91,7 +103,9 @@
                             {% if c %}
                                 <div class="col-12">
                                     <p><strong>Colour:</strong></p>
-                                    <select class="form-control rounded-0 w-50" name="product_colour" id="id_product_colour">
+                                    <select class="form-control rounded-0 w-50" 
+                                        name="product_colour" 
+                                        id="id_product_colour">
                                         <option value="black" selected>Black</option>
                                         <option value="blue">Blue</option>
                                         <option value="green">Green</option>
@@ -142,25 +156,32 @@
                         </div>
                     </form>
                     <!--Delete product modal -->
-                    <div class="modal fade" id="a{{ product.id }}" tabindex="-1" aria-labelledby="b{{ product.id }}"
+                    <div class="modal fade" id="a{{ product.id }}" tabindex="-1" 
+                        aria-labelledby="b{{ product.id }}"
                         aria-hidden="true">
                         <div class="modal-dialog modal-lg">
                             <div class="modal-content rounded-0">
                                 <div class="modal-header bg-danger p-2 rounded-0 text-white text-center">
                                     <i class="fas fa-exclamation-triangle fa-2x"></i>
                                     <h2 class="modal-title logo-font"> Warning</h2>
-                                    <button type="button" class="btn-close btn-close-white m-2" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    <button type="button" class="btn-close btn-close-white m-2" 
+                                        data-bs-dismiss="modal" aria-label="Close"></button>
                                 </div>
                                 <div class="modal-header">
                                     <h3 class="modal-title" id="b{{ product.id }}">Remove product from inventory?</h3>
                                 </div>
                                 <div class="modal-body text-center">
-                                    <p><strong class="text-danger text-uppercase">The product will be permanently removed from the database</strong></p>
+                                    <p><strong class="text-danger text-uppercase">
+                                        The product will be permanently removed from the database</strong>
+                                    </p>
                                     <p class="fw-bold">Are you sure you want delete this product?</p>
                                 </div>
                                 <div class="modal-footer">
-                                    <button type="button" class="btn btn-outline-black rounded-0" data-bs-dismiss="modal"><i class="fas fa-chevron-left"></i> Cancel</button>
-                                    <a href="{% url 'delete_product' product.id %}" class="btn btn-black rounded-0">Yes Delete <i class="fas fa-trash-alt"></i></a>
+                                    <button type="button" class="btn btn-outline-black rounded-0" 
+                                        data-bs-dismiss="modal"><i class="fas fa-chevron-left"></i> Cancel</button>
+                                    <a href="{% url 'delete_product' product.id %}" 
+                                        class="btn btn-black rounded-0">Yes Delete <i class="fas fa-trash-alt"></i>
+                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -168,26 +189,35 @@
                 </div>
             </div>
         </div>
+        <!-- Product Reviews -->
         <div class="container-fluid text-center" id="reviews">
             <div class="row mt-5">
                 <div class="col-12 text-center pb-3 mt-3">
                     <h2 class="logo-font">Product Reviews</h2>
                     <hr class="w-50 mb-1 mx-auto">
                     <div class="mb-2 text-center">
-                        <span class="rate-stars" data-bs-value="{{ product.rating }}"></span> <span>({{ reviews.count }})</span>
+                        <span class="rate-stars" data-bs-value="{{ product.rating }}"></span> 
+                        <span>({{ reviews.count }})</span>
                     </div>
                     {% if user.is_authenticated %}
                     <div class="text-center mt-3">
-                        <button type="button" class="btn btn-black btn-outline-black rounded-0 text-uppercase" data-bs-toggle="modal"
-                                data-bs-target="#reviewModal">Add Review
+                        <button type="button" class="btn btn-black btn-outline-black rounded-0 text-uppercase" 
+                            data-bs-toggle="modal"
+                            data-bs-target="#reviewModal">Add Review
                         </button>
-                        <div class="modal fade" id="reviewModal" tabindex="-1" aria-labelledby="reviewModalLabel" aria-hidden="true">
+                        <div class="modal fade" id="reviewModal" tabindex="-1" 
+                            aria-labelledby="reviewModalLabel" 
+                            aria-hidden="true">
                             <div class="modal-dialog modal-lg">
                                 <div class="modal-content rounded-0">
                                     <!-- Modal header with title and close button -->
                                     <div class="modal-header">
-                                        <h5 class="modal-title text-uppercase" id="reviewModalLabel">Write Your Review</h5>
-                                        <button type="button" class="btn-close btn-close m-2" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        <h5 class="modal-title text-uppercase" id="reviewModalLabel">
+                                            Write Your Review
+                                        </h5>
+                                        <button type="button" class="btn-close btn-close m-2" 
+                                            data-bs-dismiss="modal" aria-label="Close">
+                                        </button>
                                     </div>
                                     <!-- Review form -->
                                     <form action="{% url 'add_review' product.pk %}" method="POST">
@@ -196,9 +226,11 @@
                                             {% csrf_token %}
                                             {{ review_form|crispy }}
                                         </div>
-                                        <!-- Footer containing Add and Cancel buttons -->
+                                        <!-- Footer containing cancel and add review buttons -->
                                         <div class="modal-footer">
-                                            <button type="button" class="btn btn-outline-black rounded-0" data-bs-dismiss="modal"><i class="fas fa-chevron-left"></i> Cancel</button>
+                                            <button type="button" class="btn btn-outline-black rounded-0" 
+                                                data-bs-dismiss="modal"><i class="fas fa-chevron-left"></i> Cancel
+                                            </button>
                                             <button type="submit" class="btn btn-black rounded-0">Add Review</button>
                                         </div>
                                     </form>
@@ -207,11 +239,13 @@
                         </div>
                     </div>
                     {% endif %}
+                    <!-- Edit Review -->
                     <div class="container">
                         <div class="row mt-5 d-flex justify-content-around">
                             {% if reviews %}
                                 {% for review in reviews %}
-                                <div class="{% if forloop.counter|divisibleby:2 %} bg-light{% endif %} col-sm-12 col-lg-6 p-2 review my-4">
+                                <div class="{% if forloop.counter|divisibleby:2 %} bg-light{% endif %} 
+                                    col-sm-12 col-lg-6 p-2 review my-4">
                                     <div class="p-3 m-3 border">
                                         <div class="col-12 col-lg-4 text-center px-0">
                                             <p class="mb-0 fw-bold text-uppercase">{{ review.title }}</p>
@@ -220,11 +254,17 @@
                                             <div class="col m-auto text-center mb-2">
                                                 <small class="ms-3">
                                                     <!-- Edit button triggers modal to edit review -->
-                                                    <a href="" class="btn edit-btn btn-sm btn-block rounded-0" data-bs-toggle="modal"
-                                                    data-bs-target="#editModal{{review.id}}"><i class="fas fa-edit"></i> Edit</a>
+                                                    <a href="" class="btn edit-btn btn-sm btn-block rounded-0" 
+                                                        data-bs-toggle="modal"
+                                                        data-bs-target="#editModal{{review.id}}">
+                                                        <i class="fas fa-edit"></i> Edit
+                                                    </a>
                                                     <!-- Delete button triggers modal to confirm review deletion -->
-                                                    <button data-bs-toggle="modal" data-bs-target="#deleteReview" class="btn delete-btn btn-sm btn-block rounded-0" type="button"><i
-                                                    class="fas fa-exclamation-circle"></i><strong> Delete</strong></button>
+                                                    <button class="btn delete-btn btn-sm btn-block rounded-0" 
+                                                        data-bs-toggle="modal" 
+                                                        data-bs-target="#deleteReview" type="button">
+                                                        <i class="fas fa-exclamation-circle"></i><strong> Delete</strong>
+                                                    </button>
                                                 </small>
                                             </div>
                                             {% endif %} 
@@ -232,8 +272,11 @@
                                                 <p>"{{ review.review }}"</p>
                                                 <div class="row">
                                                     <div class="col">
-                                                        <p class="text-end fst-italic text-secondary mb-0">-{{ review.user }}</p>
-                                                        <p class="text-secondary text-end mb-0"><small>{{ review.post_on|date:"M d, Y" }}</small>
+                                                        <p class="text-end fst-italic text-secondary mb-0">
+                                                            -{{ review.user }}
+                                                        </p>
+                                                        <p class="text-secondary text-end mb-0">
+                                                            <small>{{ review.post_on|date:"M d, Y" }}</small>
                                                         </p>
                                                     </div>
                                                 </div>
@@ -259,7 +302,7 @@
                                                     {% csrf_token %}
                                                     {{ review_form|crispy }}
                                                 </div>
-                                                <!-- Footer containing Update and Cancel buttons -->
+                                                <!-- Footer containing cancel and update review buttons -->
                                                 <div class="modal-footer">
                                                     <button type="button" class="btn btn-outline-black rounded-0" data-bs-dismiss="modal"><i class="fas fa-chevron-left"></i> Cancel</button>
                                                     <button type="submit" class="btn btn-black rounded-0">Update Review</button>
@@ -269,25 +312,38 @@
                                     </div>
                                 </div>
                                  <!-- Delete review modal -->
-                                <div class="modal fade" id="deleteReview" tabindex="-1" aria-labelledby="deleteUserReview"
+                                <div class="modal fade" id="deleteReview" tabindex="-1" 
+                                    aria-labelledby="deleteUserReview"
                                     aria-hidden="true">
                                     <div class="modal-dialog modal-lg">
                                         <div class="modal-content rounded-0">
                                             <div class="modal-header bg-danger p-2 rounded-0 text-white text-center">
                                                 <i class="fas fa-exclamation-triangle fa-2x"></i>
                                                 <h2 class="modal-title logo-font"> Warning</h2>
-                                                <button type="button" class="btn-close btn-close-white m-2" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                <button type="button" class="btn-close btn-close-white m-2" 
+                                                    data-bs-dismiss="modal" aria-label="Close">
+                                                </button>
                                             </div>
                                             <div class="modal-header">
-                                                <h3 class="modal-title" id="deleteUserReview">Remove review from website?</h3>
+                                                <h3 class="modal-title" id="deleteUserReview">
+                                                    Remove review from website?
+                                                </h3>
                                             </div>
                                             <div class="modal-body text-center">
-                                                <p><strong class="text-danger text-uppercase">The review will be permanently removed from the website</strong></p>
+                                                <p><strong class="text-danger text-uppercase">
+                                                    The review will be permanently removed from the website</strong>
+                                                </p>
                                                 <p class="fw-bold">Are you sure you want delete this review?</p>
                                             </div>
                                             <div class="modal-footer">
-                                                <button type="button" class="btn btn-outline-black rounded-0" data-bs-dismiss="modal"><i class="fas fa-chevron-left"></i> Cancel</button>
-                                                <a href="{% url 'delete_review' review.id %}" class="btn btn-black rounded-0" type="button">Yes Delete <i class="fas fa-trash-alt"></i></a>
+                                                <button type="button" class="btn btn-outline-black rounded-0" 
+                                                    data-bs-dismiss="modal">
+                                                    <i class="fas fa-chevron-left"></i> Cancel
+                                                </button>
+                                                <a href="{% url 'delete_review' review.id %}" 
+                                                    class="btn btn-black rounded-0" type="button">Yes Delete 
+                                                    <i class="fas fa-trash-alt"></i>
+                                                </a>
                                             </div>
                                         </div>
                                     </div>

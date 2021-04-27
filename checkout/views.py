@@ -20,6 +20,16 @@ import json
 
 @require_POST
 def cache_checkout_data(request):
+    """ Funtion for the payment in the checkout process
+    Args:
+        request: HTTP request object
+    Returns:
+        The information needed for the payments which
+        is done in stripe. It links the payment to the cart information
+        and will display an error message if the payment cannot be
+        processed.
+    """
+
     try:
         pid = request.POST.get('client_secret').split('_secret')[0]
         stripe.api_key = settings.STRIPE_SECRET_KEY

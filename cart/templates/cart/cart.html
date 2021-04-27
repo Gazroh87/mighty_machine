@@ -3,6 +3,7 @@
 {% load cart_tools %}
 
 {% block page_header %}
+    <!-- Header -->
     <div class="container header-container">
         <div class="row">
             <div class="col"></div>
@@ -34,7 +35,7 @@
                 </div>
             </div>
         </div>
-        <!-- Product details -->
+        <!-- Shopping cart & product details -->
         <div class="row">
             <div class="col">
                 {% if cart_items %}
@@ -60,7 +61,10 @@
                                 </div>
                                 <div class="col-12 col-sm-6 order-sm-last">
                                     <p class="my-0">Price Each: ${{ item.product.price }}</p>
-                                    <p><strong>Subtotal: </strong>${{ item.product.price | calc_subtotal:item.quantity }}</p>
+                                    <p>
+                                        <strong>Subtotal: </strong>
+                                        ${{ item.product.price | calc_subtotal:item.quantity }}
+                                    </p>
                                 </div>
                                 <div class="col-8 col-sm-6">
                                     {% include "cart/quantity-form.html" %}
@@ -68,7 +72,6 @@
                             </div>
                             <div class="row"><div class="col"><hr></div></div>
                         {% endfor %}
-                        
                     </div>
                     <div class="table-responsive rounded d-none d-md-block">
                         <table class="table table-sm table-borderless scroll">
@@ -109,7 +112,7 @@
                                         {% include 'cart/cart-total.html' %}
                                     </td>
                                 </tr>
-                                <!-- User has the option to return to products and shop more or proceed to checkout -->
+                                <!-- User has the option to return to the products page or proceed to checkout -->
                                 <tr>
                                     <td colspan="5" class="text-end">
                                         {% include 'cart/checkout-buttons.html' %}
@@ -119,6 +122,7 @@
                         </table>
                     </div>
                 {% else %}
+                    <!-- Shopping cart is empty -->
                     <div class="col text-center">
                         <p class="lead mb-5">Your cart is empty. Don't miss out on our great deals!</p>
                         <a href="{% url 'products' %}" class="btn btn-outline-black rounded-0 btn-lg">

@@ -6,6 +6,7 @@
 {% endblock %}
 
 {% block page_header %}
+    <!-- Header -->
     <div class="container header-container">
         <div class="row">
             <div class="col"></div>
@@ -22,7 +23,10 @@
                 <hr>
                 <h2 class="logo-font mb-4">Thanks for your order!</h2>
                 <hr>
-                <p class="text-black text-center">Your order information is below. A confirmation email has been sent to <strong>{{ order.email }}</strong>.</p>
+                <p class="text-black text-center">
+                    Your order information is below. A confirmation email has been sent to 
+                    <strong>{{ order.email }}</strong>.
+                </p>
             </div>
         </div>
         <!-- Breadcrumbs -->
@@ -73,7 +77,6 @@
                             <h5 class="text-muted">Order Details:</h5>
                         </div>
                     </div>
-
                     {% for item in order.lineitems.all %}
                     <div class="row">
                         <div class="col-12 col-md-4">
@@ -109,7 +112,6 @@
                             <p class="mb-0">{{ order.street_address1 }}</p>
                         </div>
                     </div>
-
                     {% if order.street_address2 %}
                     <div class="row">
                         <div class="col-12 col-md-4">
@@ -120,7 +122,6 @@
                         </div>
                     </div>
                     {% endif %}
-
                     {% if order.country %}
                     <div class="row">
                         <div class="col-12 col-md-4">
@@ -131,7 +132,6 @@
                         </div>
                     </div>
                     {% endif %}
-
                     <div class="row">
                         <div class="col-12 col-md-4">
                             <p class="mb-0 text-black fw-bold">Town or City:</p>
@@ -140,7 +140,6 @@
                             <p class="mb-0">{{ order.town_or_city }}</p>
                         </div>
                     </div>
-
                     {% if order.postcode %}
                     <div class="row">
                         <div class="col-12 col-md-4">
@@ -151,7 +150,6 @@
                         </div>
                     </div>
                     {% endif %}
-
                     <div class="row">
                         <div class="col-12 col-md-4">
                             <p class="mb-0 text-black fw-bold">Country:</p>
@@ -210,7 +208,8 @@
                         <span class="text-uppercase">Back to Profile</span>
                     </a>
                 {% else %}
-                    <a href="{% url 'products' %}?category=new_items,clearance" class="btn btn-black rounded-0 my-2">
+                    <a href="{% url 'products' %}?category=new_items,clearance" 
+                        class="btn btn-black rounded-0 my-2">
                         <span class="icon me-2">
                             <i class="fas fa-gifts"></i>
                         </span>

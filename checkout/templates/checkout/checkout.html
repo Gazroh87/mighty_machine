@@ -8,6 +8,7 @@
 {% endblock %}
 
 {% block page_header %}
+    <!-- Header -->
     <div class="container header-container">
         <div class="row">
             <div class="col"></div>
@@ -41,7 +42,7 @@
                 </div>
             </div>
         </div>
-        <!-- Order summary -->
+        <!-- Order Summary & Product count -->
         <div class="row">
             <div class="col-12 col-sm-12 col-lg-6 mb-5">
                 <p class="fw-bold">Order Summary ({{ product_count }})</p>
@@ -55,25 +56,33 @@
                 </div>
                 <div class="order-summary-wrapper">
                     {% for item in cart_items %}
-                    <div class="row {% if forloop.counter|divisibleby:2 %} bg-light{% endif %}">
-                        <div class="col-2 mb-1">
-                            <a href="{% url 'product_detail' item.product.id %}">
-                                {% if item.product.image %}
-                                    <img class="w-100" src="{{ item.product.image.url }}" alt="{{ product.part_name }}">
-                                {% else %}
-                                    <img class="w-100" src="{{ MEDIA_URL }}noimage.png" alt="{{ product.part_name }}">
-                                {% endif %}
-                            </a>
+                        <div class="row {% if forloop.counter|divisibleby:2 %} bg-light{% endif %}">
+                            <div class="col-2 mb-1">
+                                <a href="{% url 'product_detail' item.product.id %}">
+                                    {% if item.product.image %}
+                                        <img class="w-100" 
+                                            src="{{ item.product.image.url }}" 
+                                            alt="{{ product.part_name }}">
+                                    {% else %}
+                                        <img class="w-100" 
+                                            src="{{ MEDIA_URL }}noimage.png" 
+                                            alt="{{ product.part_name }}">
+                                    {% endif %}
+                                </a>
+                            </div>
+                            <div class="col-7 mb-2">
+                                <p class="my-0"><strong>{{ item.product.part_name }}</strong></p>
+                                <p class="my-0 small">Colour: 
+                                    {% if item.product.has_colours %}{{ item.colour|upper }}{% else %}N/A{% endif %}
+                                </p>
+                                <p class="my-0 small text-muted">Qty: {{ item.quantity }}</p>
+                            </div>
+                            <div class="col-3 text-end">
+                                <p class="my-0 small text-muted">
+                                    £{{ item.product.price | calc_subtotal:item.quantity }}
+                                </p>
+                            </div>
                         </div>
-                        <div class="col-7 mb-2">
-                            <p class="my-0"><strong>{{ item.product.part_name }}</strong></p>
-                            <p class="my-0 small">Colour: {% if item.product.has_colours %}{{ item.colour|upper }}{% else %}N/A{% endif %}</p>
-                            <p class="my-0 small text-muted">Qty: {{ item.quantity }}</p>
-                        </div>
-                        <div class="col-3 text-end">
-                            <p class="my-0 small text-muted">£{{ item.product.price | calc_subtotal:item.quantity }}</p>
-                        </div>
-                    </div>
                     {% endfor %}
                 </div>
                 <!-- Total cost details -->
@@ -113,8 +122,14 @@
                     {{ order_form.country | as_crispy_field }}
                     <div class="form-check form-check-inline float-end me-0">
                         {% if user.is_authenticated %}
-                            <label for="id-save-info" class="form-check-label">Save this delivery information to my profile</label>
-                            <input type="checkbox" class="form-check-input ms-2 me-0" id="id-save-info" name="save-info" checked>
+                            <label for="id-save-info" class="form-check-label">
+                                Save this delivery information to my profile
+                            </label>
+                            <input type="checkbox" 
+                                class="form-check-input ms-2 me-0" 
+                                id="id-save-info" 
+                                name="save-info" 
+                                checked>
                         {% else %}
                             <label for="id-save-info" class="form-check-label">
                                 <a class="text-info" href="{% url 'account_signup' %}">Create an account</a> or
@@ -133,7 +148,6 @@
                     <!-- Pass the client secret to the view so we can get the payment intent id -->
                     <input type="hidden" value="{{ client_secret }}" name="client_secret">
                 </fieldset>
-
                 <div class="submit-button text-end my-3 d-flex justify-content-evenly">                    
                     <a href="{% url 'view_cart' %}" class="btn btn-outline-black rounded-0">
                         <span class="icon">
@@ -158,6 +172,7 @@
         </div>
     </div>
 </div>
+<!-- Loading overlay -->
 <div id="loading-overlay">
     <h1 class="text-light logo-font loading-spinner">
         <span class="icon">

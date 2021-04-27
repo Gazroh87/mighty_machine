@@ -11,7 +11,15 @@ from checkout.models import Order
 
 @login_required
 def profile(request):
-    """ Display the user's profile. """
+    """ Display the user's profile.
+    Args:
+        request: HTTP request object
+    Returns:
+        The user's profile and if the user updates the
+        profile correctly they will receive a success message,
+        but if the form is invalid they will receive an error message.
+    """
+
     profile = get_object_or_404(UserProfile, user=request.user)
 
     if request.method == 'POST':
@@ -37,6 +45,17 @@ def profile(request):
 
 
 def order_history(request, order_number):
+    """ Display the user's order history.
+    Args:
+        request: HTTP request object
+        order_number: order number passed into the funtion
+    Returns:
+        The order history which will display the previous
+        orders of the customer if they are logged in. This will display
+        the information relating to the order and can be clicked on to
+        see further details.
+    """
+
     order = get_object_or_404(Order, order_number=order_number)
 
     messages.info(request, (

@@ -2,6 +2,7 @@
 {% load static %}
 
 {% block page_header %}
+    <!-- Header -->
     <div class="container header-container">
         <div class="row">
             <div class="col"></div>
@@ -10,6 +11,7 @@
 {% endblock %}
 
 {% block content %}
+    <!-- Jumbotron and Slideshow -->
     <div class="container-fluid h-100 mb-5">
         <div id="slideshow" class="w-100">
             <img src="{{ MEDIA_URL }}home_bg.jpg" alt="PC Gamer Gaming">
@@ -20,13 +22,16 @@
         </div>
         <div class="row h-100">
             <div class="col-12 col-md-4 offset-md-1 my-auto shadow-lg jumbotron">
-                <img src="{% static 'images/mm-pcparts-logo.png' %}" class="hero-logo mx-auto d-block my-2" alt="MM PC Parts logo">
+                <img src="{% static 'images/mm-pcparts-logo.png' %}" 
+                    class="hero-logo mx-auto d-block my-2" 
+                    alt="MM PC Parts logo">
                 <h1 class="display-4 logo-font mt-2 text-center">
                     The Latest tech <br> has arrived...
                 </h1>
                 <div class="my-5">
                     <h4>
-                        <a href="{% url 'products' %}" class="shop-now-button btn btn-lg rounded-0 logo-case py-3 col-6 mx-auto">
+                        <a href="{% url 'products' %}" 
+                            class="shop-now-button btn btn-lg rounded-0 logo-case py-3 col-6 mx-auto">
                             Shop Now
                         </a>
                     </h4>

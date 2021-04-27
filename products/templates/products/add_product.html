@@ -2,6 +2,7 @@
 {% load static %}
 
 {% block page_header %}
+    <!-- Header -->
     <div class="container header-container">
         <div class="row">
             <div class="col"></div>
@@ -20,10 +21,11 @@
                 <hr>
             </div>
         </div>
-
+        <!-- Add product crispy form -->
         <div class="row">
             <div class="col-12 col-sm-10 offset-sm-1 col-md-8 offset-md-2">
-                <form method="POST" action="{% url 'add_product' %}" class="form mb-2" enctype="multipart/form-data">
+                <form method="POST" action="{% url 'add_product' %}" 
+                    class="form mb-2" enctype="multipart/form-data">
                     {% csrf_token %}
                     {% for field in form %}
                         {% if field.name != 'image' %}
@@ -33,8 +35,12 @@
                         {% endif %}
                     {% endfor %}
                     <div class="text-end">
-                        <a class="btn btn-outline-black rounded-0" href="{% url 'products' %}"><i class="fas fa-chevron-left"></i> Cancel</a>
-                        <button class="btn btn-black rounded-0" type="submit">Add Product <i class="fas fa-plus"></i></button>
+                        <a class="btn btn-outline-black rounded-0" 
+                            href="{% url 'products' %}"><i class="fas fa-chevron-left"></i> Cancel
+                        </a>
+                        <button class="btn btn-black rounded-0" 
+                            type="submit">Add Product <i class="fas fa-plus"></i>
+                        </button>
                     </div>
                 </form>
             </div>

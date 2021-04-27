@@ -1,5 +1,9 @@
 {% if item.product.image %}
-<img class="img-fluid cart-item-img" src="{{ item.product.image.url }}" alt="{{ item.product.part_name }}">
+    <img class="img-fluid cart-item-img" 
+        src="{{ item.product.image.url }}" 
+        alt="{{ item.product.part_name }}">
 {% else %}
-<img class="img-fluid cart-item-img" src="{{ MEDIA_URL }}noimage.png" alt="{{ item.product.part_name }}">
+    <img class="img-fluid cart-item-img" 
+        src="{{ MEDIA_URL }}noimage.png" 
+        alt="{{ item.product.part_name }}">
 {% endif %}

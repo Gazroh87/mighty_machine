@@ -10,7 +10,13 @@ from .forms import ProductForm, ReviewForm
 
 
 def all_products(request):
-    """A view to display all products, including sorting and search queries"""
+    """A view to display all products, including sorting and search queries
+    Args:
+        request: HTTP request object
+    Returns:
+        All products including how they are sorted and
+        returns any search results for products.
+    """
 
     products = Product.objects.all()
     query = None
@@ -62,7 +68,15 @@ def all_products(request):
 
 
 def product_detail(request, product_id):
-    """A view to display individual product details"""
+    """A view to display individual product details
+    Args:
+        request: HTTP request object
+        product_id: product id passed into the funtion
+    Returns:
+        The product detail template which displays the
+        all the information of a product if a product
+        has been selected from the products page.
+    """
 
     product = get_object_or_404(Product, pk=product_id)
     if request.user.is_authenticated:
@@ -92,6 +106,7 @@ def product_detail(request, product_id):
 @login_required
 def add_product(request):
     """ Add a product to the store """
+
     if not request.user.is_superuser:
         messages.error(request, 'Sorry, only store owners can do that.')
         return redirect(reverse('home'))
@@ -120,6 +135,7 @@ def add_product(request):
 @login_required
 def edit_product(request, product_id):
     """ Edit a product in the store """
+
     if not request.user.is_superuser:
         messages.error(request, 'Sorry, only store owners can do that.')
         return redirect(reverse('home'))
@@ -150,6 +166,7 @@ def edit_product(request, product_id):
 @login_required
 def delete_product(request, product_id):
     """ Delete a product in the store """
+
     if not request.user.is_superuser:
         messages.error(request, 'Sorry, only store owners can do that.')
         return redirect(reverse('home'))
@@ -198,9 +215,8 @@ def add_review(request, product_id):
 
 @login_required
 def edit_review(request, review_id):
-    """
-    Saves review form edited by user
-    """
+    """ Saves review form edited by user """
+
     review = get_object_or_404(Review, pk=review_id)
     review_form = ReviewForm(request.POST, instance=review)
     product = Product.objects.get(part_name=review.product)
@@ -223,9 +239,8 @@ def edit_review(request, review_id):
 
 
 def delete_review(request, review_id):
-    """
-    Deletes user's review
-    """
+    """ Deletes user's review """
+
     review = get_object_or_404(Review, pk=review_id)
     product = Product.objects.get(part_name=review.product)
 
