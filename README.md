@@ -188,8 +188,34 @@ and products etc.
 
 ## Structure
 
-* The website should provide a user friendly interface to further increase usability and help encourage users to 
+* When the user lands on the homepage, it will be met with a slideshow of attractive imagery behind text invoking 
+the websites purpose.
+* A user friendly interface to further increase usability and help encourage users to 
 return to the website.
+* The navigation bar is always fixed to the top of the viewport and is fully responsive in adjusting itself for 
+tablet and mobile users.
+* Responsive links which change appearance when hovered over, providing the user with feedback as they navigate 
+around the website.
+* The products page follows a similar layout to the majority of other E-Commerce shops. The default products page 
+includes all available products from every category. Each product is represented as a card with an image of the 
+whole product, the product name including brand, a short description, a rating and price.
+* If a user wants to view a product, they can find a bit more information.
+* If a user adds a product to their cart, they will receive a toast pop-up message, towards the top right of the 
+viewport under the cart button in the nav, informing them that they have added 'x' amount of product, and if they 
+selected a product in a certain colour, it will tell them in which colour they have added the product into their 
+cart.
+* On the cart page, users can see all the products they have added including the optional colour they might have 
+selected and they can modify the quantities.
+* Once a user has proceeded to the checkout, they will be presented with a form to fill out in order to complete 
+their checkout. Once the user has completed this, the order will be stored in their order history of their account, 
+for them to view at any time.
+* I have provided users with the ability to exit pop-ups as soon as they appear via a close button.
+* Images are responsive to the device screen size.
+* I have provided users with breadcrumbs for them to quickly to steps back in the website without clicking a browser's
+back button.
+* Every time a user submits some information or an action including registering, logging in/out, interacting with 
+product quantities, the cart, or completing a transaction, they are notified by a toast pop-up message that describes 
+the result of the action that has just taken place.
 
 
 # Features
