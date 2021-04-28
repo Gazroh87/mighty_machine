@@ -129,16 +129,40 @@ The website is heavily reliant on [Bootstrap v5 theme colors.](https://getbootst
 
 White, black and dark shades of blue are the primary colours used for the web app's frontend.
 
+Examples of colour usage:
+
 #### White
+* Background
+* General buttons
 #### Black
+* Majority of text
+* General buttons
 #### Dark shades of blue
+* Delivery banner
+* Shop Now button hover/active/focus states
+* Update links
+* Breadcrumbs
 #### Secondary
 #### Success
+* Buttons for adding product(s) to the shopping cart
+* Success toasts
 #### Danger
+* Removing/deleting
+* Error toasts
 #### Warning
+* Edit buttons
 #### Dark (off black)
 
 ### Typography
+
+* My website uses two fonts from the [Google Fonts](https://fonts.google.com/) library called Iceland and Roboto.
+* 'Iceland' is used for most headings, some nav links and as part of the logo design. Roboto is used for all other 
+text.
+* These fonts are imported via the head element of the base HTML file.
+* Sans-serif is the fallback font if for some reason the above fonts can't be imported into the site correctly.
+* Both fonts are very popular in the developer world and are also easy enough to read, so they are both attractive 
+and appropriate.
+
 
 ## Strategy
 
@@ -217,10 +241,103 @@ back button.
 product quantities, the cart, or completing a transaction, they are notified by a toast pop-up message that describes 
 the result of the action that has just taken place.
 
+## Skeleton
+
+### Wireframes
+
+#### Mobile
+
+[Home/Index]()  |
+[Products]() |
+[Product Details]() |
+[Shopping Cart]() |
+[Checkout]() |
+[Order confirmation]() |
+[Registration]() |
+[Login/logout]() |
+[Profile]() |
+
+#### Tablet
+
+[Home/Index]() |
+[Products]() |
+[Product Details]() |
+[Shopping Cart]() |
+[Checkout]() |
+[Order confirmation]() |
+[Registration]() |
+[Login/logout]() |
+[Profile]() |
+
+#### Desktop
+
+[Home/Index]() |
+[Products]() |
+[Product Details]() |
+[Shopping Cart]() |
+[Checkout]() |
+[Order confirmation]() |
+[Registration]() |
+[Login/logout]() |
+[Profile]() |
+
+***
 
 # Features
-## Existing Features
 
+## Current Features
+
+There are currently and as a required, a minimum of 3 usertypes for my project to function as it should:
+- Superuser(s) / site administrator(s)
+- Registered users
+- Unregistered users
+
+For all users the user experience is going to be much the same, although, there are some extra features/benefits 
+available to registered users and superusers, with superusers having all the extra admin functionality restricted 
+to themselves.
+
+Web App Section | Feature | Description
+----------------|---------|------------
+Top Navigation bar | Fixed navigation bar | Visible across every page and on any device screen size. On smaller widths, it transforms into a hamburger menu. This navigation area includes the website logo, search bar and sets of links for each section/subsection of the website.
+Homepage | Slideshow | 5 colourful images of inspirational media including products that can be puchased from the website are animated using a slow fade in and out effect.
+Homepage | Jumbotron | The website logo and a brief summary of the kind of products the store sells. The message "The latest tech has arrived..." tells the user that the store is up to date and that they don't have to go anywhere else to find the latest PC Parts available. Below this is the "Shop Now" button, that when clicked on will direct the user to the products page.
+Footer | Fixed Footer |  Every page contains the same footer with a shop link to the products page, copyright information and social media links.
+Products page | Standard E-Commerce feed of products | Options to sort and filter products by name and price. Each product can be added to the shopping cart immediately and links to an individual product detail page.
+Product detail page | Product details | Consists of an image of the product, name, description, rating, price and add to cart button.
+Product detail page | Quantity selector | Allows users to increase and decrease the quantity of a product they are thinking of adding to their cart. The minus button decrements the value in steps of 1, while the plus button increments the value in steps of 1.
+Shopping cart page | Shopping cart | Consists of product info and images of items currently in the cart along with prices, quantities, colours and sub totals. If a user changes their mind about the quantity of a product, they can update this or remove them entirely.
+Checkout page | Details form | User enters their personal details including full name and e-mail address.
+Checkout page | Delivery form | User enters their delivery details for their order to be sent to the correct address.
+Checkout page | Payment form | User enters their card details. If the user enters incorrect card information, they will be notified that the form is invalid.
+Checkout page | Order summary | Details of the order the user is about to purchase. Displays image(s), name(s), quantity, sub totals, order total, delivery charge and grand total.
+Order confirmation page | Order confirmation | Below the heading, the user will receive a message letting them know that their order has been confirmed and that they will receive an e-mail confirmation aswell. The confirmations contain the unique order number and the date and time of the transaction. Below this is all the order details including the products, delivery and billing info.
+User account | Order history | User accounts are only available to registered/super users who are currently logged in. Users can track their order history at any time.
+User account | Shipping details | Users can safely store and view their current delivery details at any time for a faster checkout process.
+
+Other:
+
+Feature | Description
+--------|------------
+Registration | User registration with link to sign in if user already has an account otherwise the user must fill out the form to create an account.
+Logging in | Users can log in to their account or click a button to register for an account if they have not already done so.
+Logging out | Users can log out of their account.
+Password reset | Users can reset their password by entering their associated e-mail address.
+
+## Django Apps
+
+Mighty Machine is a [Django project](https://docs.djangoproject.com/en/3.1/ref/applications/), consisting of 5 Django 
+applications listed below:...
+
+- **Home**
+- **Products**
+- **Cart**
+- **Checkout**
+- **Profiles**
+
+As Django's documentation explains - A Django app describes a Python package that provides some set features. The 
+same applications can be reused in other projects.
+
+* TO BE UPDATED IN FUTURE
 
 ## Future features to implement
 
