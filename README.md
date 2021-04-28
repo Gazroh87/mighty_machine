@@ -283,7 +283,7 @@ the result of the action that has just taken place.
 
 ***
 
-# Features
+# F E A T U R E S
 
 ## Current Features
 
@@ -339,8 +339,21 @@ same applications can be reused in other projects.
 
 * TO BE UPDATED IN FUTURE
 
-## Future features to implement
+## Future features/improvements to be implemented
 
+- A feature that provides authenticated users with the ability to save favourited products for later viewing/purchasing.
+Each product of the products page could have a heart-shape icon link to save the item to their favourites list 
+accessible from their profile page. Users could manually remove the items from their list and tick a box or tick boxes 
+for individual products, to say the wanted the item automatically removed from the list if they have purchased the 
+item.
+- A contact page featuring a form to fill out.
+- A feature that makes items stay in a users shopping cart after they have logged out. 
+- Coupon codes and discounts for customer loyalty.
+- An E-mail newsletter feature. During the registration process, the user has the option to tick a box to receive a 
+regular newsletter containing personalized product recommendations, discounts and new products coming soon to the store.
+
+Working on this project has been an incredible journey of learning. I just wish I had more time to implement the above 
+features.
 
 ## Technologies Used
 * I have used HTML, CSS, JavaScript and Python programming languages.
