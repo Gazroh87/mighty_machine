@@ -73,7 +73,9 @@ These are all questions I asked myself throughout the UX design process.
 ## User Goals and Expectations
 
 ### Customer
+
 #### Products
+
 *	I want to see the full range of your products, and be able to purchase one or quickly change how many I have put 
 in my shopping cart.
 *	I want to be able to view an individual product and find out more details about that product.
@@ -85,6 +87,7 @@ products I might not be interested in.
 *	(FUTURE) I want to see if the product(s) I want is in stock so I know they are available to purchase.
 
 #### Purchasing
+
 *	Once I have selected the items I want to buy and added them to the cart I want a notification with them shown 
 added to my cart.
 *	I want to be able to be able to change the items in my cart e.g. change quantity of an item or remove it.
@@ -96,6 +99,7 @@ mistakes.
 *   I want to be able to make a purchase wihtout needing to create an account.
 
 ### User
+
 *	I want to be able to easily create an account and be able to see the profile that I have created.
 *	I want to be able to login easily to view my account and be able to logout easily when I want to leave the 
 website.
@@ -105,6 +109,7 @@ website.
 successfully.
 
 ### Admin
+
 *	I want to be able to add a new product on the site.
 *	I want to be able to edit or update an existing product on the site.
 *	I want to be able to delete and remove a product which I no longer want users to be able to purchase.
@@ -512,6 +517,141 @@ access to certain functionalities of my website which are not intended for regul
 * [Grammarly](https://www.grammarly.com/) - Grammarly is used for checking for and and helping to eliminate spelling and grammatical errors.
 
 You can find any other technologies not listed here that were used in this project in my [requirements.txt](https://github.com/Gazroh87/mighty_machine/blob/master/requirements.txt) file.
+
+***
+
+# T E S T I N G
+
+My process of testing includes:
+
+My process of testing includes:
+
+- Testing my user stories as set out in the UX section.
+- Validating all custom HTML, CSS and JavaScript files.
+- Reviewing website compatibility on different browsers and devices.
+- Reviewing design responsiveness from custom mobile screen sizes of 320 x 480px to desktop 4K resolutions in DevTools.
+- Making sure all links function correctly.
+- Getting my partner to review my website at different developmental stages and the completed product across multiple
+  device sizes for feedback and to point out any obvious bugs or issues with her experience.
+
+My website is to be tested on the latest popular web browsers including:
+
+- Google Chrome
+- Mozilla Firefox
+- Microsoft Edge
+- Apple Safari
+- Microsoft Internet Explorer
+- Amazon Silk
+
+I've used the following physical devices for development and testing:
+
+- AMD Ryzen 7 2700X PC running Windows 10, Chrome, Firefox and Edge browsers on two monitors; 1920x1200px and 2560x1440px natively.
+- Apple iPhone 6S and SE running Safari browser.
+- Laptop running Chrome, Internet Explorer and Edge browsers.
+- Amazon Fire HD tablet running Silk browser.
+
+The following validators were used to validate all of the HTML, CSS and JavaScript files that make up this project, to
+ensure there are no syntax errors in the project code.
+
+- HTML - [W3C Markup Validation Service](https://validator.w3.org/) - No errors.
+- CSS - [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/) - No errors.
+- JavaScript - [JSHint Validator](https://jshint.com/) - No errors.
+- Python - [PEP8 online](http://pep8online.com/) - All right.
+
+## User Story Tests
+
+### Customer
+
+#### Products
+
+*	I want to see the full range of your products, and be able to purchase one or quickly change how many I have put in my shopping cart.
+    - Upon entering the shop, the user can naviaget to view all of the products by clicking on the 'All Products' 
+    menu link in the navigation bar and in dropdowns, select 'All Products'. Optionally the user can sort and filter 
+    products by name, price, rating, category etc.
+
+*	I want to be able to view an individual product and find out more details about that product.
+    - Every product can direct the user to it's individual product details page with a bit more info available than 
+    the products page. Doing this is as simple as clicking on a product's image from the products page.
+
+*	I want to be able to see at all times, how much my current cart total is so I can see how much I am spending on products.
+    - Below the shopping cart icon towards the top right of the viewport, the user can see their current cart total. 
+    By clicking on this icon, the user can find out more details about the contents of their cart and how much they 
+    could end up spending.
+
+*	I want to be able to see the different categories and be able to sort through them without having to see all the products I might not be interested in.
+    - In the top navigation bar, the user can navigate through different categories. There are four main categories; 
+    Cases, Internal Components (all the main interal parts that make up a computer), Peripherals (currently only 
+    keyboards and mice) and Hot Deals which includes new items and clearance items. By clicking on one of these 
+    categories the user will see a dropdown menu appear with subcategories of products.
+
+*	I want to be able to search for a specific product to see if it is available for purchase on the website.
+    - The user can search for specific product(s) by clicking within the search box and entering what they are looking 
+    for. Depending on the result of the search, the user will either be presented with the product(s) they are looking 
+    for or no results if there is no match to their query.
+
+*	(FUTURE) I want to see if the product(s) I want is in stock so I know they are available to purchase.
+
+#### Purchasing
+
+*	Once I have selected the items I want to buy and added them to the cart I want a notification with them shown added to my cart.
+    - Once the user has added a product to the cart they will receive a brief toast pop-up success message. They can 
+    view their cart by clicking on the cart icon and the user can find out more details about the contents of their 
+    cart. They user will also know the product has been added to their cart because the cart icon will change colour 
+    and show the value of the contents of the cart below the icon. 
+
+*	I want to be able to be able to change the items in my cart e.g. change quantity of an item or remove it.
+    - The user can change the items in their cart at the shopping cart page by updating the quantity or clicking the 
+    remove button.
+
+*	I want to be able to enter my payment details for the products as quickly and as easily as possible.
+    - Once the user is happy with the contents of their cart and have proceeded to the checkout process then they can 
+    enter their payment information. The user can enter in their card details and if they have entered the information 
+    correctly they won't receive an error message and the transaction will be successful. If the card payment is 
+    invalid, they will receive a notification and be asked to try to enter their correct details to process the payment.
+
+*	I want to be sure that my payment information is secure before confirming my payment details at the checkout.
+    - Stripe ensures user's payment information is secure.
+
+*	I want a confirmation of my order on the site before confirming just to double check that I have not made any mistakes and that you have received the order and its being processed.
+    - Once the user has completed the checkout process they will then be directed to the order confirmation page. 
+    This page lists all the information relating to their order including order details, delivery and billing 
+    information.
+
+*	I then want an email confirmation so I know that you have received the order correctly and are processing it.
+    - On the order confirmation page, they will see that a confirmation E-mail has been sent to their registered 
+    E-mail address.
+
+*   I want to be able to make a purchase wihtout needing to create an account.
+    - A user can proceed to the checkout and complete a purchase without needing to create an account.
+
+### User
+
+*	I want to be able to easily create an account and be able to see the profile that I have created.
+
+
+*	I want to be able to login easily to view my account and be able to logout easily when I want to leave the website.
+
+
+*	I want to be able to recover my password in case I forget and be able to change if and when I wish to do so.
+
+
+*	I want to able to easily access my account so I can see my details, order history etc.
+
+
+*	I want to receive an email confirmation once I have registered to let me know that I created an account successfully.
+
+### Admin
+
+*	I want to be able to add a new product on the site.
+
+
+*	I want to be able to edit or update an existing product on the site.
+
+
+*	I want to be able to delete and remove a product which I no longer want users to be able to purchase.
+
+
+*   I want the ability to limit the creation, editing and deletion of products to the superuser(s) with admin access.
 
 ## Committing files to GitHub
 When I make changes to each file I push them from GitHub from GitPod and below are the steps I do to do this. This is essential as to not losing any of the work I have done.
