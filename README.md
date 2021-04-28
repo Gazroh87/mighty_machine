@@ -1,4 +1,5 @@
-# [Mighty Machine](https://gazroh87-mighty-machine.herokuapp.com/) - PC Parts E-Commerce Web App
+# [Mighty Machine](https://gazroh87-mighty-machine.herokuapp.com/)
+## PC Parts E-Commerce Web App
 
 ![Mighty Machine Logo](https://github.com/Gazroh87/mighty_machine/blob/master/static/images/mighty-machine-logo.png)
 
@@ -455,7 +456,7 @@ Product Colour | product_colour | = models.CharField | (max_length=99, null=True
 Quantity | quantity | = models.IntegerField | (null=False, blank=False, default=0)
 Line Item Total ! lineitem_total | = models.DecimalField | (max_digits=6, decimal_places=2, null=False, blank=False, editable=False)
 
-### security
+### Security
 
 Using configuration variables in Heroku, all SECRET keys are stored safely to prevent unauthorized connections to 
 the database. I've incorporated Django Allauth to setup user registratiom and built-in decorators enforce restricted 
@@ -464,19 +465,53 @@ access to certain functionalities of my website which are not intended for regul
 ***
 
 # Technologies Used
-* I have used HTML, CSS, JavaScript and Python programming languages.
-* I used Gitpod (https://gitpod.io/) to build the website.
-* I used Django as I wanted to utilise a python based web framework for this project.
-* I used Django-Allauth (https://django-allauth.readthedocs.io/en/latest/installation.html) for the authentication system of the project as it has the security features I require.
-* I used Django Crispy Forms to helps to manage the forms and able adjust forms properties in the backend.
-* I used Django Countries which was used for the country field for user to be able to selct the contry they are from.
-* I used Stripe to set up the payment methods for the site allowing customers to pay by online card transactions.
-* I used Bootstrap for its mobile-first, responsive and simplistic layouts.
-* I used Pillow to be able to use the image field for the products on the site.
-* I used JQuery (https://jquery.com/) to decrease the amount of JavaScript code in the project.
-* I used Font Awesome (https://fontawesome.com) to add the icons used in the site.
-* Block templates were used so I don’t have to repeat my code to save time.
 
+## Programming languages
+
+* [HTML5](https://www.w3.org/) - I used HTML to build the basic layout of the website.
+* [CSS3](https://www.w3.org/) - I used CSS to style and format the website's HTML elements.
+* [JavaScript](https://www.javascript.com/) - My project uses JavaScript for the implementation of custom JS, Stripe and EmailJS. This enhances user experience by adding functionality and interactivity to the website.
+* [Python](https://www.python.org/) - Handles data provided by the database. Backend functions are written in Python.
+
+## Libraries
+
+* [Font Awesome](https://fontawesome.com) - Font Awesome was used to provide the icons throughout the website for aesthetic and UX design purposes. Icons give the user additional context from the first glance.
+* [Google Fonts](https://fonts.google.com/) - Google Fonts were used to embed and link the 'Iceland' and 'Roboto' fonts into the HTML. It was pointless importing them into the CSS file as the base.html file extends all other HTML files with the required head tags.
+* [jQuery](https://jquery.com/) - jQuery is a JavaScript library that comes as part of the Bootstrap framework. It is designed to simplify HTML DOM tree traversal and manipulation. 
+* [Jinja](https://jinja.palletsprojects.com/en/2.11.x/) - Jinja handles the frontend display of data provided by the backend database in addition to HTML code.
+
+## Frameworks / Extensions
+
+* [Bootstrap 5](https://getbootstrap.com/) - Bootstrap provides mobile-first, responsive and simplistic layouts. Bootstrap was used to assist with some of the structuring and responsiveness of the website and build off of or modify some of its existing components and styling to save time.
+* [Django](https://www.djangoproject.com/) - Django is a high-level Python web framework that encourages rapid development and clean, pragmatic design.
+* [Django Allauth](https://django-allauth.readthedocs.io/en/latest/installation.html) - I used Django-Allauth for the authentication system of the project as it has the security features I require.
+* [EmailJS](https://www.emailjs.com/) - Sends E-mails using only client-side technology. This was used for testing E-mails. It only requires to connect EmailJS to one of the supported email services, create an email template, and use their Javascript library to trigger an email.
+* [Stripe](https://stripe.com/ie) - Allows users to make and receive payments over the Internet. This helps manage test transactions.
+
+## Database
+
+* [SQLite](https://www.sqlite.org/) - Django's default database type used during development.
+* [PostgreSQL](https://www.heroku.com/postgres/) - PostgreSQL is one of the world's most popular relational database management systems.
+
+
+## Tools, Editors, Version Control etc.
+
+* [GitHub](https://github.com/) - GitHub is a global company that provides hosting for software development version control using Git. GitHub is used to store the project's code within a repository including all previous versions or commits of the project after being pushed from Gitpod and can be used to host the deployed website for public viewing.
+* [Git](https://git-scm.com/) - Git was used for version control by utilizing the Gitpod IDE terminal to commit files to Git and push them to GitHub.
+* [Gitpod](https://gitpod.io/) - Gitpod was the primary development tool for the building and maintenance of the website.
+* [Balsamiq Wireframes]() - I used the Balsamiq Wireframes desktop application to create all my wireframes during the design process.
+* [Pip](https://pip.pypa.io/en/stable/) - Pip is the software package installer/manager for Python.
+* [Django Crispy forms]() - I used Django Crispy Forms to helps to manage the forms and able adjust forms properties in the backend.
+* [Django Countries]() - I used Django Countries which was used for the country field for user to be able to selct the contry they are from.
+* [Google Chrome DevTools]() - The Chrome DevTools were used throughout the building, testing and debugging of the website to quickly see the result of any changes made to any code via visualization in a live browser tab and/or the developer console.
+* [Heroku](https://dashboard.heroku.com/) - Heroku is a cloud platform that lets companies and individuals build, deliver, monitor and scale apps. This is where the web application is deployed.
+* [Amazon Web Services S3](https://aws.amazon.com/s3/) - Object storage service that offers industry-leading scalability, data availability, security, and performance. This is used to host the project's media and static files.
+* Tiny [jpg](https://tinyjpg.com/)/[png](https://tinypng.com/) - These websites were used to compress the images used throughout the project to reduce data size, decreasing load times without sacrificing the integrity or quality of the original images.
+* [Favicon Converter](https://favicon.io/) - This Favicon converter was used to create the favicon based on my brand logo, to be displayed on the browser tab and bookmarks bar.
+* [Autoprefixer CSS](https://autoprefixer.github.io/) - Autoprefixer was used to help with making the CSS code compatible and valid for all internet browsers as much as possible by fixing cross-browser CSS issues.
+* [Grammarly](https://www.grammarly.com/) - Grammarly is used for checking for and and helping to eliminate spelling and grammatical errors.
+
+You can find any other technologies not listed here that were used in this project in my [requirements.txt](https://github.com/Gazroh87/mighty_machine/blob/master/requirements.txt) file.
 
 ## Committing files to GitHub
 When I make changes to each file I push them from GitHub from GitPod and below are the steps I do to do this. This is essential as to not losing any of the work I have done.
