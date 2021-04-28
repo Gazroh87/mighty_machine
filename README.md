@@ -355,7 +355,115 @@ regular newsletter containing personalized product recommendations, discounts an
 Working on this project has been an incredible journey of learning. I just wish I had more time to implement the above 
 features.
 
-## Technologies Used
+***
+
+# Information Architecture
+
+As SQL databases are used by Django by default, I used [SQLite](https://www.sqlite.org/) during development. However, 
+Heroku provides a [PostgreSQL](https://www.postgresql.org/) database for the deployed version.
+
+## Database Models
+
+### User Model
+
+The user model used for my project is the standard one provided by Django's 'django.contrib.auth.models'.
+
+### Profiles App
+
+`UserProfile` Model
+
+Name | Database Key | Field Type | Type Validation
+-----|--------------|------------|----------------
+User | user | = models.OneToOneField 'User' | (User, on_delete=models.CASCADE)
+Default Phone Number | default_phone_number | = models.CharField | (max_length=20, null=True, blank=True)
+Default Street Address1 | default_street_address1 | = models.CharField | (max_length=80, null=True, blank=True)
+Default Street Address2 | default_street_address2 | = models.CharField | (max_length=80, null=True, blank=True)
+Default Town or City | default_town_or_city | = models.CharField | (max_length=40, null=True, blank=True)
+Default County | default_county | = models.CharField | (max_length=80, null=True, blank=True)
+Default Postcode | default_postcode | = models.CharField | (max_length=20, null=True, blank=True)
+Default Country | default_country | = CountryField | (blank_label='Select Country', null=True, blank=True)
+
+### Products App
+
+`Category` Model
+
+Name | Database Key | Field Type | Type Validation
+-----|--------------|------------|----------------
+Category id | id | primary_key=True | AutoField
+Name | name | = models.CharField | (max_length=254)
+Friendly Name | friendly_name | = models.CharField| (max_length=254, null=True, blank=True)
+
+`Product` Model
+
+Name | Database Key | Field Type | Type Validation
+-----|--------------|------------|----------------
+Product id | id | primary_key=True | AutoField
+Category | category | = models.ForeignKey | ('Category', null=True, blank=True, on_delete=models.SET_NULL)
+SKU | sku | = models.CharField | (max_length=12)
+Brand | brand | = models.CharField | (max_length=254)
+Part Name | part_name | = models.CharField | (max_length=254)
+Description | description | = models.TextField | ()
+Has Colours | has_colours | = models.BooleanField | (default=False, null=True, blank=True)
+Price | price | = models.DecimalField | (max_digits=7, decimal_places=2)
+Rating | rating | = models.DecimalField | (max_digits=3, decimal_places=2, null=True, blank=True)
+Image | image | = models.ImageField | (null=True, blank=True)
+Part Type | part_type | = models.CharField | (max_length=254)
+
+`Review` Model
+
+Name | Database Key | Field Type | Type Validation
+-----|--------------|------------|----------------
+Product | product | = models.ForeignKey | ('Product', null=True, blank=True, on_delete=models.CASCADE)
+User | user | = models.ForeignKey | (User, on_delete=models.CASCADE)
+Title | title | = models.CharField | (max_length=50, blank=True)
+Review | review | = models.TextField | (max_length=1000, blank=True)
+Rating | rating | = models.IntegerField | (default=1, choices=RATING)
+Posted on | post_on | = models.DateTimeField | (auto_now_add=True)
+Updated on | update_on | = models.DateTimeField | (auto_now=True)
+
+### Checkout App
+
+`Order` Model
+
+Name | Database Key | Field Type | Type Validation
+-----|--------------|------------|----------------
+Order Number | order_number | = models.CharField | (max_length=32, null=False, editable=False)
+User Profile | user_profile | = models.ForeignKey | (UserProfile, on_delete=models.SET_NULL, null=True, blank=True, related_name='orders')
+Full Name | full_name | = models.CharField | (max_length=50, null=False, blank=False)
+E-mail | email | = models.EmailField | (max_length=254, null=False, blank=False)
+Phone Number | phone_number | = models.CharField | (max_length=20, null=False, blank=False)
+Country | country | = CountryField | (blank_label='Select Country', null=False, blank=False)
+Postcode | postcode | = models.CharField | (max_length=20, null=True, blank=True)
+Town or City | town_or_city | = models.CharField | (max_length=40, null=False, blank=False)
+Street Address1 | street_address1 | = models.CharField | (max_length=80, null=True, blank=True)
+Street Address2 | street_address2 | = models.CharField | (max_length=80, null=True, blank=True)
+County | county | = models.CharField | (max_length=80, null=True, blank=True)
+Date | date | = models.DateTimeField | (auto_now_add=True)
+Delivery Cost | delivery_cost | = models.DecimalField | (max_digits=6, decimal_places=2, null=False, default=0)
+Order Total | order_total | = models.DecimalField | (max_digits=10, decimal_places=2, null=False, default=0)
+Grand Total | grand_total | = models.DecimalField | (max_digits=10, decimal_places=2, null=False, default=0)
+Original Cart | original_cart | = models.TextField | (null=False, blank=False, default='')
+Stripe PID | stripe_pid | = models.CharField | (max_length=254, null=False, blank=False, default='')
+
+`OrderLineItem` Model
+
+Name | Database Key | Field Type | Type Validation
+-----|--------------|------------|----------------
+Order | order | = models.ForeignKey | (Order, null=False, blank=False, on_delete=models.CASCADE, related_name='lineitems')
+Product | product | = models.ForeignKey | (Product, null=False, blank=False, on_delete=models.CASCADE)
+Product Colour | product_colour | = models.CharField | (max_length=99, null=True, blank=True)
+Quantity | quantity | = models.IntegerField | (null=False, blank=False, default=0)
+Line Item Total ! lineitem_total | = models.DecimalField | (max_digits=6, decimal_places=2, null=False, blank=False, editable=False)
+
+### security
+
+Using configuration variables in Heroku, all SECRET keys are stored safely to prevent unauthorized connections to 
+the database. I've incorporated Django Allauth to setup user registratiom and built-in decorators enforce restricted 
+access to certain functionalities of my website which are not intended for regular users.
+
+***
+
+# Technologies Used
 * I have used HTML, CSS, JavaScript and Python programming languages.
 * I used Gitpod (https://gitpod.io/) to build the website.
 * I used Django as I wanted to utilise a python based web framework for this project.
