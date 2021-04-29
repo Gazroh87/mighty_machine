@@ -469,7 +469,7 @@ access to certain functionalities of my website which are not intended for regul
 
 ***
 
-# Technologies Used
+# T E C H  U S E D
 
 ## Programming languages
 
@@ -619,41 +619,62 @@ ensure there are no syntax errors in the project code.
     - On the order confirmation page, they will see that a confirmation E-mail has been sent to their registered 
     E-mail address.
 
-*   I want to be able to make a purchase wihtout needing to create an account.
+*   I want to be able to make a purchase without needing to create an account.
     - A user can proceed to the checkout and complete a purchase without needing to create an account.
 
 ### User
 
 *	I want to be able to easily create an account and be able to see the profile that I have created.
-
+    - A user can create an account by clicking on the 'My Account' link button towards the top right of the viewport and 
+    selecting 'Register' from the dropdown menu options. Once the user is on the registration page, they will have a form 
+    to fill out, entering in their E-mail address, password and username. Once the user has successfully registered for 
+    an account, they will receive an E-mail confirming the account has been created with Mighty Machine.
 
 *	I want to be able to login easily to view my account and be able to logout easily when I want to leave the website.
-
+    - A user can login to their account by clicking on the 'My Account' link button towards the top right of the viewport 
+    and selecting 'Login' from the dropdown menu options. Once the user is on the login page, they will have a form to fill out, 
+    entering in their username/E-mail address and password and then click login. If the user has successfully logged into 
+    their account, the 'My Account' 'Login' dropdown menu option will change to 'Logout'. If the user is unsuccessfull in 
+    logging in, then they will receive a notification to re-enter their details. The user can click on the 'Remember me' box 
+    so they don't have to re-enter this information into the form again in future.
 
 *	I want to be able to recover my password in case I forget and be able to change if and when I wish to do so.
+    - If a user has forgotten their password and needs to create a new one, then they can click on the 'Forgot Password' 
+    link in the login page. The user will be directed to the forgotten password page to enter their E-mail address and then 
+    click on 'Reset My Password'. If the result of this is successfull, then the user will receive a link to their E-mail 
+    address so they are able to reset their password. If the E-mail does not exist in the database, then the user will 
+    receive a notification telling them that their E-mail address is unrecognised.
 
-
-*	I want to able to easily access my account so I can see my details, order history etc.
-
+*	I want to be able to easily access my account so I can see view my editable details, order history etc.
+    - A logged in user can click on the 'My Account' link button towards the top right of the viewport and select the 
+    'My Account' dropdown menu option. This directs the user to the user's account page. On the left side of this page they 
+    will see their details and they can edit these details just by typing in the field boxes and then click on the 
+    'Update Information' button underneath. On the right side of this page they will see their order history and they can 
+    click on an order to see more details about it.
 
 *	I want to receive an email confirmation once I have registered to let me know that I created an account successfully.
+    - Once the user has completed the validated registration process, then they will be informed that an E-mail is on its 
+    way confirming this. The user can then go to the E-mail account they registered to the site with and they should find 
+    an E-mail from Mighty Machine confirming the user has an account with them.
 
 ### Admin
 
 *	I want to be able to add a new product on the site.
-
+    - Admins can click add buttons via the website or the Admin site to add new products to the website.
 
 *	I want to be able to edit or update an existing product on the site.
-
+    - Admins can edit and update existing products on the website via the website or the admin site with the click of a button.
 
 *	I want to be able to delete and remove a product which I no longer want users to be able to purchase.
-
+    - Admins can remove existing products from the website via the website of the admin site with the click of a button.
 
 *   I want the ability to limit the creation, editing and deletion of products to the superuser(s) with admin access.
+    - The creation, editing and deletion of products functions have restrictions by two methods. Jinja logic is used within 
+    some of the HTML code and the @login_required Python decorator is utilised within views.py files.
 
 ***
 
-# Deployment
+# D E P L O Y M E N T
 
 My project was developed using the [Gitpod](https://gitpod.io/) IDE with [Git](https://git-scm.com/) for version control.
 Along the development process, files are saved, committed and pushed to [GitHub](https://github.com/) as the host for the 
@@ -812,8 +833,6 @@ STRIPE_PUBLIC_KEY | pk_test_ ...
 STRIPE_SECRET_KEY | sk_test_ ...
 STRIPE_WH_SECRET | whsec_ ...
 USE_AWS | True
-True
-Edit Delete
 
 ### Hosting files with AWS S3
 
