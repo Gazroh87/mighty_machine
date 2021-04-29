@@ -548,12 +548,17 @@ I've used the following physical devices for development and testing:
 - Laptop running Chrome, Internet Explorer and Edge browsers.
 - Amazon Fire HD tablet running Silk browser.
 
-The following validators were used to validate all of the HTML, CSS and JavaScript files that make up this project, to
-ensure there are no syntax errors in the project code.
+## Validation Tools
+
+The following validators were used to validate all of the HTML, CSS, JavaScript and Python code which makes up this project, 
+to ensure there are no syntax errors in the project code.
 
 - HTML - [W3C Markup Validation Service](https://validator.w3.org/) - No errors.
-- CSS - [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/) - No errors.
-- JavaScript - [JSHint Validator](https://jshint.com/) - No errors.
+- CSS - [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/) - No errors but this website displays warnings 
+concerned with unknown vendor extensions, most of which have been added to my code via the Autoprefixer. These are 
+considered unimportant warnings and can be ignored as many of these extensions prevent animation and rendering bugs 
+across different browser types. This makes the implementation of these vendor extensions very helpful.
+- JavaScript - [JSHint Validator](https://jshint.com/) - No errors but I have warnings which should cause no concern as the majority of modern web browsers support ECMA6. 
 - Python - [PEP8 online](http://pep8online.com/) - All right.
 
 ## User Story Tests
@@ -1007,6 +1012,23 @@ something went wrong and that I need to try again.
 - If I enter an unrecognised E-mail address, then I'm notified that the E-mail address I entered does not exist in the 
 database.
 
+
+## Additional Perfomance/Responsiveness Testing
+
+1. Tested the development website's (https://8000-scarlet-chipmunk-mte3db8p.ws-eu03.gitpod.io/) responsiveness using [Responsinator](http://www.responsinator.com/).
+    - Result: The website is responsive across all devices and screen sizes without any undesired x-scroll.
+2. Tested images sizes to ensure all images are a reasonable size and don't take up took much space. This impacts the website's load times. I used the Google Chrome Dev Tools Network tab for tests and monitoring.
+    - Result: The website's loading time is decently acceptable and capable of loading in under a second.
+
+## Bugs
+
+I encountered a bug in my code where when entering in a quantity of a product in the store, I could add 0 items or as many 
+as I wanted. I fixed this by changing the if quantity > 0 lines in the cart app views.py to if quantity in range(0, 99).
+
+You can probably dig out over bugs by browsing through the commit history.
+
+* TO BE UPDATED IN FUTURE
+
 ***
 
 # D E P L O Y M E N T
@@ -1186,10 +1208,83 @@ Finally, you have to connect [Django to S3](https://django-storages.readthedocs.
 ***
 
 ## Credits
-Product images - 
 
-Product descptions - 
+### Code
 
-Logo - Was created in 
+- [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web) - Referenced for best practices for lists and images, 
+  as well as the smooth scrolling functionality.
+- The [Bootstrap 5](https://getbootstrap.com/) was used for its Grid layout system and existing styled element components for easy and
+  time-saving modification. The modals make great use of Bootstrap.
+- [Heroku](https://en.wikipedia.org/wiki/Heroku) - Heroku's excellent deployment system was used to supply the 
+  website for public viewing, thanks to it's connection to gitpod.
+- Most of the WebKit, moz and ms vendor extensions listed in the CSS file were obtained by passing the code through [Autoprefixer CSS.](https://autoprefixer.github.io/)
 
-Code Institte includeing the Boutique Ado project which helped me alot.
+### Content
+
+- Product data/specs were sourced from docyx data scrape of [PCPartPicker](https://pcpartpicker.com) found [here](https://github.com/docyx/pc-part-dataset).
+- The Iceland and Roboto fonts were obtained from [Google Fonts](https://fonts.google.com/).
+- The icons used in my website were obtained from [Font Awesome](https://fontawesome.bootstrapcheatsheets.com/) and styled by me.
+These help with the aesthetics and UX design. Icons give the user additional context from the first glance.
+
+### Media
+
+- Logos were created with (Free Logo Design)(https://www.freelogodesign.org/)
+
+- Product images were sourced from Amazon and the following PC component manufacturers websites:
+    * [Aerocool](https://aerocool.io/)
+    * [AMD](https://www.amd.com/en)
+    * [Antec](https://www.antec.com/)
+    * [ASUS](https://rog.asus.com/uk/)
+    * [Cooler Master](https://www.coolermaster.com/)
+    * [Corsair](https://www.corsair.com/uk/en/)
+    * [Crucial](https://uk.crucial.com/)
+    * [Enermax](https://www.enermaxeu.com/)
+    * [EVGA](https://www.evga.com/)
+    * [Fractal Design](https://www.fractal-design.com/)
+    * [Gigabyte](https://www.gigabyte.com/)
+    * [Kingston](https://www.kingston.com/unitedkingdom/en)
+    * [Kingston HyperX](https://www.hyperxgaming.com/unitedkingdom/en)
+    * [Mionix](https://mionix.net/)
+    * [MSI](https://uk.msi.com/)
+    * [NZXT](https://www.nzxt.com/)
+    * [Phanteks](https://www.phanteks.com/)
+    * [Seagate](https://www.seagate.com/gb/en/)
+    * [SteelSeries](https://steelseries.com/)
+    * [Thermaltake](https://uk.thermaltake.com/)
+
+- Other photo images were sourced from [Unsplash](https://unsplash.com/).
+
+- I'm only using these images as this project is purely for educational and **NOT** commercial purposes.
+
+- All image animation and was produced by me.
+
+- [Favicon Converter](https://favicon.io/favicon-converter/) - This Favicon converter was used to create the favicon 
+  based on my brand logo, to be displayed on the browser tab and bookmarks bar. Filepath is static/favicons/favicon.ico
+
+### Useful information sources
+
+- HTML/CSS/JavaScript - [w3schools](https://www.w3schools.com/)
+- CSS - [CSS-Tricks](https://css-tricks.com/)
+- JavaScript Operators - [w3resource](https://www.w3resource.com/javascript/javascript.php)
+- JavaScript - [Developer Mozilla](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+
+### Special thanks / Acknowledgements
+
+- Mighty Machine builds upon Code Institute's Boutique Ado tutorial which helped out a lot. The Stripe payment system is more or less unchanged from 
+the tutorial.
+- Thanks to Mentors for their guidance, knowledge and support.
+- Thanks to Code Institute and Tim Nelson for giving me the knowledge, skills and the Mini Project template presented during 
+the course for help in getting started and completing this project.
+- Thanks to Code Institute's tutors for help and support with completing challenges.
+- Thansk to Code Institute's Slack community for providing advice and support.
+- Thanks to my family for all their support and encouragement with the project.
+
+Thanks for viewing my project/website.
+
+---
+
+## Disclaimer
+
+This project was created for educational purposes only, for submission to the Code Institute Full Stack Software 
+Development Course for Milestone 4 project grading.
+
