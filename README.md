@@ -672,6 +672,341 @@ ensure there are no syntax errors in the project code.
     - The creation, editing and deletion of products functions have restrictions by two methods. Jinja logic is used within 
     some of the HTML code and the @login_required Python decorator is utilised within views.py files.
 
+## Manual Element and Logic Testing
+
+
+### Elements/logic used across multiple pages
+
+
+#### Logos
+
+- Logos load across all pages correctly and render as intended.
+- Clicking on logos from any page brings me back to the homepage as intended.
+- When I reduce the screen size, the logo is switched to a smaller size logo.
+
+#### Search bar
+
+- The search bar and button works correctly across all pages.
+- When I query for a product or products, I receive the correct and expected results.
+- When I type in a word for a product that doesn't exist on the website then I am informed that 0 products have been found 
+for the search query.
+- Increasing the screen size makes the search bar grow in width and decreasing the screen size shrinks the search bar's 
+width as intended.
+
+#### My Account nav menu link
+
+- The dropdown menu function works correctly and all the different page links are all working as intended.
+
+#### Shopping cart button
+
+- When I click on the button I am directed to the shopping cart page as intended.
+- When I click on a product's add button the value underneath the cart icon is updated correctly and the colour changes 
+as intended.
+
+#### Cart dropdown button and cart preview
+
+- When I click on the button, the cart preview is displayed correctly.
+- The red 'x' (remove from cart) button successfully removes the product from the cart.
+- The adjust cart button redirects the user to the shopping cart page for updating as intended.
+- The go to secure checkout button directs the user to the checkout page as intended.
+
+#### Navigation bar
+
+- Hovering over the nav menu links changes their appearance as intended.
+- All the different menu links are all working as intended, taking me to the correct pages.
+- When I reduce the screen size, the navigation bar switches to a burger icon button with dropdown navigation as intended.
+
+#### Headings
+
+- All page headings load and work as intended.
+
+#### Breadcrumbs
+
+- All breadcrumb links are working as intended, taking me to the correct pages.
+
+#### Add to cart buttons
+
+- These buttons are rendered correctly and as intended.
+- When I click on the button, the attached product is added to the shopping cart as intended.
+
+#### Quantity selector
+
+- The quantity selector loads up correctly as intended with the minus and plus buttons either side of the quantity value 
+field.
+- When I click on the minus button, this decreases the quantity and the plus button increases the quantity as expected.
+- When the quantity has a value of 1, I am unable to decrease the quantity to under 1 and I am unable to increase the 
+quantity of any product past 99 as I have coded in so this works correctly and as intended. Note that only the arrows 
+ensure this works properly on the shopping cart page.
+
+#### Keep shopping button
+
+- When I click on the button I am directed to the products page as intended.
+
+#### Remember me checkbox
+
+- The remember me checkbox and text load correctly below the password field as expected.
+- When I click on the remember me field and click the login button then the next time I am required to visit the login page 
+I will see that I don't have to fill in the fields as they have been remembered and filled in for me.
+
+#### Home/cancel buttons
+
+- These buttons all load correctly as intended.
+- If I click on one of these buttons, I'm redirected to the previous page or homepage. They all work correctly and as intended. 
+
+#### Login button/link
+
+- These are rendered correctly and as intended.
+- When I click on the button, I'm logged into my account If I have typed in my details correctly.
+- When I click on the button and I haven't typed in my details correctly, I will not be logged into my account. I am notified what is incorrect.
+
+#### Back to login button
+
+- This button renders correctly and as intended.
+- When I click on the button, I'm redirected back to the login page as expected.
+
+### Homepage
+
+
+#### Slideshow
+
+- All 5 slideshow images load correctly when I land on the homepage. 
+- The animation works as intended with images being cycled through and rendered when expected.
+- The slideshow looks good across all screen sizes.
+
+#### Jumbotron
+
+- The jumbotrons elements load correctly when I land on the homepage.
+- The jumbotron looks good across all screen sizes.
+
+#### Shop now button
+
+- When I click on the button I am directed to the products page as intended.
+
+#### Other images
+
+- All 3 images towards the bottom of the page load correctly when I land on the homepage with correct sizing.
+- Selecting each option on the dropdown gives the desired result
+
+
+### Products Page
+
+
+#### Sort/filter dropdown
+
+- The dropdown loads up correctly as intended.
+- When I click on the dropdown, all the coded options are available to choose from.
+
+#### Product cards
+
+- All product cards and there relevant data loads correctly. 
+- Desktop:  4 or 6 products/columns per row
+- Tablet:   2 to 4 products/columns per row
+- Mobile:   1 or 2 products/columns per row
+- When I click on a product's image, I'm directed to the product details page as intended.
+- The details are rendered correctly with all the necessary data.
+- When I click on the individual product's category link directs me to the correct category as expected.
+
+
+### Product details page
+
+
+#### Image
+
+- A larger sized image of the product loads correctly to the left of the product details as intended.
+- When the screen size is reduced, the image shifts position on the page to above the product details as expected.
+
+#### Product info
+
+- All of the product details relative to the product loads correctly to the right of the image as intended.
+- When I click on the individual product's category link directs me to the correct category as expected.
+- When the screen size is reduced, the product details shift position on the page to below the image as expected.
+
+#### Colour selector
+
+- The colour selector loads up correctly as intended.
+- When I click on the dropdown, all the coded options are available to choose from. 
+
+#### Add Review button
+
+- This button is rendered correctly and as intended.
+- When I click on the button, the attached review modal is displayed.
+
+#### Review modal
+
+- All buttons are rendered correctly and as intended.
+- When I click on the cancel button, the modal is closed.
+- When I click on the add review button, the review is added to the product for anyone to see.
+
+
+### Shopping cart page
+
+
+#### Images
+
+- A smaller sized image of the product loads correctly to the left of the product/order line info as intended.
+
+#### Product/order line info
+
+- All of the product details relative to each product loads correctly to the right of the images as intended.
+
+#### Remove and update functions
+
+- The links for these functions appear correctly where they should.
+- Modifying the quantity and clicking on the update function updates the quantity of the product in the cart.
+- When I click on the remove function, the product is removed from the cart.
+
+#### Delivery totals
+
+- The cart total displays and calculates the total amount in the cart as expected.
+- The delivery charge is given when the cart total is less than £500 and this calculates correctly.
+- The delivery charge is £0 when the cart total is £500 or more and this calculates correctly.
+- The notification below letting the user know how much they have to spend to get free delivery calculates correctly.
+- The grand total which is the cart total plus the delivery calculates correctly as expected.
+
+#### Secure checkout button
+
+- When I click on the secure checkout button I am directed to the checkout page as intended.
+
+### Checkout page
+
+
+#### Order summary
+
+- A smaller sized image of the product loads correctly to the left of the form as intended.
+- All of the product details relative to the order loads as expected.
+- All of the prices relative to the order all calculate correctly as intended.
+
+#### Checkout form
+
+- Everyu field making up the checkout form loads correctly.
+- The fields Full Name, E-mail Address, Street Address 1, Town or City, Country and Phone Number are required and if they 
+aren't entered correctly then validation will appear to let the user know what is required.
+- The fields Street Address 2, Postal Code and County or State are not required so users are not required to enter these 
+to proceed and works correctly and as intended.
+
+#### Pay method
+
+- The payment field loads and receives inputs correctly as expected.
+- When I tap in an incorrect card number then I receive a notification telling me that what I have entered is incorrect 
+and that I must try to enter this in again.
+- When I tap in a correct card number then my card's logo will appear and I can proceed with the payment process.
+
+#### Adjust cart button
+
+- The button is rendered correctly and as intended.
+- When I click on the button, I'm redirected to the shopping cart page as intended.
+
+
+#### Complete order button
+
+- The button is rendered correctly and as intended.
+- When I click on the complete order button I am directed to the order confirmation page as intended.
+
+
+### Order confirmation page
+
+
+#### Order confirmation details
+
+- The thank you message loads correctly as intended.
+- The message notifying the user that an order confirmation E-mail will be sent to their E-mail account works correctly as intended.
+- I have received an E-mail confirmation of an order.
+- The order confirmation form displays order details, delivery details and billing information as expected.
+- All of the details display correctly including correct calculations of the order and billing details.
+
+### Login/logout pages
+
+
+#### Register links
+
+- The registration links load correctly and when clicked, direct me to the registration page as expected.
+
+#### Login fields
+
+- Login fields load correctly and I can type in my Username and Password. The password appears as ********** to keep it 
+hidden for security purposes.
+- If I type in a valid Username or E-mail address then I'm able to proceed and move on to the password.
+- If I type in an invalid Username or E-mail address then I'm presented with a notification telling me that what I entered 
+is unrecognised.
+- If I type in a valid password then I'm able to proceed once I click on the login button.
+- If I type in an invalid password then I'm presented with a notification telling me that what I entered is unrecognised.
+
+#### Forgot password link
+
+- The forgot password link is rendered correctly and when I click it, I'm directed to the forgot password page as expected.
+
+#### Logout button
+
+- The button is rendered correctly and as intended.
+- When I click on the button, I'm logged out of my account as expected.
+
+
+### Register page
+
+
+#### E-mail address field
+
+- Both E-mail address fields load up correctly and an E-mail address can be inserted in the text field.
+- The user will have to type in a correct E-mail address or the validation will restrict them from proceeding.
+- Once the first E-mail address if inserted then it must be a match with the second E-mail address field or the user won’t 
+be able to proceed.
+
+#### Username field
+
+- Both Username fields load up correctly and a Username can be inserted in the text field.
+- The user will have to type in a unique username or the validation will restrict them from proceeding.
+- Once the first username is inserted then it must be a match with the second username field or the user won’t 
+be able to proceed.
+
+#### Password field
+
+- Both Password fields load up correctly and a password can be inserted in the text field which will appear as ********** 
+to keep it hidden for security purposes.
+- The user will have to type in a correct password or the validation will restrict them from proceeding.
+- Once the first password is inserted then it must be a match with the second password field or the user won’t 
+be able to proceed.
+
+#### Register button
+
+- The registration button loads correctly and when clicked bring me to the registration page as expected.
+- When I click on the button with entirely valid info, I'm notified that an E-mail has been sent to my registered E-mail 
+account and I'm required to follow the link to verify my account creation.
+- When I click on the button with invalid info, I'm notified that something went wrong and that I need to try again.
+
+
+### My account page
+
+
+#### Default delivery info form
+
+- Every field in the form loads correctly and as expected.
+- Every field shows the relevant piece of the users information, so the user can edit this to their needs and to pass 
+validation.
+
+#### Order history
+
+- My order history is displayed correctly and when I'm logged in as a new user, then my order history is blank as no 
+orders have been placed before.
+- Every field displays the correct details and the total is calculated correctly as expected.
+- I can click on an order number to reveal more information about an order. This works as intended.
+
+#### Update info button
+
+- The button appears correctly where it should.
+- When I click on the button, my profile information is updated if it has passed validation.
+- When I click on the button, my profile information won't be updated if it has failed validation and I'm notified that 
+something went wrong and that I need to try again.
+
+### Password reset page
+
+
+#### E-mail address field
+
+- The E-mail address field for resetting a password loads correctly as intended.
+- If I enter an E-mail address recognised as being in the database, then I'm able to reset my password.
+- If I enter an unrecognised E-mail address, then I'm notified that the E-mail address I entered does not exist in the 
+database.
+
 ***
 
 # D E P L O Y M E N T
