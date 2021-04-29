@@ -9,7 +9,7 @@ View the live website [here](https://gazroh87-mighty-machine.herokuapp.com/)
 
 ## Code Institute - Final Milestone Project 4 - Full Stack Frameworks with Django
 
-*Note: My project builds upon large portions of the code sourced from Code Institute's Django [Boutique Ado](https://github.com/ckz8780/boutique_ado_v1) 
+> **Note:** My project builds upon large portions of the code sourced from Code Institute's Django [Boutique Ado](https://github.com/ckz8780/boutique_ado_v1) 
 project tutorials.*
 
 ***
@@ -47,7 +47,7 @@ but they can also do some of the basic tasks through the website's own frontend 
 
 ## Testing Purchases
 
-*Note: If you wish to try out the app right away and test the purchasing, for ease of use, you do not need 
+> **Note:** If you wish to try out the app right away and test the purchasing, for ease of use, you do not need 
 to register an account on the website.*
 
 Under 'Pay Method'...
@@ -524,8 +524,6 @@ You can find any other technologies not listed here that were used in this proje
 
 My process of testing includes:
 
-My process of testing includes:
-
 - Testing my user stories as set out in the UX section.
 - Validating all custom HTML, CSS and JavaScript files.
 - Reviewing website compatibility on different browsers and devices.
@@ -653,14 +651,185 @@ ensure there are no syntax errors in the project code.
 
 *   I want the ability to limit the creation, editing and deletion of products to the superuser(s) with admin access.
 
-## Committing files to GitHub
-When I make changes to each file I push them from GitHub from GitPod and below are the steps I do to do this. This is essential as to not losing any of the work I have done.
-1.	On my GitPod project scroll down and click on the command prompt at the bottom.
-2. Check status by typing in ‘git status’.
-3.	Type ‘git add .’ to add all files for staging or 'git add filepath' to add select files by path.
-4.	Type ‘git commit -m "Message" to commit the files.
-5.	Type ‘git push’ to push the files to GitHub.
+***
 
+# Deployment
+
+My project was developed using the [Gitpod](https://gitpod.io/) IDE with [Git](https://git-scm.com/) for version control.
+Along the development process, files are saved, committed and pushed to [GitHub](https://github.com/) as the host for the 
+project's repository.
+
+## Committing files to GitHub
+
+When I make larger changes to a file or multiple files such as adding a new feature/function or bug fix, I commit the 
+changes in Git and push them from Gitpod to GitHub and below are the typical steps to do this. Regular committing is 
+essential as is lowers the risk of losing work and gives me steps of the project to fall back to if I need to.
+
+1. On my GitPod project workspace, scroll down and click on the terminal command prompt.
+2. Check status of added, modified or deleted files by typing in ‘git status’.
+3. Type ‘git add .’ to add all files for staging or 'git add filepath' to add select files by their filepath.
+4. Type ‘git commit -m "Message" to commit the files.
+5. Type ‘git push’ to push the files to GitHub.
+
+## Deploying files to GitHub
+
+1. Log in to GitHub, locate Repositories then click on the repository if you already have an existing one or create a new repository.
+    * If you have created a new repository click the green Gitpod button to launch the project in Gitpod.
+    * Create an index.html file.
+    * Add the file to the staging area using the git add command.
+    * Commit the file using the git commit -m with a message like "Initial commit".
+    * Push the commit to GitHub using the git push command.
+    * Refresh your repository.
+2. Locate the "Settings" button at the end of the horizontal menu and click to go to the settings page.
+3. Scroll down the settings page until you find the "GitHub Pages" section.
+4. Under "Source", click on the dropdown menu, set as "None" by default and change it to "master branch" from the available list of options.
+5. The page will automatically reload, with a ribbon notification stating: "GitHub Pages source saved" indicating a successful deployment.
+6. Above "Source", click the link next to "Your site is published at ".
+
+## Cloning the repository for local deployment
+
+When you clone a repository, the repository is copied on to your local machine.
+
+> **Note:** Please make sure you install all dependencies from [requirements.txt](https://github.com/Gazroh87/mighty_machine/blob/master/requirements.txt) 
+as they are critical for the application to work. In the terminal you can run the command `pip install -r requirements.txt`.
+
+1. Log in to GitHub and locate the GitHub Repository.
+   - VGReviews repository can be found [here](https://github.com/Gazroh87/mighty_machine)
+
+2. Under the repository name, click the "download code" option.   
+
+3. To clone the repository using HTTPS, under "Clone with HTTPS", copy the link.   
+
+4. Open Git Bash
+
+5. Change the current working directory to the location where you want the cloned directory to be made.
+
+6. Type git clone, and then paste the URL you copied in Step 3.
+
+    ```
+    $ git clone https://github.com/YOUR-USERNAME/mighty_machine.git
+    ```
+
+7. Press Enter. Your local clone will be created.
+
+      Now, you have a local copy of your fork of the VGReviews repository.
+
+    > **Note:** The repository name and output numbers that you see on your computer, representing the total file size, etc, may differ from the example I have provided above.
+
+8. Add an env.py file to your workspace to include your environment variables (more details below).
+
+   > **Note:** Contact the site owner if you want more information on the environment variables that have been included.
+
+## Deploying files to Heroku
+
+### Creating the application
+
+1. Navigate to Heroku's website and login to your account.
+2. Click on the 'New' button and select 'Creat new app'.
+3. Give the project a unique app name.
+4. Select the region closest to you.
+
+### Setting up the connection to GitHub
+
+1. Click the 'deploy' tab and select GitHub - Connect to GitHub.
+2. A prompt to find a GitHub repo to connect to will be displayed.
+3. Enter the repo name for your project and click 'search'.
+4. When the repo has been found, click the 'connect' button.
+
+### Adding PostgreSQL database
+
+1. Click the 'Resources' tab and search for then select Heroku Postgres.
+2. Select the Hobby Dev free plan and then click 'Submit Order Form'.
+3. In the terminal, run `pip install dj_database_url` of `pip3 install dj_database_url` if you are running Python v3+ 
+followed by pip/pip3 install psycopg2-binary.
+4. Add `import dj_database_url` to your settings file.
+5. Comment out Django's default database configuration in the settings file and replace it with:
+
+```
+DATABASES = {
+    'default': dj_database_url.parse('postgres_database_url')
+    }
+```
+
+The Postgres url can be found in the config vars at Heroku.
+
+6. Migrate your database(s) to Heroku by running `python3 manage.py migrate` 
+(If you have fixtures, now is a good time to load them to the new database with `python3 manage.py loaddata name_of_fixture`).
+My fixtures were categories and then products in that order as products are dependent on categories.
+7. Create a new superuser for this deployed version by running `python3 manage.py createsuperuser`. Fill in the required details.
+8. You can then uncomment Django's default database config in the settings and remove this snippet:
+
+```
+DATABASES = {
+    'default': dj_database_url.parse('postgres_database_url')
+    }
+```
+
+9. For more convenience when switching between development and production, add the following instead:
+
+```
+if 'DATABASE_URL' in os.environ:
+    DATABASES = {
+        'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
+    }
+else:
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.sqlite3',
+            'NAME': BASE_DIR / 'db.sqlite3',
+        }
+    }
+```
+
+10. Run `pip3 install gunicorn`.
+11. Create the requirements.txt file if you haven't already done so. In the terminal it can be done by running the command 
+`pip3 freeze --local > requirements.txt`.
+12. Add a Procfile. In the terminal it can be done by running the command `echo web: gunicorn mighty_machine.wsgi:application > Procfile'.
+13. Run the command `heroku login -i` in the terminal to login to Heroku.
+14. Add the Heroku app url to `Allowed_Hosts = []` in the settings file. Make sure to add your local host path to the list.
+15. Set remote repo to Heroku: `heroku git remote -a mighty_machine`.
+16. Push to Heroku: `git push heroku master`.
+17. For automatic deploys from GitHub, scroll to 'deployment method'. Choose GitHub for auto deployment.
+18. From the inputs below, make sure your GitHub user is selected, and then enter the name for your repo. Click 'search' 
+Once your repo is found, click the 'connect' button.
+19. Go back up to 'Deploy' and click it. Scroll down and click 'Enable automatic deployment'.
+
+### Setting up the environment variables
+
+Click on the settings tab and then click reveal config vars.
+
+Config Vars
+
+**Key** | **Value**
+--------|----------
+AWS_ACCESS_KEY_ID | 20 characters
+AWS_SECRET_ACCESS_KEY | AWS Secret Access Key
+DATABASE_URL | postgres:// ...
+EMAIL_HOST_PASS | 16 characters
+EMAIL_HOST_USER | gazroh01987@gmail.com (my email account used)
+SECRET_KEY | SECRET Key
+STRIPE_PUBLIC_KEY | pk_test_ ...
+STRIPE_SECRET_KEY | sk_test_ ...
+STRIPE_WH_SECRET | whsec_ ...
+USE_AWS | True
+True
+Edit Delete
+
+### Hosting files with AWS S3
+
+To host static and media files with AWS, you need to create a new [AWS](https://aws.amazon.com/) account.
+
+In addition, you will need to create:
+
+1. An AWS S3 bucket
+2. A policy for the bucket
+3. A user group
+4. An access policy
+5. A user
+
+Finally, you have to connect [Django to S3](https://django-storages.readthedocs.io/en/latest/backends/amazon-S3.html).
+
+***
 
 ## Credits
 Product images - 
