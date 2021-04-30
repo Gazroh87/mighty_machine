@@ -251,6 +251,8 @@ the result of the action that has just taken place.
 
 ### Wireframes
 
+* Find wireframes in readme_files > wireframes.
+
 #### Mobile
 
 [Home/Index]()  |
@@ -258,9 +260,6 @@ the result of the action that has just taken place.
 [Product Details]() |
 [Shopping Cart]() |
 [Checkout]() |
-[Order confirmation]() |
-[Registration]() |
-[Login/logout]() |
 [Profile]() |
 
 #### Tablet
@@ -270,9 +269,6 @@ the result of the action that has just taken place.
 [Product Details]() |
 [Shopping Cart]() |
 [Checkout]() |
-[Order confirmation]() |
-[Registration]() |
-[Login/logout]() |
 [Profile]() |
 
 #### Desktop
@@ -282,9 +278,6 @@ the result of the action that has just taken place.
 [Product Details]() |
 [Shopping Cart]() |
 [Checkout]() |
-[Order confirmation]() |
-[Registration]() |
-[Login/logout]() |
 [Profile]() |
 
 ***
@@ -1207,7 +1200,7 @@ Finally, you have to connect [Django to S3](https://django-storages.readthedocs.
 
 ***
 
-## Credits
+## C R E D I T S
 
 ### Code
 

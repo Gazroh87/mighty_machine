@@ -11,7 +11,7 @@ Grand Total: £{{ order.grand_total }}
 
 Your order will be shipped to {{ order.street_address1 }} in {{ order.town_or_city }}, {{ order.country }}.
 
-SHould we need to contact you, we'll use the phone number you have provided: {{ order.phone_number }}.
+Should we need to contact you, we'll use the phone number you have provided: {{ order.phone_number }}.
 
 If you have any questions, feel free to contact us at {{ contact_email }}.
 
